@@ -13,7 +13,8 @@ public class TargetManager : MonoBehaviour
     private int currentId;
     private GameManager gameManager = GameManager.Instance;
 
-    // Start is called before the first frame update
+    private string targeID;
+    private bool imageTarget; //if false target -> model target.
 
     void OnDisable() {
         gameManager.OnStateChange -= HandleOnStateChange;
@@ -111,4 +112,25 @@ public class TargetManager : MonoBehaviour
             centerSquare.SetActive(false);
         }
     }
+
+    public string GetTargetID()
+    {
+        return targeID;
+    }
+
+    public void SetTargetID(string id)
+    {
+        targeID = id;
+    }
+
+    public bool GetImageTarget()
+    {
+        return imageTarget;
+    }
+
+    public void SetImageTarget(bool b)
+    {
+        imageTarget = b;
+    }
+
 }

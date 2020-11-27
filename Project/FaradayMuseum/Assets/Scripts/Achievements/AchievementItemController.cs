@@ -45,6 +45,21 @@ public class AchievementItemController : MonoBehaviour
         }
     }
 
+    public string GetID()
+    {
+        return achievement.id;
+    }
+
+    public string GetArtifactID()
+    {
+        return achievement.artifactID;
+    }
+
+    public bool GetHaveExplanation()
+    {
+        return achievement.haveExplanation;
+    }
+
     private void OnValidate()
     {
         RefreshView();

@@ -22,6 +22,12 @@ public class AchievementManager : MonoBehaviour
 
     private int notificationCount;
 
+    //explanation appears when achivements is unlocked
+    public GameObject explanation;
+
+    //give an hint if is take to long
+    public HintManager hintManager;
+
     #endregion
 
     #region Const Variables
@@ -32,13 +38,14 @@ public class AchievementManager : MonoBehaviour
 
     private Color oddColor = new Color(0.0f, 0.82f, 0.83f, 1.0f);
 
-    private int achieventPointsTotal;
-
     #endregion
+
 
     [SerializeField][HideInInspector]
     private List<AchievementItemController> achievementItems;
-     
+    
+    private int achieventPointsTotal;
+
     private void Start()
     {
         LoadAchievementsTable();
@@ -123,19 +130,23 @@ public class AchievementManager : MonoBehaviour
         CalculateAchievementPoints(item.achievement.points);
     }
 
-    public void IncrementAchievement(Achievements achievement)
+    public bool IncrementAchievement(Achievements achievement)
     {
         AchievementItemController item = achievementItems[(int)achievement];
 
         if (item.unlocked)
-            return;
+            return false;
 
         if (item.Increment())
         {
             UnlockAchievement(achievement);
+            item.RefreshView();
+
+            return true;
         }
 
         item.RefreshView();
+        return false;
     }
 
     [ContextMenu("LockAllAchievements()")]
@@ -169,5 +180,100 @@ public class AchievementManager : MonoBehaviour
     {
         achievementsButtonController.ResetNotification();
         notificationCount = 0;
+    }
+
+
+
+    // JOAO
+    public string GetAchievementID(Achievements achievement)
+    {
+        AchievementItemController item = achievementItems[(int)achievement];
+
+        return item.GetID();
+    }
+
+    public string GetAchievementArtifactID(Achievements achievement)
+    {
+        AchievementItemController item = achievementItems[(int)achievement];
+
+        return item.GetArtifactID();
+    }
+
+    public string[] GetAllAchievementsID()
+    {
+        string[] allAchievementsID = System.Enum.GetNames(typeof(Achievements));
+
+        return allAchievementsID;
+    }
+
+    public List<string> GetUnlockedAchievementsID()
+    {
+        List<string> unlockedAchievementsID = new List<string>(); ;
+
+        foreach (Achievements ach in Enum.GetValues(typeof(Achievements)))
+        {
+            AchievementItemController item = achievementItems[(int)ach];
+
+            if (item.unlocked == true)
+            {
+                unlockedAchievementsID.Add(GetAchievementID(ach));
+            }
+        }
+
+        return unlockedAchievementsID;
+    }
+
+    public List<string> GetLockedAchievementsID()
+    {
+        List<string> lockedAchievementsID = new List<string>(); ;
+
+        foreach (Achievements ach in Enum.GetValues(typeof(Achievements)))
+        {
+            AchievementItemController item = achievementItems[(int)ach];
+
+            if (item.unlocked == false)
+            {
+                lockedAchievementsID.Add(GetAchievementID(ach));
+            }
+        }
+
+        return lockedAchievementsID;
+    }
+
+    public List<string> GetLockedAchievementsIDByArtifactID(string artifactID)
+    {
+        List<string> lockedAchievementsID = new List<string>(); ;
+
+        foreach (Achievements ach in Enum.GetValues(typeof(Achievements)))
+        {
+            AchievementItemController item = achievementItems[(int)ach];
+
+            if (item.unlocked == false && artifactID == item.GetArtifactID())
+            {
+                lockedAchievementsID.Add(GetAchievementID(ach));
+            }
+            Debug.Log(artifactID + " ** " + item.GetArtifactID());
+        }
+
+        return lockedAchievementsID;
+    }
+
+   /*
+    * TODO: refact
+    */
+    public void AchivemententUnlocked(Achievements achievement)
+    {
+
+
+        AchievementItemController item = achievementItems[(int)achievement];
+        string id = item.GetID();      
+        
+        if(item.GetHaveExplanation() == true)
+        {
+            explanation.GetComponent<ExplanationDisplay>().SetID(id);
+            explanation.SetActive(true);
+        }
+        
+        hintManager.SetStartTimer(true);
     }
 }

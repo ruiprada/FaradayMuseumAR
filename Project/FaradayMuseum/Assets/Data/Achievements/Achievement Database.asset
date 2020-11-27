@@ -19,23 +19,40 @@ MonoBehaviour:
       description: First Achievement Description
       objective: 1
       points: 10
+      haveExaplanation: 0
+      artifactID: 
     - id: Second
       title: Second Achievement
       description: Second Achievement Description
       objective: 5
       points: 20
+      haveExaplanation: 0
+      artifactID: 
     - id: Third
       title: Third Achievement
       description: Third Achievement Description
       objective: 1
       points: 30
+      haveExaplanation: 0
+      artifactID: 
     - id: Fourth
       title: Fourth Achievement
       description: Fourth Achievement Description
       objective: 1
       points: 40
+      haveExaplanation: 0
+      artifactID: 
     - id: Fifth
       title: Fifth Achievement
       description: Fifth Achievement Description
       objective: 1
       points: 50
+      haveExaplanation: 0
+      artifactID: 
+    - id: CR1
+      title: Fifth Achievement
+      description: Fifth Achievement Description
+      objective: 1
+      points: 50
+      haveExaplanation: 1
+      artifactID: CR
