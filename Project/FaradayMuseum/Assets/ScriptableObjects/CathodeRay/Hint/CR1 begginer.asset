@@ -15,5 +15,5 @@ MonoBehaviour:
   artifactID: CR
   ID: CR1
   title: Hey, it seems that you need help...
-  description: hint bbbb
+  description: "Try to create a line by rotating the ampule to 0\xBA, 180\xBA or 360\xBA."
   expertiseLevel: begginer

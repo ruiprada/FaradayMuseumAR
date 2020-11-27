@@ -50,7 +50,6 @@ public class Countdown : MonoBehaviour {
             dialog.SetActive(false);
             phoneCall.Call();
          }
- //        fraction = (timeLeft * 100) % 100;
      }
  
      private IEnumerator UpdateCoroutine(){

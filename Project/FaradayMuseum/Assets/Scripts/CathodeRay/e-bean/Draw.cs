@@ -11,8 +11,10 @@ using UnityEngine;
 public class Draw : MonoBehaviour
 {
 
-
     #region PRIVATE_VARIABLES
+    [SerializeField]
+    private DrawAux drawAux;
+
     [SerializeField]
     private GameObject Ampule;
 
@@ -22,8 +24,9 @@ public class Draw : MonoBehaviour
     private Color augementedColor;
     private Color augementedColor_Lock;
 
-    private float ampuleRadius = 0.155f;
-
+    private float ampuleRadius = 0.073f; //imageTarget -> 0.073f ; modelTarget -> 0.25f;
+    private float offSet = -0.013f; //imageTarget -> -0.013f ; modelTarget -> +0.025f;
+    private float auxDistance = 0.2119759f; //imageTarget -> 0.2119759f ; modelTarget -> +0.025f;
     private int numberOfVertices = 400;
     private float radius = 0.2f;
     
@@ -32,7 +35,7 @@ public class Draw : MonoBehaviour
     private float lineEndWidth = 0.02f;
     
     private LineRenderer lineRenderer;
-    private Renderer renderer;
+    private new Renderer renderer;
     #endregion
 
     void Awake()
@@ -57,22 +60,32 @@ public class Draw : MonoBehaviour
         ShowARButton.OnARButtonClicked += UpdateColor;
     }
 
+    void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+
+        Vector3 ampuleWorldPos = new Vector3(Ampule.transform.position.x + offSet,
+            Ampule.transform.position.y, Ampule.transform.position.z);
+
+
+        // Debug.Log(ampuleWorldPos.y);
+        Gizmos.DrawSphere(ampuleWorldPos, ampuleRadius); //0.25f;
+    }
+
     private void Update()
     {
         //Global position of Ampule
         //necessary to be in Updated because ampilue positon changes due to AR
         List<Vector4> ampuleWorldPos = new List<Vector4>();
        
-        ampuleWorldPos.Add(new Vector4(Ampule.transform.position.x,
+        ampuleWorldPos.Add(new Vector4(Ampule.transform.position.x + offSet,
             Ampule.transform.position.y, Ampule.transform.position.z, 1));
 
         renderer.material.SetVectorArray("_AmpulePos", ampuleWorldPos);
-        
-        //renderer.material.SetColor("_AugmentedColor", am)
     }
 
-
-    public void DrawLine(double alpha)
+    public void DrawDefault()
     {
         lineRenderer.loop = false;
 
@@ -80,28 +93,47 @@ public class Draw : MonoBehaviour
         lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
 
         // Second point
-        float k = 0.105f;
+        lineRenderer.SetPosition(1, new Vector3(0, 0, 0));
+
+        drawAux.DisableAuxCircle();
+    }
+
+    public void DrawLine(double alpha)
+    {
+        drawAux.DisableAuxCircle();
+
+        lineRenderer.loop = false;
+
         if(alpha == 0)
         {
             // z(t) = -V0 * t, (z(t) < 0) e x(t) = y(t) = 0 
-            lineRenderer.SetPosition(1, new Vector3(0, 0, -k));
+            lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
+            lineRenderer.SetPosition(1, new Vector3(0, 0, -0.062f)); //0.071f
         }
         else
         {
             // z(t) = V0 * t, (z(t) > 0) e x(t) = y(t) = 0
-            lineRenderer.SetPosition(1, new Vector3(0, 0, k));
+            lineRenderer.SetPosition(0, new Vector3(0.01f, 0, 0));
+            lineRenderer.SetPosition(1, new Vector3(0, 0, 0.065f)); //0.075f
         }
 
     }
 
+    
+
     public void DrawCircle()
     {
+        Vector3 ampuleWorldPos;
+        Vector3 point;
+
         float x;
         float y;
         float z = 0;
 
         float angle = 0f;
 
+        drawAux.DisableAuxCircle();
+        
         // This is stupid but it's how it works
         if (radius <= 1)
         {
@@ -118,22 +150,54 @@ public class Draw : MonoBehaviour
          *  z(t) = 0 
          */
 
+
+        // 0 on z because it's a circunference
+        ampuleWorldPos = new Vector3(Ampule.transform.position.x + offSet,
+            Ampule.transform.position.y, 0);
+
         for (int i = 0; i < (numberOfVertices + 1); i++)
         {
-            //x = (float) (Math.Sin((Math.PI / 180) * angle) * radius);
-            //y = (float) (Math.Cos((Math.PI / 180) * angle) * radius);
 
-            x = (float) (radius * (1 - Math.Cos((Math.PI / 180) * angle)));
-            y = (float) (radius * (Math.Sin((Math.PI / 180) * angle)));
 
-            lineRenderer.SetPosition(i, new Vector3(z, x, y)); //new Vector3(y, z, x)
+            x = (float)(radius * (1 - Math.Cos((Math.PI / 180) * angle)));
+            y = (float)-(radius * (Math.Sin((Math.PI / 180) * angle)));
+
+
+            point = new Vector3(x, y, z);
+            
+            Vector3 difference = new Vector3(
+              point.x - ampuleWorldPos.x,
+              point.y - ampuleWorldPos.y,
+              point.z - ampuleWorldPos.z);
+
+            float distance = (float) Math.Sqrt(
+              Math.Pow(difference.x, 2f) +
+              Math.Pow(difference.y, 2f) +
+              Math.Pow(difference.z, 2f));
+
+            //Debug.Log("i: " + i + " Point: " + point + " AmpulePos: " + ampuleWorldPos + " D:" + distance);
+            if (distance > auxDistance) 
+            {
+                //Debug.Log(i);
+
+                lineRenderer.positionCount = i;
+                lineRenderer.loop = false;
+
+                drawAux.DrawAuxCircle(radius, i, numberOfVertices);
+                break;
+            }
+
+            lineRenderer.SetPosition(i, new Vector3(z, x, y));
 
             angle += (360f / numberOfVertices);
         }
     }
 
+
     public void DrawSpiral(double alpha, double V0, double T, double W)
     {
+        drawAux.DisableAuxCircle();
+
         lineRenderer.loop = false;
 
         float x, y, z;
@@ -151,7 +215,7 @@ public class Draw : MonoBehaviour
         for (int i = 0; i < (numberOfVertices + 1); i++)
         {
             x = (float) (radius * Math.Sin(alpha) * (1 - Math.Cos(W * ((Math.PI / 180) * angle))));
-            y = (float) (radius * Math.Sin(alpha) * Math.Sin(W * ((Math.PI / 180) * angle)));
+            y = (float) -(radius * Math.Sin(alpha) * Math.Sin(W * ((Math.PI / 180) * angle)));
             z = (float) -(V0 * ((Math.PI / 180) * angle) * Math.Cos(alpha));
 
             lineRenderer.SetPosition(i, new Vector3(z, x, y));

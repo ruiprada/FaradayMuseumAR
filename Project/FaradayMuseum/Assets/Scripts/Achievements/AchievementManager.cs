@@ -132,7 +132,12 @@ public class AchievementManager : MonoBehaviour
 
     public bool IncrementAchievement(Achievements achievement)
     {
+        if(achievementItems.Count == 0){
+            return false;
+        }
+
         AchievementItemController item = achievementItems[(int)achievement];
+
 
         if (item.unlocked)
             return false;
@@ -183,8 +188,6 @@ public class AchievementManager : MonoBehaviour
     }
 
 
-
-    // JOAO
     public string GetAchievementID(Achievements achievement)
     {
         AchievementItemController item = achievementItems[(int)achievement];
@@ -252,15 +255,11 @@ public class AchievementManager : MonoBehaviour
             {
                 lockedAchievementsID.Add(GetAchievementID(ach));
             }
-            Debug.Log(artifactID + " ** " + item.GetArtifactID());
         }
 
         return lockedAchievementsID;
     }
 
-   /*
-    * TODO: refact
-    */
     public void AchivemententUnlocked(Achievements achievement)
     {
 
@@ -274,6 +273,6 @@ public class AchievementManager : MonoBehaviour
             explanation.SetActive(true);
         }
         
-        hintManager.SetStartTimer(true);
+        hintManager.AchievementCompleted(true);
     }
 }

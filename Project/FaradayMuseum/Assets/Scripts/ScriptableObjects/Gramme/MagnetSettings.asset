@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a2141da0b7ab74c878c359f9df464a, type: 3}
   m_Name: MagnetSettings
   m_EditorClassIdentifier: 
-  intensifierMultiplier: 0.2
+  intensifierMultiplier: 0.8
   northPoleColor: {r: 1, g: 0.99, b: 0.99, a: 1}
   southPoleColor: {r: 0.99, g: 0.99, b: 1, a: 1}

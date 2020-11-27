@@ -1,42 +1,37 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class ExplanationDisplay : MonoBehaviour
+[RequireComponent(typeof(Animator))]
+public class ExplanationDisplay : PopUps
 {
-    [Tooltip("This manager needs to contain the settings manager script")]
-    public GameObject manager;
-    public Explanation[] explanation;
+    public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI description;
+
+    public bool SwipeLeftToCenter { get; set; } = false;
+
+    [SerializeField]
+    private SettingsManager settingsManager;
+    [SerializeField]
+    private Explanation[] explanation;
+    [SerializeField]
+    private TextMeshProUGUI title;
+    [SerializeField]
+    private TextMeshProUGUI description;
 
     private string ID;
+    List<string> alreadyOpen = new List<string>();
 
-    private void Update()
+    private Animator animator;
+
+    private void Awake()
     {
-        // if user click, disable the explanation
-        if (Input.GetMouseButtonDown(0))
-        {
-            gameObject.SetActive(false);
-        }
+        animator = GetComponent<Animator>();
     }
 
-    void Start()
+    void OnEnable()
     {
-        string expertiseLevel = manager.GetComponent<SettingsManager>().GetExpertiseLevel();
-        string targetID = manager.GetComponent<TargetManager>().GetTargetID();
-
-        for (int i = 0; i < explanation.Length; i++)
-        {
-            if (explanation[i].expertiseLevel == expertiseLevel &&
-                explanation[i].artifactID == targetID && 
-                explanation[i].ID == ID)
-            {
-                title.text = explanation[i].title;
-                description.text = explanation[i].description;
-            }
-        }
-
+        EnableAndPopulate();
     }
 
     public string GetID()
@@ -47,5 +42,45 @@ public class ExplanationDisplay : MonoBehaviour
     public void SetID(string id)
     {
         ID = id;
+
+        if (IsActive)
+        {
+            EnableAndPopulate();
+        }
+    }
+
+    public void OnQuitButtonClick()
+    {
+        singleton.AddGameEvent(LogEventType.Click, "Close Explanation");
+
+        StartCoroutine(ClosePopUp(animator, gameObject));
+        OnPopUpDisable?.Invoke();
+    }
+
+    private void EnableAndPopulate()
+    {
+        IsActive = true; 
+
+        animator.SetTrigger("FadeIn");
+
+        string expertiseLevel = settingsManager.GetExpertiseLevel();
+        string targetID = "CR";
+
+        for (int i = 0; i < explanation.Length; i++)
+        {
+            if (explanation[i].expertiseLevel == expertiseLevel &&
+                explanation[i].artifactID == targetID &&
+                explanation[i].ID == ID)
+            {
+                title.text = explanation[i].title;
+                description.text = explanation[i].description;
+            }
+        }
+
+        if (!alreadyOpen.Contains(ID))
+        {
+            OnPopUpEnable?.Invoke(ID);
+            alreadyOpen.Add(ID);
+        }
     }
 }

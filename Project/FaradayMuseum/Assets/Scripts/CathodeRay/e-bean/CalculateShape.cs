@@ -4,21 +4,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Draw))]
+[RequireComponent(typeof(CheckAchievements))]
 public class CalculateShape : PhysicsConsts
 {
-    public AchievementManager achievementManager;
-
     private Draw draw;
-
+    private CheckAchievements checkAchievements;
+    
     private int nPoints = 1000; //number of points to design the circle
 
     private double B; // magnetic field
     private double V0; // initial velocity
     private double alpha; // rotation angle in rads
 
+    public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
+
+
     void Awake()
     {
         draw = gameObject.GetComponent<Draw>();
+        checkAchievements = gameObject.GetComponent<CheckAchievements>();
     }
 
 
@@ -26,6 +30,8 @@ public class CalculateShape : PhysicsConsts
     {
         // B = U0 * H
         B = U0 * H(intesity);
+
+        checkAchievements.CheckSpiralAchivement(-1, -1, intesity);
 
         ShapeCalculator();
     }
@@ -35,12 +41,16 @@ public class CalculateShape : PhysicsConsts
         // sqrt(2 * q /m * Ua) , Ua -> acceleration voltage
         V0 = Math.Sqrt(2 * tension * (q / m));
 
+        checkAchievements.CheckSpiralAchivement(-1, tension, -1);
+
         ShapeCalculator();
     }
 
     public void SetAlpha(float rotation)
     {
         alpha = (Math.PI / 180) * rotation;
+
+        checkAchievements.CheckSpiralAchivement(rotation, -1, -1);
 
         ShapeCalculator();
     }
@@ -62,7 +72,8 @@ public class CalculateShape : PhysicsConsts
             /*
             * TODO: Fix this -ask to professor carlos
             */
-
+            draw.NumberOfVertices = 2;
+            draw.DrawDefault();
             return;
         }
 
@@ -72,6 +83,8 @@ public class CalculateShape : PhysicsConsts
             draw.NumberOfVertices = 2;
 
             draw.DrawLine(alpha);
+           
+            checkAchievements.AchivementDone(Achievements.CR1);
         }
         // alpha = PI, is a line 
         else if (alpha == Math.PI)
@@ -80,7 +93,7 @@ public class CalculateShape : PhysicsConsts
 
             draw.DrawLine(alpha);
 
-            AchivementDone(Achievements.CR1);
+            checkAchievements.AchivementDone(Achievements.CR1);
         }
         // alpha = PI/2, is a circle
         else if (alpha == (Math.PI / 2))
@@ -94,6 +107,8 @@ public class CalculateShape : PhysicsConsts
             draw.Radius = (float) r;
 
             draw.DrawCircle();
+
+            checkAchievements.CheckCircumferenceAchivement(r);
         }
         // alpha != 0,PI/2,Pi -> is a spiral
         else
@@ -103,15 +118,19 @@ public class CalculateShape : PhysicsConsts
             double timePeriod = T(B);
             double D = Delta(B);
 
-            /*
-             *
-             * TODO: rightvalue of  number of vertices
-             */
-
             draw.NumberOfVertices = 360;
             draw.Radius = (float) r;
 
             draw.DrawSpiral(alpha, V0, timePeriod, w);
+
+            if (checkAchievements.Spiral1)
+            {
+                checkAchievements.AchivementDone(Achievements.CR4);
+            }
+            else if(checkAchievements.Spiral2)
+            {
+                checkAchievements.AchivementDone(Achievements.CR5);
+            }
         }
     }
 
@@ -165,14 +184,5 @@ public class CalculateShape : PhysicsConsts
 
 
 
-    private void AchivementDone(Achievements achivement)
-    {
-        bool achivementUnlocked = achievementManager.IncrementAchievement(achivement);
-
-        if (achivementUnlocked == true)
-        {
-            achievementManager.AchivemententUnlocked(achivement);
-        }
-
-    }
+    
 }

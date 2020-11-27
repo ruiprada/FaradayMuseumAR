@@ -8,7 +8,7 @@ public class Game : MonoBehaviour
 
     private GameObject gameSpecificCanvas;
 
-    public BoxBlur ARCameraBlur;
+    //public BoxBlur ARCameraBlur;
 
     public GameObject ObjectOverview;
 
@@ -18,7 +18,7 @@ public class Game : MonoBehaviour
     {
         if (gameManager.gameState == GameState.MAIN_MENU)
         {
-            ARCameraBlur.Blur();
+           // ARCameraBlur.Blur();
             ObjectOverview.SetActive(true);
 
 
@@ -28,15 +28,15 @@ public class Game : MonoBehaviour
 
     public void LostFocus()
     {
-        if (gameManager.gameState == GameState.IN_GAME)
-        {
-            ARCameraBlur.ResetBlur();
-        }
+       // if (gameManager.gameState == GameState.IN_GAME)
+       // {
+            //ARCameraBlur.ResetBlur();
+       // }
     }
 
     public void ExitGame()
     {
-        ARCameraBlur.ResetBlur();
+        //ARCameraBlur.ResetBlur();
         gameManager.ExitGame();
     }
 }

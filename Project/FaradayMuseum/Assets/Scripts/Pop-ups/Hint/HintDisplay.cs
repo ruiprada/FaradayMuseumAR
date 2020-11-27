@@ -1,21 +1,35 @@
 ﻿using TMPro;
 using UnityEngine;
 
-public class HintDisplay : MonoBehaviour
+[RequireComponent(typeof(Animator))]
+public class HintDisplay : PopUps
 {
-    [Tooltip("This manager needs to contain the settings manager script")]
-    public GameObject manager;
-    public Hint[] hint;
+    public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI description;
+    [SerializeField]
+    private TargetManager targetManager;
+    [SerializeField]
+    private SettingsManager settingsManager;
+    [SerializeField]
+    private Hint[] hint;
+    [SerializeField]
+    private TextMeshProUGUI title;
+    [SerializeField]
+    private TextMeshProUGUI description;
 
     private string ID;
 
-    void Start()
+    private Animator animator;
+
+    private void Awake()
     {
-        string expertiseLevel = manager.GetComponent<SettingsManager>().GetExpertiseLevel();
-        string targetID = manager.GetComponent<TargetManager>().GetTargetID();
+        animator = GetComponent<Animator>();
+    }
+
+    void OnEnable()
+    {
+        string expertiseLevel = settingsManager.GetExpertiseLevel();
+        string targetID = targetManager.GetTargetID();
 
         for (int i = 0; i < hint.Length; i++)
         {
@@ -26,17 +40,18 @@ public class HintDisplay : MonoBehaviour
                 title.text = hint[i].title;
                 description.text = hint[i].description;
             }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
-
     }
 
-    private void Update()
+    public void OnQuitButtonClick()
     {
-        // if user click, disable the hint
-        if (Input.GetMouseButtonDown(0))
-        {
-            gameObject.SetActive(false);
-        }
+        singleton.AddGameEvent(LogEventType.Click, "Close Hint");
+
+        StartCoroutine(ClosePopUp(animator, gameObject));
     }
 
     public string GetID()

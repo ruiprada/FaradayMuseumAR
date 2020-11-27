@@ -12,6 +12,7 @@ public class Explanation : ScriptableObject
     public string ID;
 
     public string title = "Sabias que..." ;
+    [TextArea]
     public string description;
 
     [Tooltip("Use lower case! Case Sensitive with settingsManager.cs")]

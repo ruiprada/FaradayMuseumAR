@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class HintManager : MonoBehaviour
 {
-    public GameObject hint;
-    public AchievementManager achievementManager;
-    public TargetManager targetManager;
-
+    [SerializeField]
+    private GameObject hint;
+    [SerializeField]
+    private AchievementManager achievementManager;
     [SerializeField] private float timer = 60;
     private float timerLock; // used to reset time
 
     private bool hintShowed = false; // if a hint was showed or not
     private bool startTimer = false; // if the timer should start to count
 
+    public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
     void Start()
     {
@@ -36,18 +37,18 @@ public class HintManager : MonoBehaviour
         {
             // Select an locked achivement to show the hint
             List<string> lockedAchievementsIDByArtifactID =
-                achievementManager.GetLockedAchievementsIDByArtifactID(targetManager.GetTargetID());
+                achievementManager.GetLockedAchievementsIDByArtifactID("CR");
             string[] aux = lockedAchievementsIDByArtifactID.ToArray();
 
             if (aux.Length > 0)
             {
                 // for now we are selecting the first one
                 // maybe we should change this later!!
-                string id = GetAchivementToHelp(aux);
-
+                string id = GetAchievementToHelp(aux);
                 // show hint
                 hint.GetComponent<HintDisplay>().SetID(id);
                 hint.SetActive(true);
+                singleton.AddGameEvent(LogEventType.NoActionClick, "Hint showed: " + id);
                 // dont show hint anymore
                 hintShowed = true;
                 // reset timer to next hint
@@ -61,13 +62,14 @@ public class HintManager : MonoBehaviour
                 startTimer = false;
             }
         }
+        else
+        {
+            hintShowed = false;
+        }
     }
 
-    public string GetAchivementToHelp(string[] achivementdIDs)
+    public string GetAchievementToHelp(string[] achivementdIDs)
     {
-        /*
-         * TO DO: Improve this logic
-         */
         return achivementdIDs[0];
     }
 
@@ -82,8 +84,21 @@ public class HintManager : MonoBehaviour
         timer = timerLock;
     }
 
-    public void SetStartTimer(bool b)
+    private void SetStartTimer(bool b)
     {
         startTimer = b;
+
+        if (startTimer)
+        {
+            ResetTimer();
+        }
+    }
+
+    public void AchievementCompleted(bool b)
+    {
+        //If achievement completed the hint showed to this achievement is disabled
+        hint.SetActive(false);
+
+        SetStartTimer(b);
     }
 }

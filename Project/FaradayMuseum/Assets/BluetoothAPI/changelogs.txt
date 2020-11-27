@@ -1,3 +1,30 @@
++ 5.4.3
+    - Minor Changes
++ 5.4.2
+    - Improvement for multi-device connection on macos and ios
+    - fix compilation problem for ios and native android
+    - misc minor bug fixes
++ 5.4.1
+    - Support for BLE on Android 10
++ 5.4.0
+    - Fix bug in android causing all bluetooth instances to disconnect if one gets disconnected
+    - Allow to use BLE inside Unity editor during development
+    - Minor improvements
++ 5.3.1
+    - fix for windows platform causing unity to hang
+    - bug fix for android causing previously found devices to appears in the next scan even when not available.
++ 5.3.0
+    - ability to implement custom Stream Manager
+    - performance improvements on android
+    - bug fixed for all platforms causing empty scan results afteer disconnection
+    - add getGattServices function to return peripheral gatt services list.
++ 5.2.2
+    - minor improvements for ios
+    - fix bug with terminator based stream for all platforms
++ 5.2.1
+    - fix bug in android
+    - fix bug on mac and ios causing not invoking connected after disconnecting
+    - additional demo scene
 + 5.2.0
     - Ability to connect to multiple bluetooth devices, simply call GetNewInstance to get a new bluetoothHelper object
     - setTxCharacteristic and setRxCharacteristic, two functions added to define in and out characteristic for BLE in case

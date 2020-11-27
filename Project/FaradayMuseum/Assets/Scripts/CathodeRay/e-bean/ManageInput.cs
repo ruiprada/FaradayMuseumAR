@@ -5,8 +5,11 @@ using UnityEngine;
 [RequireComponent(typeof(CalculateShape))]
 public class ManageInput : PhysicsConsts
 {
-    public Transform Ampule;
-    public CoilsManager coilsManager;
+    [SerializeField]
+    private Transform Ampule;
+
+    public static Action<float> OnIntesityChanged;
+    public static Action OnTensionChanged;
 
     #region PRIVATE_VARIABLES
 
@@ -31,7 +34,7 @@ public class ManageInput : PhysicsConsts
             intensity = value;
 
             calculateShape.SetB(intensity);
-            coilsManager.UpdateSize(intensity);
+            OnIntesityChanged?.Invoke(intensity);
         }
     }
 
@@ -43,6 +46,8 @@ public class ManageInput : PhysicsConsts
             tension = value;
 
             calculateShape.SetV0(tension);
+
+            OnTensionChanged?.Invoke();
         }
     }
 
@@ -53,12 +58,7 @@ public class ManageInput : PhysicsConsts
         {
             rotation = value;
 
-            Vector3 temp = Ampule.rotation.eulerAngles;
-            temp.z = rotation;
-            Ampule.rotation = Quaternion.Euler(temp);
-
-            //Ampule.eulerAngles = new Vector3(Ampule.eulerAngles.x, rotation, Ampule.eulerAngles.z);
-            // Ampule.Rotate(0, 0.0f, rotation, Space.Self);
+            Ampule.localEulerAngles = new Vector3(rotation, 0, 0);
 
             calculateShape.SetAlpha(rotation);
         }

@@ -12,6 +12,7 @@ public class Hint : ScriptableObject
     public string ID;
 
     public string title = "Hey, it seems that you need help...";
+    [TextArea]
     public string description;
 
     [Tooltip("Use lower case! Case Sensitive with settingsManager.cs")]

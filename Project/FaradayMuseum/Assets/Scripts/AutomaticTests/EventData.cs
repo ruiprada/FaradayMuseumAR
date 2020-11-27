@@ -39,6 +39,10 @@ public enum LogEventType
 
     Drag,
 
+    AchivementUnlocked,
+
+    TrackingTarget,
+
     //Book
     OnAppLoad,
     OpenBook,
@@ -67,4 +71,11 @@ public enum LogEventType
     TopDoor,
     MiddleDoor,
     BottomDoor,
+
+    // Cathode Ray
+    Rotating,
+    Tension,
+    Intensity,
+    Rotation,
+    Warning
 }

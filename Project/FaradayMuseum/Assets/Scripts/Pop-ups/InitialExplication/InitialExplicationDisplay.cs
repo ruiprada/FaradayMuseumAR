@@ -1,19 +1,33 @@
 ﻿using TMPro;
 using UnityEngine;
 
-public class InitialExplicationDisplay : MonoBehaviour
+[RequireComponent(typeof(Animator))]
+public class InitialExplicationDisplay : PopUps
 {
-    [Tooltip("This manager needs to contain the settings manager script")]
-    public GameObject manager;
-    public InitialExplication[] initialExplications;
+    public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI description;
+    [SerializeField]
+    private SettingsManager settingsManager;
+    [SerializeField]
+    private InitialExplication[] initialExplications;
+    [SerializeField]
+    private TextMeshProUGUI title;
+    [SerializeField]
+    private TextMeshProUGUI description;
 
-    void Start()
+    private Animator animator;
+
+    private void Awake()
     {
-        string expertiseLevel = manager.GetComponent<SettingsManager>().GetExpertiseLevel();
-        string targetID = manager.GetComponent<TargetManager>().GetTargetID();
+        animator = GetComponent<Animator>();
+    }
+
+    void OnEnable()
+    {
+        animator.SetTrigger("FadeIn");
+
+        string expertiseLevel = settingsManager.GetExpertiseLevel();
+        string targetID = "CR";
 
         for (int i = 0; i < initialExplications.Length; i++)
         {
@@ -25,5 +39,24 @@ public class InitialExplicationDisplay : MonoBehaviour
             }
         }
 
+        if (firstTime)
+        {
+            OnPopUpEnable?.Invoke("IE");
+            firstTime = false;
+        }
+        
+    }
+
+    public void Disable()
+    {
+        StartCoroutine(ClosePopUp(animator, gameObject));
+    }
+
+    public void OnQuitButtonClick()
+    {
+        singleton.AddGameEvent(LogEventType.Click, "Close initialExplanation");
+
+        Disable();
+        OnPopUpDisable?.Invoke();
     }
 }

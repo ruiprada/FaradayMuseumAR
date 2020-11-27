@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-using System.Net;
 using System.IO;
 using Newtonsoft.Json;
-using System.Linq;
+using UnityEngine.Networking;
+using System.Collections.Generic;
 
-public sealed class UsabilityTestsSingleton{
+public sealed class UsabilityTestsSingleton
+{
 
     public List<EventData> gameEventsLocal = new List<EventData>();
     public List<EventData> gameEventsServer = new List<EventData>();
@@ -15,7 +16,11 @@ public sealed class UsabilityTestsSingleton{
 
     private static UsabilityTestsSingleton _instance = null;
 
-    private bool LOG = false;
+    public bool Log { get;  set; } = false;
+
+    private string DEVELOPER_ULR_ADDRESS = "http://web.tecnico.ulisboa.pt/~ist181633/FaradayMuseum/LogTests/LogTests_POST.php";
+    private static string logFileName = "defaultName";
+    public string LogFileName { get { return logFileName; } set { logFileName = value; } }
 
     private UsabilityTestsSingleton()
     {
@@ -24,7 +29,8 @@ public sealed class UsabilityTestsSingleton{
 
     public static UsabilityTestsSingleton Instance()
     {
-        if (_instance == null){
+        if (_instance == null)
+        {
 
             _instance = new UsabilityTestsSingleton();
         }
@@ -36,7 +42,7 @@ public sealed class UsabilityTestsSingleton{
         gameEventsLocal.Add(new EventData(eventType, DateTime.Now));
         gameEventsServer.Add(new EventData(eventType, DateTime.Now));
 
-        SaveOnMobile(); 
+        SaveOnMobile();
     }
 
     public void AddGameEvent(LogEventType eventType, string objectName)
@@ -47,58 +53,14 @@ public sealed class UsabilityTestsSingleton{
         SaveOnMobile();
     }
 
-    void OutputTime()
+    private void SaveOnMobile()
     {
-        Debug.Log(Time.time);
-    }
-
-    public void SendtoSigma()
-    {
-        try
-        {
-
-        string filename = DateTime.Now.ToString("yyyy-MM-dd") +  ".json";
-        string file = JsonConvert.SerializeObject(gameEventsServer, new JsonSerializerSettings() { DateFormatString = "dd/MM/yyyy HH:MM:ss" });
-
-        string urlAddress = "http://web.tecnico.ulisboa.pt/ist172700/Faraday/FileReceiver.php?filename=" + filename + "&file=" + file;
-           
-        HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(urlAddress);
-        Credential credential = LoadJson("credentials");
-        NetworkCredential myCredentials = new NetworkCredential(credential.username, credential.password);
-
-        webRequest.Method = "GET";
-
-        webRequest.Credentials = CredentialCache.DefaultCredentials;
-
-        var webResponse = webRequest.GetResponse();
-
-            /*
-            var webResponse = (HttpWebResponse)await Task.Factory.FromAsync(webRequest.BeginGetResponse,
-                        webRequest.EndGetResponse,
-                        null);
-            */
-
-        var webStream = webResponse.GetResponseStream();
-        var responseReader = new StreamReader(webStream);
-        var response = responseReader.ReadToEnd();
-        Console.WriteLine("Response: " + response);
-        responseReader.Close();
-
-        gameEventsServer.Clear();
-
-        }catch{
-            Debug.LogWarning("Communication Failure");
-        }
-    }
-
-    public void SaveOnMobile()
-    {
-        if (!LOG)
+        if (!Log)
         {
             return;
         }
 
-        string filePath = Application.persistentDataPath + "/" + DateTime.Now.ToString("yyyy-MM-dd") + ".json";
+        string filePath = Application.persistentDataPath + "/" + LogFileName + ".json";
         string fileData = JsonConvert.SerializeObject(gameEventsLocal, new JsonSerializerSettings() { DateFormatString = "dd/MM/yyyy HH:MM:ss" });
 
         try
@@ -113,21 +75,71 @@ public sealed class UsabilityTestsSingleton{
         }
     }
 
-    public Credential LoadJson(string path)
+    public IEnumerator SendToSigma()
     {
-        using (StreamReader r = new StreamReader("Assets/Credentials/" + path + ".json"))
+        string file = "";
+        string interaction = "";
+
+        while (true)
         {
-            string json = r.ReadToEnd();
-            Credential credential = JsonUtility.FromJson<Credential>(json);
-            return credential;
+            file = "";
+            List<IMultipartFormSection> wwwForm = new List<IMultipartFormSection>();
+
+            List<EventData> auxEventData = gameEventsServer;
+
+            foreach (var eventDataItem in auxEventData)
+            {
+                interaction = "";
+
+                string eventType = "EventType: " + eventDataItem.EventType + " ";
+                string eventDate = "EventDate: " + eventDataItem.EventDate + " ";
+                string additionalInfo = "AdditionalInfo: " + eventDataItem.ObjectName + " ";
+
+                //interaction = cleaner + eventType + eventDate + additionalInfo + "\n";
+                interaction = eventType + eventDate + additionalInfo + "\n";
+                file += interaction;
+            }
+
+            //Send info
+            if (file != "")
+            {
+                wwwForm.Add(new MultipartFormDataSection("_fileName", LogFileName));
+                wwwForm.Add(new MultipartFormDataSection("_content", file));
+            }
+
+            gameEventsServer.Clear();
+
+            UnityWebRequest www = UnityWebRequest.Post(DEVELOPER_ULR_ADDRESS, wwwForm);
+
+            //w8 for answer
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.Log("Error While Sending: " + www.error);
+            }
+
+            yield return new WaitForSeconds(5.0f);
         }
     }
-}
 
+    public string FileName()
+    {
+        string name = "";
 
-public class Credential
-{
-    public string username;
-    public string password;
+        name += DateTime.Now.ToString("yyyy-MM-dd_HH-mm");
+        name += "_";
+        for (int i = 0; i < 7; i++)
+        {
+            name += UnityEngine.Random.Range(0, 9);
+        }
+        name += "_";
+        for (int i = 0; i < 7; i++)
+        {
+            name += UnityEngine.Random.Range(0, 9);
+        }
+        name += ".txt";
 
+        return name;
+    }
 }

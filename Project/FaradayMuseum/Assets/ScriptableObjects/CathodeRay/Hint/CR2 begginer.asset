@@ -15,5 +15,5 @@ MonoBehaviour:
   artifactID: CR
   ID: CR2
   title: Hey, it seems that you need help...
-  description: hint 2 bbb
+  description: "Try rotation = 90\xBA, and maybe increase the intensity value."
   expertiseLevel: begginer

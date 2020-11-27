@@ -8,24 +8,64 @@ public class ControlPanel : MonoBehaviour
 {
     [SerializeField]
     private bool UIEnabled = false;
-
-    public BLEManager BLEManager;
-    public GameObject UI;
+    [SerializeField]
+    private Animator UIAnimator;
+    [SerializeField]
+    private GameObject UI;
     //Warning
-    public GameObject warning;
-    public TextMeshProUGUI warningText;  
-    
+    [SerializeField]
+    private GameObject warning;
+    [SerializeField]
+    private TextMeshProUGUI warningText;
+    [SerializeField]
+    [Tooltip("Stuff to disable when connected to BLE")]
+    private GameObject[] stuffToDisable;
+
+    private int count = 0;
+
+    public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
+
+    private void OnEnable()
+    {
+        BLEManager.OnBluetoothConnected += DisableValuesChangers;
+    }
+
+    private void DisableValuesChangers(bool toDisable)
+    {
+       foreach(var stuff in stuffToDisable)
+       {
+            var inputField = stuff.GetComponent<TMP_InputField>();
+            if(inputField != null)
+            {
+                inputField.enabled = !toDisable;
+            }
+            else
+            {
+                stuff.SetActive(!toDisable);
+            }
+            
+        }
+    }
+
     public void OnButtonClick()
     {
         UIEnabled = !UIEnabled;
 
-        UI.gameObject.SetActive(UIEnabled);
+        singleton.AddGameEvent(LogEventType.Click, "Control Panel: " + UIEnabled);
+        
+        UIAnimator.SetBool("IsOpen", !UIEnabled);
     }
 
     public IEnumerator WarningTheUsers(string s)
     {
+        if(count == 0)
+        {
+            count++;
+            yield break;
+        }
         warning.SetActive(true);
         warningText.text = s;
+        singleton.AddGameEvent(LogEventType.Warning);
 
         yield return new WaitForSeconds(1.5f);
 
@@ -54,13 +94,13 @@ public class ControlPanel : MonoBehaviour
         return f;
     }
 
-    public void SendDataToBLE(string s)
-    {
-        if (BLEManager.connectBLE == true)
-        {
-            BLEManager.MySendData(s);
-        }
+    public void SendDataToBLE(string s) { 
+
     }
 
-        
+
+    private void OnDisable()
+    {
+        BLEManager.OnBluetoothConnected -= DisableValuesChangers;
+    }
 }

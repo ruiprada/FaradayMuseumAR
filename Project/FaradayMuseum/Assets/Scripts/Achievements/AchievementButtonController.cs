@@ -9,6 +9,8 @@ public class AchievementButtonController : MonoBehaviour
 
     public GameObject notificationImage;
 
+    private bool firstTime = true;
+
     private Animator m_animator;
 
     private void Awake()
@@ -35,6 +37,12 @@ public class AchievementButtonController : MonoBehaviour
         if (m_animator != null)
         {
             m_animator.SetBool("isOpen", isOpen);
+
+            if (firstTime)
+            {
+                m_animator.SetTrigger("FirstTime");
+                firstTime = false;
+            }
         }
     }
 }

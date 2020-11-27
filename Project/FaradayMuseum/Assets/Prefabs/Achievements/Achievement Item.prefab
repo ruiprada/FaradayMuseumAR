@@ -360,7 +360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6771a9ef37a274c9390dd039e493eb3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 90555da7c5feaa8458830420ad1ea245, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -468,6 +468,8 @@ MonoBehaviour:
     description: First Achievement Description
     objective: 1
     points: 10
+    haveExplanation: 0
+    artifactID: 
   current: 0
 --- !u!1 &6336083731289886942
 GameObject:

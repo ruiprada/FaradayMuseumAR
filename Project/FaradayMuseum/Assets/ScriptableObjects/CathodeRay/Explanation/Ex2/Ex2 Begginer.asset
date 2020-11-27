@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR2
-  title: Sabias que...
-  description: isto funciona 2 bbb
+  title: Congratulations! You made a Circle!
+  description: "Did you notice the faded blue line? It represents the augmented part
+    of the circumference.\r\nYou can disable the AR by pressing the AR+ button.\r\n\r\nNow,
+    try to change the circle radius by changing the intensity or the tension value."
   expertiseLevel: begginer

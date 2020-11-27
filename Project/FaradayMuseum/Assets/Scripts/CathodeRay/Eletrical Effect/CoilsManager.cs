@@ -12,9 +12,22 @@ public class CoilsManager : MonoBehaviour
     private float minR = 0.7f;
     private float maxR = 1.7f;
 
+    private void Awake()
+    {
+        ManageInput.OnIntesityChanged += UpdateSize;
+        ShowARButton.OnARButtonClicked += UpdateARToShow;
+    }
+
+    private void UpdateARToShow(bool showOrNot)
+    {
+        for (int i = 0; i < pss.Length; i++)
+        {
+            pss[i].gameObject.SetActive(showOrNot);
+        }
+    }
+
     public void UpdateSize(float intensity)
     {
-        //particleSystemSizeModule.sizeMultiplier = intensity;
         for (int i = 0; i < pss.Length; i++)
         {
             var mainModule = pss[i].main;
@@ -36,5 +49,11 @@ public class CoilsManager : MonoBehaviour
         float size = (((i - minI) * (maxR - minR)) / (maxI - minI)) + minR;
 
         return size;
+    }
+
+    private void OnDestroy()
+    {
+        ManageInput.OnIntesityChanged -= UpdateSize;
+        ShowARButton.OnARButtonClicked -= UpdateARToShow;
     }
 }

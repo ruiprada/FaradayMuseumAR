@@ -5,60 +5,75 @@ using UnityEngine;
 
 public class ParserData : MonoBehaviour
 {
+    [SerializeField]
+    private TargetManager targetManager;
 
-    public RotationUI rotationUI;
-    public IntensityUI intensityUI;
-    public TensionUI tensionUI;
+    // For CR
+    [SerializeField]
+    private RotationUI rotationUI;
+    [SerializeField]
+    private IntensityUI intensityUI;
+    [SerializeField]
+    private TensionUI tensionUI;
 
     /*
-    private float r = 358;
-    private float i = 50;
-    private float t = 100;
-    private string test = "CR ";
-    void Update()
+     * This code may need to be redone to match the BLE module script
+     * Or change the BLE script to match this
+     * Im using the following sintaxt:
+     *      CR;I2;\n          (singel value passed)
+     *      CR;I2;R90;T150;\n  (multiple value passed)
+     * Where:
+     *      CR - target ID (need to know wich target refering too)
+     *      ; - separator  (need for easy parser)
+     *      I - Intensity  (For cathode Ray )
+     *      R - Rotation   (For cathode Ray )
+     *      T - Tension    (For cathode Ray )
+     *      After each value ID (I,R,T) the respective value
+     */
+
+    public void Parser(string strToParse)
     {
-    //my ideia of what soul be the input
-        test = "CR " + r + " " + i + " " + t;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log(test);
-            Parser(test);
-            r++;
-            i++;
-            t++;
-        }
-    }*/
-
-
-    public void Parser(string s)
-    {
+        Debug.Log("Start Parsing: " + strToParse);
         string[] splited;
         string artifactID;
 
-        s = s.Trim();
+        strToParse = strToParse.Trim();
 
-        if (s != "")
+        if (strToParse != "" && strToParse != null)
         {
-            splited = s.Split(' ');
+            // ';' needs to match the separator in BLE module script
+            splited = strToParse.Split(';');
            
-            /*for ( int i = 0; i < splited.Length; i++)
-            {
-                Debug.Log(splited[i]);
-            }*/
-            
             artifactID = splited[0];
-            if(artifactID == "Gramme")
+            if(artifactID != targetManager.GetTargetID())
+            {
+                Debug.LogError("ArtifactID parsed not match the tatget ArtifactID! " + 
+                    "ArtifactID parsed: " + artifactID + " Target artifactID: " + targetManager.GetTargetID());
+                return;
+            }
+
+            //Debug.Log("Parser artifactID: " + artifactID);
+            if (artifactID == "Gramme")
             {
                 throw new NotImplementedException();
             }
             else if(artifactID == "CR")
             {
-                throw new NotImplementedException();
-
-                //rotationUI.SetRotation(float.Parse(splited[1]));
-                //intensityUI.SetIntensity(float.Parse(splited[2]));
-                //tensionUI.SetTension(float.Parse(splited[3]));
+                for (int i = 0; i < splited.Length; i++)
+                {
+                    if(splited[i] == "I")
+                    {
+                        intensityUI.SetIntensity(float.Parse(splited[i + 1]));
+                    }
+                    else if (splited[i] == "T")
+                    {
+                        tensionUI.SetTension(float.Parse(splited[i + 1]));
+                    }
+                    else if (splited[i] == "R")
+                    {
+                        rotationUI.SetRotation(float.Parse(splited[i + 1]));
+                    }
+                }
             }
             else
             {

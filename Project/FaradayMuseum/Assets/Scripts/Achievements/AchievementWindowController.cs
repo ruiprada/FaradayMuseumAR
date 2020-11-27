@@ -17,6 +17,7 @@ public class AchievementWindowController : MonoBehaviour
 
     public int AchieventPointsTotal { get; set; }
 
+    public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
     void Awake()
     {
@@ -36,6 +37,8 @@ public class AchievementWindowController : MonoBehaviour
             bool isOpen = m_animator.GetBool("isOpen");
 
             m_animator.SetBool("isOpen", !isOpen);
+
+            singleton.AddGameEvent(LogEventType.Click, "Achivement window: " + !isOpen);
         }
     }
 
@@ -53,5 +56,10 @@ public class AchievementWindowController : MonoBehaviour
     {
         currentPoints += points;
         myPoints.text = currentPoints.ToString() + " / " + AchieventPointsTotal;
+    }
+
+    public void SetActiveFalse()
+    {
+        gameObject.SetActive(false);
     }
 }

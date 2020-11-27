@@ -8,72 +8,153 @@ using UnityEngine;
 [RequireComponent(typeof(ParserData))]
 public class BLEManager : MonoBehaviour
 {
-    [Tooltip("To enable or disable the BLE conection. " +
-        "Make sure it's true when build!")]
-    public bool connectBLE;
+    public static Action<bool> OnBluetoothConnected;
 
     [SerializeField]
-    [Tooltip("Arduino device name")]
-    private string deviceName = "ASTRA_K_LED_BLE";
+    [Tooltip("To enable or disable the BLE conection.")]
+    private bool connectToBLE;
+
+    //Bluetooth icons 
+    [SerializeField]
+    private GameObject bluetoothSearching;
+    [SerializeField]
+    private GameObject bluetoothConnected;
+    [SerializeField]
+    private GameObject bluetoothDisconnected;
 
     [SerializeField]
-    [Tooltip("UART service UUID")]
-    private string UUID = "6E400001-B5A3-F393-E0A9-E50E24DCCA9E";
+    private TargetManager targetManager;
 
-    [SerializeField]
-    [Tooltip("UUID_RX -> recive from arduino")]
-    private string UUID_RX = "6E400002-B5A3-F393-E0A9-E50E24DCCA9E";
+    // Arduino device name
+    private string deviceName;
+    // UART service UUID 
+    private string UUID;
+    // UUID_RX -> recive from arduino
+    private string UUID_RX;
+    // UUID_TX -> to write on arduino
+    private string UUID_TX;
 
-    [SerializeField]
-    [Tooltip("UUID_TX -> to write on arduino")]
-    private string UUID_TX = "6E400003-B5A3-F393-E0A9-E50E24DCCA9E";
+    //if the app is connect to the BLE
+    private bool BLEconnected = false;
 
     private ParserData parserData;
     private BluetoothHelper bluetoothHelper;
-
-    private string queue;
-    private bool awatingMsg;
-
-    void Start()
+    
+    private void Awake()
     {
-        queue = "";
-        awatingMsg = false;
-        TryToConnect();
+        parserData = gameObject.GetComponent<ParserData>();
+
+        MyTrackableEventHandler.OnTrackingObj += ObjTracking;
     }
 
+    #region BLE_EVENTS
+    private void OnScanEnded(BluetoothHelper helper, LinkedList<BluetoothDevice> devices)
+    {
+        Debug.Log("Found " + devices.Count);
+
+        if (devices.Count == 0)
+        {
+            UpdateBluetoothIcons(true, false, false);
+            BLEConnected(false);
+
+            helper.ScanNearbyDevices();
+            return;
+        }
+
+        try
+        {
+            helper.setDeviceName(deviceName);
+            helper.Connect();
+
+            Debug.Log("Connecting...");
+        }
+        catch (Exception ex)
+        {
+            UpdateBluetoothIcons(false, false, true);
+            BLEConnected(false);
+
+            Debug.LogError("OnScanEnded Exception founded: " + ex);
+        }
+    }
+
+    private void OnConnected(BluetoothHelper helper)
+    {
+        Debug.Log("Connected");
+        UpdateBluetoothIcons(false, true, false);
+        BLEConnected(true);
+
+        bluetoothHelper.StartListening();
+    }
+
+    private void OnConnectionFailed(BluetoothHelper helper)
+    {
+        Debug.Log("Connection failed... Scanning aguen...");
+
+        UpdateBluetoothIcons(true, false, false);
+        BLEConnected(false);
+
+        helper.ScanNearbyDevices();
+    }
+
+    private void OnDataReceived(BluetoothHelper helper)
+    {
+        string data = helper.Read();
+
+        if (data != null && data != "")
+        {
+            parserData.Parser(data);
+        }
+    }
+    #endregion
+
+
+    #region BLE_ICONS
+    private void InitBluetoothIcons()
+    {
+        if (connectToBLE)
+        {
+            UpdateBluetoothIcons(true, false, false);
+            BLEConnected(false);
+        }
+        else
+        {
+            UpdateBluetoothIcons(false, false, false);
+        }
+    }
+
+    private void UpdateBluetoothIcons(bool searching, bool connected, bool disconnected)
+    {
+        bluetoothSearching.SetActive(searching);
+        bluetoothConnected.SetActive(connected);
+        bluetoothDisconnected.SetActive(disconnected);
+    }
+    #endregion
+
+
+    #region BLE_CONNECTION
     private void TryToConnect()
     {
-        Debug.Log("App started Search for BLE connection: " + connectBLE);
+        Debug.Log("App started Search for BLE connection: " + connectToBLE);
 
-        if (connectBLE == true)
+        if (connectToBLE == true)
         {
             try
             {
-                awatingMsg = false;
-
                 BluetoothHelper.BLE = true;  //use Bluetooth Low Energy Technology
                 bluetoothHelper = BluetoothHelper.GetInstance("TEST");
 
+                // Every msg received needs to end in \n ==> needs to match BLE mdoule script
                 bluetoothHelper.setTerminatorBasedStream("\n");
 
-                Debug.Log(bluetoothHelper.getDeviceName());
                 Debug.Log("Device name: " + bluetoothHelper.getDeviceName());
-
-                bluetoothHelper.OnConnected += () => {
-
-                    Debug.Log("Connected");
-
-                    awatingMsg = false;
-                    bluetoothHelper.StartListening();
-                };
-
-                bluetoothHelper.OnConnectionFailed += () => {
-                    Debug.Log("Connection failed");
-                };
 
                 bluetoothHelper.OnScanEnded += OnScanEnded;
 
-                bluetoothHelper.OnDataReceived += BluetoothHelper_OnDataReceived;
+                bluetoothHelper.OnConnected += OnConnected;
+
+                bluetoothHelper.OnConnectionFailed += OnConnectionFailed;
+
+                bluetoothHelper.OnDataReceived += OnDataReceived;
 
                 BluetoothHelperCharacteristic txC = new BluetoothHelperCharacteristic(UUID_TX);
                 txC.setService(UUID);
@@ -81,97 +162,117 @@ public class BLEManager : MonoBehaviour
                 BluetoothHelperCharacteristic rxC = new BluetoothHelperCharacteristic(UUID_RX);
                 rxC.setService(UUID);
 
-
                 bluetoothHelper.setRxCharacteristic(rxC);
                 bluetoothHelper.setTxCharacteristic(txC);
+
+                // To subscribe explicitly - not necessary for now
+                //bluetoothHelper.Subscribe(rxC);
 
                 bluetoothHelper.ScanNearbyDevices();
             }
             catch (Exception ex)
             {
-                Debug.LogError("Exception founded: " + ex);
+                UpdateBluetoothIcons(false, false, true);
+                BLEConnected(false);
+
+                Debug.LogError("Connection Try exception founded: " + ex);
             }
         }
     }
 
-    private void OnScanEnded(LinkedList<BluetoothDevice> devices){
-        Debug.Log("Found " + devices.Count);
-
-        if (devices.Count == 0){
-            bluetoothHelper.ScanNearbyDevices();
-            return;
-        }
-            
-        try
-        {
-            bluetoothHelper.setDeviceName(deviceName);
-            bluetoothHelper.Connect();
-
-            Debug.Log("Connecting");
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("Exception founded: " + ex);
-        }
-    }
-    
-    //call this to send data to the arduino
-    public void MySendData(string s){
-        Debug.Log("Trying to send ");
-
-        // need to concatunate the string, because c# reoder strings to optimize things
-        queue += s + "|";
-
-        SendNext();
-    }
-
-
-    private void SendNext()
+    private void BLEConnected(bool isConnected)
     {
+        BLEconnected = isConnected;
 
-        if (awatingMsg || bluetoothHelper == null)
-            return;
-
-        //Debug.Log("queue: " + queue);
-
-        int x = queue.IndexOf('|');
-        if(x <= 0) 
-        {
-            queue = "";
-            return;
-        }
-        string msg = queue.Substring(0, x);
-        queue = queue.Substring(x + 1);
-        awatingMsg = true;
-
-        Debug.Log("Sending " + msg);
-
-        bluetoothHelper.SendData(msg);
+        OnBluetoothConnected?.Invoke(isConnected);
     }
 
-    private void BluetoothHelper_OnDataReceived()
+    private void ConnectBLE()
     {
-        awatingMsg = false;
+        DefineBLEDevice();
+        TryToConnect();
+    }
 
-        string aux = bluetoothHelper.Read();
-        Debug.Log("Received: " +  aux);
+    private void DisconectBLE()
+    {
+        BLEDisconnectFromEvents();
 
-        //Parse the data received by the arduino
-        parserData.Parser(aux);
+        if (bluetoothHelper != null)
+        {
+            bluetoothHelper.Disconnect();
+        }
+    }
 
-        // send the next message only when the previous message response is received.
-        SendNext();
-        
+    private void BLEDisconnectFromEvents()
+    {
+        bluetoothHelper.OnScanEnded -= OnScanEnded;
+        bluetoothHelper.OnConnected -= OnConnected;
+        bluetoothHelper.OnConnectionFailed -= OnConnectionFailed;
+        bluetoothHelper.OnDataReceived -= OnDataReceived;
+    }
+    #endregion
+
+
+    #region BLE_API
+    public void ConnectedByUser()
+    {
+        DefineBLEDevice();
+        TryToConnect();
+
+        UpdateBluetoothIcons(true, false, false);
+        BLEConnected(false);
+    }
+
+    public void DisconnectByUser()
+    {
+        UpdateBluetoothIcons(false, false, true);
+        BLEConnected(false);
+
+        BLEDisconnectFromEvents();
+
+        if (bluetoothHelper != null)
+        {
+            bluetoothHelper.Disconnect();
+        }
+    }
+    #endregion
+
+
+    private void ObjTracking(bool isTracking)
+    {
+        if (isTracking)
+        {
+            InitBluetoothIcons();
+            ConnectBLE();
+        }
+        else
+        {
+            UpdateBluetoothIcons(false, false, false);
+
+            DisconectBLE();
+        }
+    }
+
+    private void DefineBLEDevice()
+    {
+        if (targetManager.GetTargetID() == "CR")
+        {
+            deviceName = "ASTRA_K_LED_BLE";
+            UUID = "6E400001-B5A3-F393-E0A9-E50E24DCCA9E";
+            UUID_RX = "6E400002-B5A3-F393-E0A9-E50E24DCCA9E";
+            UUID_TX = "6E400003-B5A3-F393-E0A9-E50E24DCCA9E";
+        }
+        else
+        {
+            Debug.LogError("Excpetion founded in DefineBLEDevice, targetID: " + targetManager.GetTargetID() + " don't match");
+        }
+
     }
 
     void OnDestroy()
     {
-        if (bluetoothHelper != null)
-            bluetoothHelper.Disconnect();
-    }
+        DisconectBLE();
 
-    public BluetoothHelper GetBluetoothHelper()
-    {
-        return bluetoothHelper;
+        MyTrackableEventHandler.OnTrackingObj += ObjTracking;   
     }
 }

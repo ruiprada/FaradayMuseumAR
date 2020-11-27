@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR1
-  title: Sabias que...
-  description: isto funciona 1 bbb
+  title: Congratulations! You made a line!
+  description: "By rotating the ampule, you changed the electron beam's position relative
+    to the magnetic field, creating a line.\r\n\r\nTry rotating the ampule again to
+    make a circle."
   expertiseLevel: begginer
