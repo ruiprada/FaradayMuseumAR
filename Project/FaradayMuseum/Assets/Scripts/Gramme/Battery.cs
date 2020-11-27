@@ -10,8 +10,6 @@ public class Battery : MonoBehaviour
     public Field rightField;
     public Field leftField;
 
-    public RotatingArm rotatingArm;
-
     private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -29,8 +27,7 @@ public class Battery : MonoBehaviour
     {
         rightField.Invert();
         leftField.Invert();
-        rotatingArm.InvertField();
-        //rotatingArm.InvertTexture();
+        // rotatingArm.InvertTexture();
         animator.SetTrigger("rotate");
     }
 }

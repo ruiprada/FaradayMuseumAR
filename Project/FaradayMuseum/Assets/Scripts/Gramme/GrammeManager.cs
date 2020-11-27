@@ -4,31 +4,53 @@ using UnityEngine;
 
 public class GrammeManager : MonoBehaviour
 {
-    public Material northPole;
-    public Material southPole;
+    public GameObject magneticLines;
+    public RotatingArm rotatingArm;
+    public Magnet rightMagnet;
+    public Magnet leftMagnet;
 
-    public Magnet LeftMagnet;
-    public Magnet RightMagnet;
-    public RotatingArm RotatingArm;
+    private ColorChanger rightMagnetColor;
+    private ColorChanger leftMagnetColor;
+
+    private float previousTorque;
     // Start is called before the first frame update
-    void Awake()
-    {
-        LeftMagnet.GetComponent<Magnet>().IsNorth = false;
-        RightMagnet.GetComponent<Magnet>().IsNorth = true;          
+
+    void Awake(){
+        leftMagnet.IsNorth = false;
+        rightMagnet.IsNorth = true;    
+
+        rightMagnetColor = leftMagnet.GetComponent<ColorChanger>(); 
+        leftMagnetColor = rightMagnet.GetComponent<ColorChanger>(); 
     }
-
-    // Update is called once per frame
-    public void ChangePolarity()
-    {
-        RotatingArm.InvertField();
-
-        /*foreach (Transform magneticField in MagneticFields.transform) {
-            magneticField.transform.Rotate(0.0f, 0.0f, 180.0f, Space.Self);
+    void Update() {
+        if (rotatingArm.Torque != 0){
+            magneticLines.gameObject.SetActive(true);
+        }else{
+            magneticLines.gameObject.SetActive(false);
         }
-        */
-    }
 
-    public void InvertField(){
-        RotatingArm.InvertField();
+        // any Sign change (negative <-> positive)
+        if(previousTorque * Mathf.Sign(rotatingArm.Torque) < 0){
+            magneticLines.gameObject.SetActive(true);
+            rightMagnet.ChangePolarity();
+            leftMagnet.ChangePolarity();
+            InvertMagneticField();
+        }
+        previousTorque = Mathf.Sign(rotatingArm.Torque);
+
+        rightMagnetColor.SetColorStrength(Mathf.Abs(rotatingArm.Torque));
+        leftMagnetColor.SetColorStrength(Mathf.Abs(rotatingArm.Torque));
+    }
+        public void InvertMagneticField(){
+        foreach (Transform magneticRow in magneticLines.transform)
+        {
+            foreach (Transform item in magneticRow)
+            {
+                var texture = item.GetComponent<MagnetTexture>();
+                if(texture){
+                    texture.InvertMagnetTexture();
+                }
+            }
+        }
     }
 }

@@ -16,7 +16,7 @@ public class TargetManager : MonoBehaviour
     private string targeID;
     private bool imageTarget; //if false target -> model target.
 
-    void OnDisable() {
+    void OnDestroy() {
         gameManager.OnStateChange -= HandleOnStateChange;
     }
     
@@ -37,24 +37,24 @@ public class TargetManager : MonoBehaviour
             }
         }
 
-        PreviewLogic();
+        ModelTargetLogic();
     }
 
     private void HandleOnStateChange(object sender, GameStateChangedEventArgs args)
     {
         if (args.GameState == GameState.MAIN_MENU)
         {
-            PreviewLogic();
+            ModelTargetLogic();
         }
     }
 
     public void SetId(int dropdownId)
     {
         currentId = dropdownId;
-        PreviewLogic();
+        ModelTargetLogic();
     }
 
-    public void PreviewLogic()
+    public void ModelTargetLogic()
     {
         if (currentId == 0)
         {

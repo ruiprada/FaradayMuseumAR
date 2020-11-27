@@ -20,12 +20,12 @@ public class LinearVelocity : MonoBehaviour
 
         Vector3 velocity = Vector3.Cross(radiusVector, angularVelocity);
 
-        Debug.DrawRay(transform.position, velocity, Color.red);
+        // Debug.DrawRay(transform.position, velocity, Color.red);
 
-        Vector3 right = Quaternion.LookRotation(velocity) * Quaternion.Euler(0,180+20.0f,0) * new Vector3(0,0,1);
-        Vector3 left = Quaternion.LookRotation(velocity) * Quaternion.Euler(0,180-20.0f,0) * new Vector3(0,0,1);
-        Debug.DrawRay(transform.position + velocity, right * 0.03f, Color.white);
-        Debug.DrawRay(transform.position + velocity, left * 0.03f, Color.white);
+        //Vector3 right = Quaternion.LookRotation(velocity) * Quaternion.Euler(0,180+20.0f,0) * new Vector3(0,0,1);
+        // Vector3 left = Quaternion.LookRotation(velocity) * Quaternion.Euler(0,180-20.0f,0) * new Vector3(0,0,1);
+        // Debug.DrawRay(transform.position + velocity, right * 0.03f, Color.white);
+        // Debug.DrawRay(transform.position + velocity, left * 0.03f, Color.white);
 
     }
 }

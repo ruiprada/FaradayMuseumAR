@@ -4,7 +4,6 @@ public class ColorChanger : MonoBehaviour
 {
     Material material;
     public Color mainColor { get; set; }
-    public float duration = 15.0f;
     private float t = 0;
     private float colorStrength;
     public MagnetSettings settings;
@@ -31,7 +30,7 @@ public class ColorChanger : MonoBehaviour
 
         if (t < 1)
         {
-            t += Time.deltaTime / duration;
+            t += Time.deltaTime / settings.duration;
         }
     }
 

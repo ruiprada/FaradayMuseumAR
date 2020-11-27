@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79a2141da0b7ab74c878c359f9df464a, type: 3}
-  m_Name: MagnetSettings
+  m_Script: {fileID: 11500000, guid: 5e15e71226ac6b94ba92c8439be5dab6, type: 3}
+  m_Name: GrammeSpecification
   m_EditorClassIdentifier: 
-  intensifierMultiplier: 0.2
-  northPoleColor: {r: 1, g: 0.99, b: 0.99, a: 1}
-  southPoleColor: {r: 0.99, g: 0.99, b: 1, a: 1}
+  Kt: 0.04
+  coilRadius: 0

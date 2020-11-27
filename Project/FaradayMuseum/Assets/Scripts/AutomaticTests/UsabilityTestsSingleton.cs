@@ -115,7 +115,7 @@ public sealed class UsabilityTestsSingleton{
 
     public Credential LoadJson(string path)
     {
-        using (StreamReader r = new StreamReader("Assets/Server/" + path + ".json"))
+        using (StreamReader r = new StreamReader("Assets/Credentials/" + path + ".json"))
         {
             string json = r.ReadToEnd();
             Credential credential = JsonUtility.FromJson<Credential>(json);
