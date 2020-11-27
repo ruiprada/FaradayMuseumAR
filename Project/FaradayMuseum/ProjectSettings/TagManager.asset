@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Tools
+  - Battery
+  - CenterPiece
+  - Objectives
+  - TopDoor
+  - VibratePlate
+  - BottomDoor
+  - InfoPanel
+  - Phones
+  - FadeBattery
+  - SoundPS
+  - Bobine
+  - FadeBobine
+  - FadeMotor
+  - Handheld
+  - Motor
+  - cameraController
+  - LoadManagar
+  - Debug
+  - Book
+  - XMLManager
+  - TelephoneDemo
+  - SmallImages
+  - InfoPanelBook
+  - InfoExtra1
+  - InfoPanelIntruccoes
+  - DarkBackground
+  - DarkBackground2
+  - Toggle Bg
+  - OnText
+  - Handle
+  - Off Text
+  - ModelTarget
+  - Field
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
