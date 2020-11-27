@@ -15,8 +15,8 @@ MonoBehaviour:
   artifactID: CR
   ID: CR3
   title: Congratulations! You made a circle!
-  description: "Did you notice that by increasing or decreasing the tension / intensity
-    value, you can change the circle radius?\r\nThats because you are strengthening
-    / weakening the magnetic field.\r\n\r\nNow let's make some spirals.\r\nTry the
-    following values: Rotation = 110\xBA; Intensity = 0,4 A; Tension = 150 V."
+  description: "By decreasing the intensity, you weakened the magnetic field, raising
+    the radius of the circle. \r\n\r\nThe faded blue line represents the augmented
+    part of the circle.\r\n\r\nTry to make this spiral, Rotation = 110\xBA, Intensity
+    = 0,4 A, Tension = 150 V."
   expertiseLevel: begginer

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowPopUps : MonoBehaviour
+public class ShowPopUps : MouseOverButton
 {
     public static Action<bool> OnShowPopUps;
 
@@ -15,21 +15,6 @@ public class ShowPopUps : MonoBehaviour
     private void Awake()
     {
         PopUps.OnPopUpDisable += ShowPopUpsToFalse;
-        MyTrackableEventHandler.OnTrackingObj += ShowOrHide;
-    }
-
-    private void ShowOrHide(bool show)
-    {
-        if (show)
-        {
-            showPopUps = true;            
-        }
-        else
-        {
-            showPopUps = false;
-        }
-
-        OnShowPopUps?.Invoke(showPopUps);
     }
 
     private void ShowPopUpsToFalse()

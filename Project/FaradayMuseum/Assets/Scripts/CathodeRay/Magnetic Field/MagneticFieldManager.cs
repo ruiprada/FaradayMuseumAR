@@ -6,7 +6,7 @@ using UnityEngine;
 public class MagneticFieldManager : MonoBehaviour
 {
     [SerializeField]
-    private MyMagnetTexture[] magnetTextures;
+    private MagnetTexture[] magnetTextures;
 
     private float minI = 0.1f;
     private float maxI = 3;

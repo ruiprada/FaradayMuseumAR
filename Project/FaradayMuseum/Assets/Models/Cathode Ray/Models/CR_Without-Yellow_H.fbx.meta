@@ -84,7 +84,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: espelho
-    second: {fileID: 2100000, guid: 76362254f22398740904066c08fde17d, type: 2}
+    second: {fileID: 2100000, guid: 48bca4c520d28f34eba3bfaeefb41d0d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -94,22 +94,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: madeira
-    second: {fileID: 2100000, guid: de73466b229742b4db8bd116a96434a9, type: 2}
+    second: {fileID: 2100000, guid: 20e9eabc98d7c494698444b5aaa01617, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: metal_geral
-    second: {fileID: 2100000, guid: 09bc0321e168175429e3141f8c477bf4, type: 2}
+    second: {fileID: 2100000, guid: a2c94f647857eab4ebcc2c08159100f3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: metal_normals
-    second: {fileID: 2100000, guid: 1c19e4de72971754e872f82d805f52dc, type: 2}
+    second: {fileID: 2100000, guid: 83f8f55f18560fc42b9846e276ccbc93, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plastico_borracha
-    second: {fileID: 2100000, guid: 148cbd43a7e6f8343bfe115cd673c24c, type: 2}
+    second: {fileID: 2100000, guid: ceeb60de255b25f45aef97abc12190e4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -119,7 +119,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: vidrodentro
-    second: {fileID: 2100000, guid: 6fdd50c23176e2f4681ac056511a3b41, type: 2}
+    second: {fileID: 2100000, guid: 4c84e7c62d6837d4d91cd7fb63e8adc9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

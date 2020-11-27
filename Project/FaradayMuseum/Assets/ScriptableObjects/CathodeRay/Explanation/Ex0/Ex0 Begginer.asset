@@ -16,7 +16,5 @@ MonoBehaviour:
   ID: CR0
   title: Congratulations! You created a magnetic field!
   description: "By increasing the intensity, you generate a circular electric field,
-    which in turn generates a magnetic field.\r\n\r\nThe ampule rotation changes the
-    e-beam's position relative to the magnetic field. \r\nTry setting rotation = 0\xBA
-    and see what happens."
+    which, in turn, generates a magnetic field.\r\n\r\nTry making a line."
   expertiseLevel: begginer

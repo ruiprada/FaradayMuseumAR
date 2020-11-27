@@ -6,11 +6,11 @@ using UnityEngine;
 public class ManageInput : PhysicsConsts
 {
     [SerializeField]
-    private Transform Ampule;
+    private Transform toRotate;
+    [SerializeField]
+    private CoilsManager coilsManager;
 
     public static Action<float> OnIntesityChanged;
-    public static Action OnTensionChanged;
-
     #region PRIVATE_VARIABLES
 
     private float intensity;  //Intensity of the eletrical current on the coils
@@ -18,52 +18,59 @@ public class ManageInput : PhysicsConsts
     private float tension; // tension of the eletrical current in the cathode ray
 
     private CalculateShape calculateShape;
-
+    
     #endregion
 
+    #region PUBLIC_FUNCTIONS
+
+    #region GETS&&SETS
+
+    public float Intensity
+    {
+        get { return intensity; }
+
+        set
+        {
+            intensity = value;
+
+            calculateShape.SetB(intensity);
+            OnIntesityChanged?.Invoke(intensity);
+        }
+    }
+
+    public float Tension
+    {
+        get { return tension; }
+        set
+        {
+            tension = value;
+
+            calculateShape.SetV0(tension);
+        }
+    }
+
+    public float Rotation
+    {
+        get { return rotation; }
+        set
+        {
+            rotation = value;
+
+            // rotate the Ampule 
+            toRotate.localEulerAngles = new Vector3(rotation, 0, 0);
+
+            calculateShape.SetAlpha(rotation);
+        }
+    }
+
+    #endregion
 
     void Awake()
     {
         calculateShape = gameObject.GetComponent<CalculateShape>();
     }
 
-    private void OnEnable()
-    {
-        IntensityUI.OnIntensityChanged += UpdateIntensity;
-        TensionUI.OnTensionChanged += UpdateTension;
-        RotationUI.OnRotationChanged += UpdateRotation;
-    }
+    #endregion
 
-    private void UpdateIntensity(float newValue)
-    {
-        intensity = newValue;
-
-        calculateShape.SetB(intensity);
-        OnIntesityChanged?.Invoke(intensity);
-    }
-
-    private void UpdateTension(float newValue)
-    {
-        tension = newValue;
-
-        calculateShape.SetV0(tension);
-
-        OnTensionChanged?.Invoke();
-    }
-
-    private void UpdateRotation(float newValue)
-    {
-        rotation = newValue;
-
-        Ampule.localEulerAngles = new Vector3(rotation, 0, 0);
-
-        calculateShape.SetAlpha(rotation);
-    }
-
-    private void OnDisable()
-    {
-        IntensityUI.OnIntensityChanged -= UpdateIntensity;
-        TensionUI.OnTensionChanged -= UpdateTension;
-        RotationUI.OnRotationChanged -= UpdateRotation;
-    }
+   
 }

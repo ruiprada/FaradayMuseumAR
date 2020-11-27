@@ -187,7 +187,6 @@ public class AchievementManager : MonoBehaviour
         notificationCount = 0;
     }
 
-
     public string GetAchievementID(Achievements achievement)
     {
         AchievementItemController item = achievementItems[(int)achievement];
@@ -255,6 +254,7 @@ public class AchievementManager : MonoBehaviour
             {
                 lockedAchievementsID.Add(GetAchievementID(ach));
             }
+            //Debug.Log(artifactID + " ** " + item.GetArtifactID());
         }
 
         return lockedAchievementsID;
@@ -273,6 +273,6 @@ public class AchievementManager : MonoBehaviour
             explanation.SetActive(true);
         }
         
-        hintManager.AchievementCompleted(true);
+        hintManager.SetStartTimer(true);
     }
 }

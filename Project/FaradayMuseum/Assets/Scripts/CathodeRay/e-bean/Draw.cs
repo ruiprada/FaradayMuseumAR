@@ -24,19 +24,15 @@ public class Draw : MonoBehaviour
     private Color augementedColor;
     private Color augementedColor_Lock;
 
+    private float ampuleRadius = 0.09f;
+
     private int numberOfVertices = 400;
     private float radius = 0.2f;
+    
     private float lineWidthMultiplier = 0.2f;
     private float lineStartWidth = 0.02f;
     private float lineEndWidth = 0.02f;
-
-    private float ampuleRadius = 0.25f; //imageTarget -> 0.073f ; modelTarget -> 0.25f;
-    private float offSet = +0.025f; //imageTarget -> -0.013f ; modelTarget -> +0.025f;
-    private float auxDistance = 0.409f; //imageTarget -> 0.2119759f ; modelTarget -> 0.4080672f;
-    // Line
-    private float z1 = -0.071f; //imageTarget -> -0.062f; modelTarget -> -0.071f;
-    private float z2 = 0.075f; //imageTarget -> 0.065ff; modelTarget -> 0.075f;
-
+    
     private LineRenderer lineRenderer;
     private new Renderer renderer;
     #endregion
@@ -63,29 +59,17 @@ public class Draw : MonoBehaviour
         ShowARButton.OnARButtonClicked += UpdateColor;
     }
 
-    void OnDrawGizmosSelected()
-    {
-        // Draw a yellow sphere at the transform's position
-        Gizmos.color = Color.yellow;
-
-        Vector3 ampuleWorldPos = new Vector3(Ampule.transform.position.x + offSet,
-            Ampule.transform.position.y, Ampule.transform.position.z);
-
-
-        // Debug.Log(ampuleWorldPos.y);
-        Gizmos.DrawSphere(ampuleWorldPos, ampuleRadius); //0.25f;
-    }
-
     private void Update()
     {
         //Global position of Ampule
         //necessary to be in Updated because ampilue positon changes due to AR
         List<Vector4> ampuleWorldPos = new List<Vector4>();
        
-        ampuleWorldPos.Add(new Vector4(Ampule.transform.position.x + offSet,
+        ampuleWorldPos.Add(new Vector4(Ampule.transform.position.x - 0.013f,
             Ampule.transform.position.y, Ampule.transform.position.z, 1));
 
         renderer.material.SetVectorArray("_AmpulePos", ampuleWorldPos);
+        
     }
 
     public void DrawDefault()
@@ -107,22 +91,36 @@ public class Draw : MonoBehaviour
 
         lineRenderer.loop = false;
 
+        //First point
+        lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
+
+        // Second point
+        float k = 0.062f;
         if(alpha == 0)
         {
             // z(t) = -V0 * t, (z(t) < 0) e x(t) = y(t) = 0 
-            lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
-            lineRenderer.SetPosition(1, new Vector3(0, 0, z1)); 
+            lineRenderer.SetPosition(1, new Vector3(0, 0, -k));
         }
         else
         {
             // z(t) = V0 * t, (z(t) > 0) e x(t) = y(t) = 0
-            lineRenderer.SetPosition(0, new Vector3(0.01f, 0, 0));
-            lineRenderer.SetPosition(1, new Vector3(0, 0, z2));
+            lineRenderer.SetPosition(1, new Vector3(0, 0, k));
         }
 
     }
 
-    
+    void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+
+        Vector3 ampuleWorldPos = new Vector3(Ampule.transform.position.x - 0.013f,
+            Ampule.transform.position.y, Ampule.transform.position.z);
+
+
+       // Debug.Log(ampuleWorldPos.y);
+        Gizmos.DrawSphere(ampuleWorldPos, 0.087f);
+    }
 
     public void DrawCircle()
     {
@@ -155,11 +153,13 @@ public class Draw : MonoBehaviour
 
 
         // 0 on z because it's a circunference
-        ampuleWorldPos = new Vector3(Ampule.transform.position.x + offSet,
-            Ampule.transform.position.y, 0);
+        ampuleWorldPos = new Vector3(Ampule.transform.position.x - 0.01f,
+            Ampule.transform.position.y - 0.165f - 0.01f, 0);
 
         for (int i = 0; i < (numberOfVertices + 1); i++)
         {
+            //x = (float) (Math.Sin((Math.PI / 180) * angle) * radius);
+            //y = (float) (Math.Cos((Math.PI / 180) * angle) * radius);
 
 
             x = (float)(radius * (1 - Math.Cos((Math.PI / 180) * angle)));
@@ -178,7 +178,7 @@ public class Draw : MonoBehaviour
               Math.Pow(difference.y, 2f) +
               Math.Pow(difference.z, 2f));
 
-            if (distance > auxDistance) 
+            if (distance > 0.168989999999999999f)
             {
                 lineRenderer.positionCount = i;
                 lineRenderer.loop = false;
@@ -187,7 +187,7 @@ public class Draw : MonoBehaviour
                 break;
             }
 
-            lineRenderer.SetPosition(i, new Vector3(z, x, y));
+            lineRenderer.SetPosition(i, new Vector3(z, x, y)); 
 
             angle += (360f / numberOfVertices);
         }

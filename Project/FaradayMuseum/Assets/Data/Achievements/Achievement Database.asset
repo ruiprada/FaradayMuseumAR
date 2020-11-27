@@ -30,29 +30,29 @@ MonoBehaviour:
       artifactID: CR
     - id: CR2
       title: Make a circle 1
-      description: Make a circle
+      description: Make a circle smaller than the ampule
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR3
       title: Make a circle 2
-      description: Make another circle
+      description: Make a circle bigger than the ampule
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR4
-      title: Make a spiral 1
+      title: Make a spiral
       description: Make a spiral by rotating the ampule
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR5
-      title: Make a spiral 2
+      title: Make a spiral
       description: Make a spiral by rotating the ampule
       objective: 1
       points: 50
-      haveExplanation: 0
+      haveExplanation: 1
       artifactID: CR

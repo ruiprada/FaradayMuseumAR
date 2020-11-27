@@ -7,8 +7,6 @@ public class GameEndDisplay : PopUps
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
     [SerializeField]
-    private TargetManager targetManager;
-    [SerializeField]
     private SettingsManager settingsManager;
     [SerializeField]
     private GameEnd[] gameEnds;
@@ -17,7 +15,8 @@ public class GameEndDisplay : PopUps
     [SerializeField]
     private TextMeshProUGUI description;
 
-        private Animator animator;
+    
+    private Animator animator;
 
     private void Awake()
     {
@@ -26,7 +25,7 @@ public class GameEndDisplay : PopUps
 
     void OnEnable()
     {
-        string targetID = targetManager.TargetID;
+        string targetID = "CR";
 
         for (int i = 0; i < gameEnds.Length; i++)
         {

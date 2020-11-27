@@ -8,6 +8,7 @@ public class HintManager : MonoBehaviour
     private GameObject hint;
     [SerializeField]
     private AchievementManager achievementManager;
+   
     [SerializeField] private float timer = 60;
     private float timerLock; // used to reset time
 
@@ -44,7 +45,7 @@ public class HintManager : MonoBehaviour
             {
                 // for now we are selecting the first one
                 // maybe we should change this later!!
-                string id = GetAchievementToHelp(aux);
+                string id = GetAchivementToHelp(aux);
                 // show hint
                 hint.GetComponent<HintDisplay>().SetID(id);
                 hint.SetActive(true);
@@ -68,7 +69,7 @@ public class HintManager : MonoBehaviour
         }
     }
 
-    public string GetAchievementToHelp(string[] achivementdIDs)
+    public string GetAchivementToHelp(string[] achivementdIDs)
     {
         return achivementdIDs[0];
     }
@@ -84,7 +85,7 @@ public class HintManager : MonoBehaviour
         timer = timerLock;
     }
 
-    private void SetStartTimer(bool b)
+    public void SetStartTimer(bool b)
     {
         startTimer = b;
 
@@ -92,13 +93,5 @@ public class HintManager : MonoBehaviour
         {
             ResetTimer();
         }
-    }
-
-    public void AchievementCompleted(bool b)
-    {
-        //If achievement completed the hint showed to this achievement is disabled
-        hint.SetActive(false);
-
-        SetStartTimer(b);
     }
 }

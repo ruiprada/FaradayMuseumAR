@@ -7,7 +7,6 @@ public class PopUpManager : MonoBehaviour
 {
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
-
     private List<string> popUpsOpened = new List<string>();
 
     [SerializeField]
@@ -33,6 +32,11 @@ public class PopUpManager : MonoBehaviour
         explanationDisplay = explanation.GetComponent<ExplanationDisplay>();
     }
 
+    private void Start()
+    {
+        ShowOrHide(true);
+        count = 1;
+    }
 
     private void AddPopUp(string popUp)
     {
@@ -52,11 +56,8 @@ public class PopUpManager : MonoBehaviour
         }
 
         count = popUpsOpened.Count;
-        if(count > 0)
-        {
-            arrowsManager.ShowArrows();
-            UpdateArrows();
-        }
+        arrowsManager.ShowArrows();
+        UpdateArrows();
     }
 
     private void ShowOrHide(bool toShow)
@@ -141,7 +142,6 @@ public class PopUpManager : MonoBehaviour
                 endPopUp.SetActive(true);
 
                 singleton.AddGameEvent(LogEventType.Click, "Right Arrow, Show: End pop-up");
-
             }
             else
             {
@@ -149,7 +149,6 @@ public class PopUpManager : MonoBehaviour
                 explanation.SetActive(true);
 
                 singleton.AddGameEvent(LogEventType.Click, "Right Arrow, Show: " + popUpsOpened[count - 1] + " Explanation");
-
             }
         }
 

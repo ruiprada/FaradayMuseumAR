@@ -10,42 +10,18 @@ public class ControlPanel : MonoBehaviour
     private bool UIEnabled = false;
     [SerializeField]
     private Animator UIAnimator;
+    
     [SerializeField]
     private GameObject UI;
     //Warning
     [SerializeField]
     private GameObject warning;
     [SerializeField]
-    private TextMeshProUGUI warningText;
-    [SerializeField]
-    [Tooltip("Stuff to disable when connected to BLE")]
-    private GameObject[] stuffToDisable;
-
+    private TextMeshProUGUI warningText;  
+    
     private int count = 0;
 
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
-
-    private void OnEnable()
-    {
-        BLEManager.OnBluetoothConnected += DisableValuesChangers;
-    }
-
-    private void DisableValuesChangers(bool toDisable)
-    {
-       foreach(var stuff in stuffToDisable)
-       {
-            var inputField = stuff.GetComponent<TMP_InputField>();
-            if(inputField != null)
-            {
-                inputField.enabled = !toDisable;
-            }
-            else
-            {
-                stuff.SetActive(!toDisable);
-            }
-            
-        }
-    }
 
     public void OnButtonClick()
     {
@@ -96,11 +72,5 @@ public class ControlPanel : MonoBehaviour
 
     public void SendDataToBLE(string s) { 
 
-    }
-
-
-    private void OnDisable()
-    {
-        BLEManager.OnBluetoothConnected -= DisableValuesChangers;
     }
 }

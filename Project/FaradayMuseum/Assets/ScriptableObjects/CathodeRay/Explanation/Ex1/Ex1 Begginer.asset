@@ -15,7 +15,7 @@ MonoBehaviour:
   artifactID: CR
   ID: CR1
   title: Congratulations! You made a line!
-  description: "By rotating the ampule, you changed the electron beam's position relative
-    to the magnetic field, creating a line.\r\n\r\nTry rotating the ampule again to
-    make a circle."
+  description: "By rotating the ampoule, you changed the electron beam's position
+    relative to the magnetic field, creating a line.\r\n\r\nTry making a circle smaller
+    than the glass."
   expertiseLevel: begginer

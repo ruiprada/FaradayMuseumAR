@@ -15,8 +15,9 @@ MonoBehaviour:
   artifactID: CR
   ID: CR4
   title: Congratulations! You made a spiral!
-  description: "I know, it doesn't really look like a spiral, but it is one. It doesn't
-    look like one since the radius is too big. Try to look at the object from a far
-    position.\r\n\r\nLet's make one more with the following values: Rotation = 94\xBA;
-    Intensity = 0,7 A; Tension = 100 V."
+  description: "I know, it doesn't really look like a spiral, but it is one.\r\n\r\nIt
+    doesn't look like one since the radius is too big. The line continues. . If it
+    was\r zoomed out, you would see it\u2019s forming a spiral.\r\n\r\nLet's make
+    one more, with the following values: Rotation = 94\xBA, Intensity = 0,7 A, Tension
+    = 100 V."
   expertiseLevel: begginer

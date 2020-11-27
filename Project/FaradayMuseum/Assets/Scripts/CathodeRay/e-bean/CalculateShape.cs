@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Draw))]
-[RequireComponent(typeof(CheckAchievements))]
 public class CalculateShape : PhysicsConsts
 {
+    [SerializeField]
+    private AchievementManager achievementManager;
+
     private Draw draw;
-    private CheckAchievements checkAchievements;
     
     private int nPoints = 1000; //number of points to design the circle
 
@@ -16,13 +17,20 @@ public class CalculateShape : PhysicsConsts
     private double V0; // initial velocity
     private double alpha; // rotation angle in rads
 
+    public static Action<Achievements> OnAchivementCompleted;
+
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
+    //To Spiral Achivements
+    private float lastIntensity = 0;
+    private float lastRotation = 0;
+    private float lastTension = 0;
+    private bool s1 = false;
+    private bool s2 = false;
 
     void Awake()
     {
         draw = gameObject.GetComponent<Draw>();
-        checkAchievements = gameObject.GetComponent<CheckAchievements>();
     }
 
 
@@ -31,9 +39,9 @@ public class CalculateShape : PhysicsConsts
         // B = U0 * H
         B = U0 * H(intesity);
 
-        checkAchievements.CheckSpiralAchivement(-1, -1, intesity);
-
         ShapeCalculator();
+
+        CheckSpiralAchivement(-1, -1, intesity);
     }
 
     public void SetV0(float tension)
@@ -41,32 +49,25 @@ public class CalculateShape : PhysicsConsts
         // sqrt(2 * q /m * Ua) , Ua -> acceleration voltage
         V0 = Math.Sqrt(2 * tension * (q / m));
 
-        checkAchievements.CheckSpiralAchivement(-1, tension, -1);
-
         ShapeCalculator();
+
+        CheckSpiralAchivement(-1, tension, -1);
     }
 
     public void SetAlpha(float rotation)
     {
         alpha = (Math.PI / 180) * rotation;
 
-        checkAchievements.CheckSpiralAchivement(rotation, -1, -1);
-
         ShapeCalculator();
+
+        CheckSpiralAchivement(rotation, -1, -1);
     }
 
 
 
     private void ShapeCalculator()
     {
-        /** /
-        *Debug.Log("--- Draw ---");
-        Debug.Log("B: " +  B);
-        Debug.Log("V0: " + V0);
-        Debug.Log("Aplha: " + alpha);
-        /**/
-
-        
+       
         if(B == 0 || V0 == 0)
         {
             /*
@@ -82,9 +83,9 @@ public class CalculateShape : PhysicsConsts
         {
             draw.NumberOfVertices = 2;
 
-            draw.DrawLine(0);
+            draw.DrawLine(alpha);
            
-            checkAchievements.AchivementDone(Achievements.CR1);
+            AchivementDone(Achievements.CR1);
         }
         // alpha = PI, is a line 
         else if (alpha == Math.PI)
@@ -93,7 +94,7 @@ public class CalculateShape : PhysicsConsts
 
             draw.DrawLine(alpha);
 
-            checkAchievements.AchivementDone(Achievements.CR1);
+            AchivementDone(Achievements.CR1);
         }
         // alpha = PI/2, is a circle
         else if (alpha == (Math.PI / 2))
@@ -108,7 +109,15 @@ public class CalculateShape : PhysicsConsts
 
             draw.DrawCircle();
 
-            checkAchievements.CheckCircumferenceAchivement(r);
+            if (r > 0.0586f)
+            {
+                AchivementDone(Achievements.CR3);
+            }
+            else
+            {
+                AchivementDone(Achievements.CR2);
+
+            }
         }
         // alpha != 0,PI/2,Pi -> is a spiral
         else
@@ -123,13 +132,13 @@ public class CalculateShape : PhysicsConsts
 
             draw.DrawSpiral(alpha, V0, timePeriod, w);
 
-            if (checkAchievements.Spiral1)
+            if (s1)
             {
-                checkAchievements.AchivementDone(Achievements.CR4);
+                AchivementDone(Achievements.CR4);
             }
-            else if(checkAchievements.Spiral2)
+            else if(s2)
             {
-                checkAchievements.AchivementDone(Achievements.CR5);
+                AchivementDone(Achievements.CR5);
             }
         }
     }
@@ -184,5 +193,55 @@ public class CalculateShape : PhysicsConsts
 
 
 
-    
+    private void AchivementDone(Achievements achivement)
+    {
+        OnAchivementCompleted?.Invoke(achivement);
+
+        /*
+        * If u want to unlock the achivement right here, descomment the next code
+        * Unlocks achivement, activates explanation, and hint logic
+        */
+        
+        /*bool achivementUnlocked = achievementManager.IncrementAchievement(achivement);
+
+        if (achivementUnlocked == true)
+        {
+            achievementManager.AchivemententUnlocked(achivement);
+            singleton.AddGameEvent(LogEventType.AchivementUnlocked, achievementManager.GetAchievementID(achivement));
+        }*/
+    }
+
+    //To Spiral Achivements
+    private void CheckSpiralAchivement(float r, float t, float i)
+    {
+        if(r != -1)
+        {
+            lastRotation = r;
+        }
+        if(t != -1)
+        {
+            lastTension = t;
+        }
+        if(i != -1)
+        {
+            lastIntensity = i;
+        }
+
+        if (lastRotation == 110 && lastTension == 150 && lastIntensity == 0.4f)
+        {
+            s1 = true;
+            s2 = false;
+        }
+        else if(lastRotation == 94 && lastTension == 100 && lastIntensity == 0.7f)
+        {
+            s1 = false;
+            s2 = true;
+        }
+        else
+        {
+            s1 = false;
+            s2 = false;
+        }
+        
+    }
 }

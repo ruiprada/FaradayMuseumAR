@@ -7,8 +7,6 @@ public class HintDisplay : PopUps
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
     [SerializeField]
-    private TargetManager targetManager;
-    [SerializeField]
     private SettingsManager settingsManager;
     [SerializeField]
     private Hint[] hint;
@@ -29,7 +27,7 @@ public class HintDisplay : PopUps
     void OnEnable()
     {
         string expertiseLevel = settingsManager.GetExpertiseLevel();
-        string targetID = targetManager.TargetID;
+        string targetID = "CR";
 
         for (int i = 0; i < hint.Length; i++)
         {
@@ -39,10 +37,6 @@ public class HintDisplay : PopUps
             {
                 title.text = hint[i].title;
                 description.text = hint[i].description;
-            }
-            else
-            {
-                gameObject.SetActive(false);
             }
         }
     }

@@ -7,7 +7,7 @@ public class SettingsManager : MonoBehaviour
     private static string expertiseLevel  = "begginer";
    
     //set expertise level when dropdwon is changed
-    //case sensitive with JSON artifacts
+    //case sensitive
     public void SetExpertiseLevel(int value)
     {
         if(value == 0) // begginer

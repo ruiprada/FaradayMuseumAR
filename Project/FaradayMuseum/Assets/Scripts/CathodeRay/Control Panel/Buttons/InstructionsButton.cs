@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InstructionsButton : MonoBehaviour
+public class InstructionsButton : MouseOverButton
 {
-    public static Action<bool> OnInstructionsButtonClicked;
-
     [SerializeField]
     private bool instructionsEnabled = false;
-    
+    [SerializeField]
+    private GameObject inst;
 
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
@@ -18,11 +16,8 @@ public class InstructionsButton : MonoBehaviour
     {
         instructionsEnabled = !instructionsEnabled;
 
-        OnInstructionsButtonClicked?.Invoke(instructionsEnabled);
+        inst.SetActive(instructionsEnabled);
 
-        singleton.AddGameEvent(LogEventType.Click, "Instructions: " + instructionsEnabled); 
+        singleton.AddGameEvent(LogEventType.Click, "Instructions: " + instructionsEnabled);
     }
-
-
-   
 }

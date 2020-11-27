@@ -15,19 +15,11 @@ public class CoilsManager : MonoBehaviour
     private void Awake()
     {
         ManageInput.OnIntesityChanged += UpdateSize;
-        ShowARButton.OnARButtonClicked += UpdateARToShow;
-    }
-
-    private void UpdateARToShow(bool showOrNot)
-    {
-        for (int i = 0; i < pss.Length; i++)
-        {
-            pss[i].gameObject.SetActive(showOrNot);
-        }
     }
 
     public void UpdateSize(float intensity)
     {
+        //particleSystemSizeModule.sizeMultiplier = intensity;
         for (int i = 0; i < pss.Length; i++)
         {
             var mainModule = pss[i].main;
@@ -54,6 +46,5 @@ public class CoilsManager : MonoBehaviour
     private void OnDestroy()
     {
         ManageInput.OnIntesityChanged -= UpdateSize;
-        ShowARButton.OnARButtonClicked -= UpdateARToShow;
     }
 }

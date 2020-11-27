@@ -15,7 +15,8 @@ MonoBehaviour:
   artifactID: CR
   ID: CR2
   title: Congratulations! You made a Circle!
-  description: "Did you notice the faded blue line? It represents the augmented part
-    of the circumference.\r\nYou can disable the AR by pressing the AR+ button.\r\n\r\nNow,
-    try to change the circle radius by changing the intensity or the tension value."
+  description: "By rotating the ampoule, you changed the electron beam's position
+    relative to the magnetic field, creating a circle.\r\n\r\nDid you notice that
+    by increasing or decreasing the tension/intensity value, you can change the circle
+    radius?\r\n\r\nNow, try to make another circle. This time bigger than the glass."
   expertiseLevel: begginer

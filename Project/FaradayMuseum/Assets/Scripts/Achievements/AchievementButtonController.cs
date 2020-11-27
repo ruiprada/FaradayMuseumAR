@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AchievementButtonController : MonoBehaviour
+public class AchievementButtonController : MouseOverButton
 {
     public Text notificationText;
 

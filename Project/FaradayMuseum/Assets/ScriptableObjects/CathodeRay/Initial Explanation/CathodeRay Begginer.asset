@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   title: Cathode Ray
-  description: This is the Cathode Ray, it allows us to manipulate an electron beam.<br><br>Did
+  description: This is the Cathode Ray, it allows us to manipulate an electron beam.<br>Did
     you know?<br>Electrons can be manipulated through a magnetic field.<br><br>To
     start, try increasing the intensity.
   expertiseLevel: begginer
