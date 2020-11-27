@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR0
-  title: Congratulations! You created a magnetic field!
-  description: "By increasing the intensity, you generate a circular electric field,
-    which in turn generates a magnetic field.\r\n\r\nThe ampule rotation changes the
-    e-beam's position relative to the magnetic field. \r\nTry setting rotation = 0\xBA
-    and see what happens."
+  title: "Parab\xE9ns! Criou um campo magn\xE9tico!"
+  description: "Ao aumentar a intensidade, gera-se um campo el\xE9ctrico circular
+    que, por sua vez, gera um campo magn\xE9tico.\r\n\r\nA rota\xE7\xE3o da ampola
+    muda a posi\xE7\xE3o do feixe electr\xF3nico em rela\xE7\xE3o ao campo magn\xE9tico.
+    \r\nTente configurar a rota\xE7\xE3o = 0\xBA e veja o que acontece."
   expertiseLevel: begginer

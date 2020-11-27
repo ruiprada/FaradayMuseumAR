@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR1
-  title: Hey, it seems that you need help...
-  description: "Try to create a line by rotating the ampule to 0\xBA, 180\xBA or 360\xBA."
+  title: Parece que precisa de ajuda...
+  description: "Tente criar uma linha rodando a ampola para 0\xBA, 180\xBA ou 360\xBA."
   expertiseLevel: begginer

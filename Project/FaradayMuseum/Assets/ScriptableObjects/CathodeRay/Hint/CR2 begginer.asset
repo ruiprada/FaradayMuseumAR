@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR2
-  title: Hey, it seems that you need help...
-  description: "Try rotation = 90\xBA, and maybe increase the intensity value."
+  title: Parece que precisa de ajuda...
+  description: "Tentar rota\xE7\xE3o = 90\xBA, e talvez aumentar o valor de intensidade."
   expertiseLevel: begginer

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR5
-  title: Congratulations! You made a spiral!
-  description: "Now, this looks like a spiral.\r\n"
+  title: "Parab\xE9ns! Fez uma espiral!"
+  description: "Agora, isto parece ser uma espiral.\r\n"
   expertiseLevel: begginer

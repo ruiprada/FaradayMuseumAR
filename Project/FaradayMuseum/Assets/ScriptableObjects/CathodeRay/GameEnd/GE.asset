@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GE
   m_EditorClassIdentifier: 
   artifactID: CR
-  title: Congratulations!!
-  description: "Congratulations! You completed the game! We hope you enjoyed it and
-    learned something new.\r\n\r\nPlease, feel free to continue using our application
-    :) "
+  title: "Parab\xE9ns!!"
+  description: "Parab\xE9ns! Concluiu o jogo! Esperamos que tenha gostado e aprendido
+    algo de novo.\r\n\r\nPor favor, sinta-se \xE0 vontade para continuar a utilizar
+    a nossa aplica\xE7\xE3o :) "

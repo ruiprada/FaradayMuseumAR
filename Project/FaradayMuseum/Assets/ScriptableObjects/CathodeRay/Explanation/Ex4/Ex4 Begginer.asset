@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR4
-  title: Congratulations! You made a spiral!
-  description: "I know, it doesn't really look like a spiral, but it is one. It doesn't
-    look like one since the radius is too big. Try to look at the object from a far
-    position.\r\n\r\nLet's make one more with the following values: Rotation = 94\xBA;
-    Intensity = 0,7 A; Tension = 100 V."
+  title: "Parab\xE9ns! Fez uma espiral!"
+  description: "Eu sei, n\xE3o parece realmente uma espiral, mas \xE9 uma espiral.
+    N\xE3o se parece com uma pois o raio \xE9 demasiado grande. Tente olhar para o
+    objecto a partir de uma posi\xE7\xE3o distante.\r\n\r\nVamos fazer mais um com
+    os seguintes valores: Rota\xE7\xE3o = 94\xBA; Intensidade = 0,7 A; Tens\xE3o =
+    100 V."
   expertiseLevel: begginer

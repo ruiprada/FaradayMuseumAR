@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR3
-  title: Congratulations! You made a circle!
-  description: "Did you notice that by increasing or decreasing the tension / intensity
-    value, you can change the circle radius?\r\nThats because you are strengthening
-    / weakening the magnetic field.\r\n\r\nNow let's make some spirals.\r\nTry the
-    following values: Rotation = 110\xBA; Intensity = 0,4 A; Tension = 150 V."
+  title: "Parab\xE9ns! Fez um c\xEDrculo!"
+  description: "Notou que ao aumentar ou diminuir o valor de tens\xE3o / intensidade,
+    pode alterar o raio do c\xEDrculo?\r\nIsto porque est\xE1 a refor\xE7ar / enfraquecer
+    o campo magn\xE9tico.\r\n\r\nAgora vamos fazer algumas espirais.\r\nExperimente
+    os seguintes valores: Rota\xE7\xE3o = 110\xBA; Intensidade = 0,4 A; Tens\xE3o
+    = 150 V."
   expertiseLevel: begginer

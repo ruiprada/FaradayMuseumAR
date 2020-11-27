@@ -15,43 +15,43 @@ MonoBehaviour:
   achievements:
     array:
     - id: CR0
-      title: Create a magnetic field
-      description: Turn on the instensity on the coils
+      title: "Criar um campo magn\xE9tico"
+      description: Ligar a intensidade nas bobinas
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR1
-      title: Make a Line
-      description: Make a Line by rotating the ampule
+      title: Fazer uma linha
+      description: Fazer uma linha rodando a ampola
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR2
-      title: Make a circle 1
-      description: Make a circle
+      title: "Fa\xE7a um c\xEDrculo 1"
+      description: "Fazer um c\xEDrculo"
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR3
-      title: Make a circle 2
-      description: Make another circle
+      title: "Fa\xE7a um c\xEDrculo 2"
+      description: "Fazer outro c\xEDrculo"
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR4
-      title: Make a spiral
-      description: Make a spiral by rotating the ampule
+      title: Fazer uma espiral 1
+      description: Fazer uma espiral rodando a ampola
       objective: 1
       points: 50
       haveExplanation: 1
       artifactID: CR
     - id: CR5
-      title: Make a spiral
-      description: Make a spiral by rotating the ampule
+      title: Fazer uma espiral
+      description: Fazer uma espiral rodando a ampola
       objective: 1
       points: 50
       haveExplanation: 1

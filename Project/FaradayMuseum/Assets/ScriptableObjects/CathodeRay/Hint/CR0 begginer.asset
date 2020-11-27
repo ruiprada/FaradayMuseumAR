@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR0
-  title: Hey, it seems that you need help...
-  description: Try to set the intensity to a value different than zero.
+  title: Parece que precisa de ajuda...
+  description: Tente fixar a intensidade a um valor diferente de zero.
   expertiseLevel: begginer

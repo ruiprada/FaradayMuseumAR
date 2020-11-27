@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR3
-  title: Hey, it seems that you need help...
-  description: Try to decrease the intensity value.
+  title: Parece que precisa de ajuda...
+  description: Tente diminuir o valor de intensidade.
   expertiseLevel: begginer

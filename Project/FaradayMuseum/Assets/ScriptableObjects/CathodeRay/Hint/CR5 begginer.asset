@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   ID: CR5
-  title: Hey, it seems that you need help...
-  description: "Try to create a spiral by rotating the ampule.\n\nTry these values:
-    Rotation = 94\xBA, Intensity = 0,7 A, Tension = 100 V.\r"
+  title: Parece que precisa de ajuda...
+  description: "Tente criar uma espiral rodando a ampola.\r\n\r\nTente estes valores:
+    Rota\xE7\xE3o = 94\xBA, Intensidade = 0,7 A, Tens\xE3o = 100 V.\r\n"
   expertiseLevel: begginer
