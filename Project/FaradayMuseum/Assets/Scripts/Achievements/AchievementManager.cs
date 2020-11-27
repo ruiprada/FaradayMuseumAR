@@ -34,9 +34,6 @@ public class AchievementManager : MonoBehaviour
 
     private int achieventPointsTotal;
 
-
-
-
     #endregion
 
     [SerializeField][HideInInspector]
@@ -53,9 +50,9 @@ public class AchievementManager : MonoBehaviour
         achievementNotificationController.ShowNotification(achievement);
     }
 
-    public void ShowAchievementsWindow()
+    public void ToggleAchievementWindow()
     {
-        achievementWindowController.ShowAchievementWindow();
+        achievementWindowController.ToggleAchievementWindow();
         ResetNotification();
     }
 

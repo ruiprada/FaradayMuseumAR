@@ -4,10 +4,8 @@
 public class BoxBlur : MonoBehaviour
 {
     public Material BlurMaterial;
-    [Range(0, 10)]
-    public int _iterations;
-    [Range(0, 4)]
-    public int _downRes;
+    private int _iterations;
+    private int _downRes;
 
     public void Blur(int iterations, int downRes)
     {

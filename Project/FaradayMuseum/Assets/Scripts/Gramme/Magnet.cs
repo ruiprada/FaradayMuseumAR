@@ -1,45 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Magnet : MonoBehaviour
 {
     public bool IsNorth { get; set; }
-
-    private Color NorthPole = new Color(0, 1, 100);
-    private Color SouthPole = new Color(240, 1, 100);
+    ColorChanger colorChanger;
+    public MagnetSettings settings;
 
     // Start is called before the first frame update
     void Start()
     {
-        Polarity();
+        colorChanger = GetComponent<ColorChanger>();
+        UpdatePolarity();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void ChangePolarity()
-    {
+    public void ChangePolarity(){
         IsNorth = !IsNorth;
-
-        Polarity();
-
+        UpdatePolarity();
     }
 
-    public void Polarity()
+    public void UpdatePolarity()
     {
-        if (IsNorth)
-        {
-            // GetComponentInChildren<TextMesh>().text = "N";
-            GetComponent<Renderer>().material.color = NorthPole;
-        }
-        else
-        {
-            // GetComponentInChildren<TextMesh>().text = "S";
-            GetComponent<Renderer>().material.color = SouthPole;
-        }
+        colorChanger.mainColor = IsNorth ? settings.northPoleColor : settings.southPoleColor;
     }
 }

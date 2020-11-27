@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class MyDropDown : GUIControl, IPointerClickHandler
 {
@@ -14,12 +12,15 @@ public class MyDropDown : GUIControl, IPointerClickHandler
 
     public override string Name { get { return "DropDown"; } }
 
-    GameManager gameManager;
+    private GameManager gameManager = GameManager.Instance;
     // Use this for initialization
     private void Awake()
     {
-        gameManager = GameManager.Instance;
         gameManager.OnStateChange += HandleOnStateChange;
+    }
+
+    void OnDisable() {
+        gameManager.OnStateChange -= HandleOnStateChange;
     }
 
     void Start()
@@ -30,19 +31,22 @@ public class MyDropDown : GUIControl, IPointerClickHandler
         }
         if (gameManager.gameState == GameState.MAIN_MENU)
         {
-            OnShow();
+            OnHide();
         }
     }
 
-    private void HandleOnStateChange()
+    private void HandleOnStateChange(object sender, GameStateChangedEventArgs args)
     {
-        if (gameManager.gameState == GameState.IN_GAME)
+        switch (args.GameState)
         {
-            OnHide();
-        }
-        if (gameManager.gameState == GameState.MAIN_MENU)
-        {
-            OnShow();
+            case GameState.IN_GAME:
+                OnHide();
+                break;
+            case GameState.MAIN_MENU:
+                OnShow();
+                break;
+            default:
+                break;
         }
     }
 

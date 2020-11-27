@@ -1,17 +1,21 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
 
 // Game States
 // for now we are only using these two
-public enum GameState { INTRO, MAIN_MENU, IN_GAME }
+public enum GameState { MAIN_MENU, IN_GAME }
 
-public delegate void OnStateChangeHandler();
+public class GameStateChangedEventArgs : EventArgs
+{
+    public GameState GameState { get; set; }
+}
+
+public delegate void OnGameStateChangeHandler(object sender, GameStateChangedEventArgs e);
 
 public class GameManager
 {
     protected GameManager() { }
     private static GameManager instance = null;
-    public event OnStateChangeHandler OnStateChange;
+    public event OnGameStateChangeHandler OnStateChange;
     public GameState gameState { get; private set; }
     public Game currentGame { get; private set; }
 
@@ -33,7 +37,8 @@ public class GameManager
         gameState = state;
         if (OnStateChange != null)
         {
-            OnStateChange();
+            GameStateChangedEventArgs args = new GameStateChangedEventArgs(){GameState = state};
+            OnStateChange(this, args);
         }
     }
 
@@ -41,6 +46,16 @@ public class GameManager
     {
         currentGame = game;
 
+    }
+
+    public void StartGame(Game game){
+        this.SetGameState(GameState.IN_GAME);
+        this.SetCurrentGame(game);
+    }
+
+    public void ExitGame(){
+        this.SetGameState(GameState.MAIN_MENU);
+        this.SetCurrentGame(null);
     }
 
     public void OnApplicationQuit()

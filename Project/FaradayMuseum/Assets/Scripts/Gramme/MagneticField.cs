@@ -8,15 +8,12 @@ public class MagneticField : MonoBehaviour
 
     public int numberOfFields;
 
-    private float scaleFactor;
+    private Vector3 scaleFactor;
     // Start is called before the first frame update
     void Awake()
     {
-        float offsetZ = Magnets.localScale.z / 2;
-        float offsetY = Magnets.localScale.y / 2;
-        scaleFactor = transform.parent.localScale.x;
-
-        transform.localPosition = new Vector3(0, -offsetY, -offsetZ);
+        transform.position = Magnets.position;
+        scaleFactor = new Vector3(Magnets.localScale.x, Magnets.localScale.y, Magnets.localScale.z);
 
         foreach (Transform eachChild in transform)
         {
@@ -26,7 +23,7 @@ public class MagneticField : MonoBehaviour
                 {
                     GameObject duplicate = Instantiate(eachChild.gameObject) as GameObject;
                     duplicate.transform.SetParent(gameObject.transform);
-                    duplicate.transform.localScale = new Vector3(scaleFactor, scaleFactor, scaleFactor);
+                    duplicate.transform.localScale = scaleFactor;
                 }
                 Destroy(eachChild.gameObject);
             }
@@ -36,7 +33,7 @@ public class MagneticField : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float length = Magnets.localScale.y;
+        float length = Magnets.localScale.x;
         float factor = 1.0f / (numberOfFields + 1);
 
         int i = 1;

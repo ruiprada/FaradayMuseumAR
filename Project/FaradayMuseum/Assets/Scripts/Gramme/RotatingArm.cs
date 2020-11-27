@@ -1,35 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RotatingArm : MonoBehaviour
 {
-    public float speed;
-    //public GameObject DownConnector;
-    //public GameObject UpConnector;
-
-    //public Material darkBlue;
-    //public Material lightBlue;
-
     public GameObject rightArm;
     public GameObject leftArm;
 
-    //public ScrollTexture[] CoilComponents;
+    public Text angularVelocity;
 
-
-
+    public Text velocity;
+    public float radius;
     public ColorChanger rightMagnetColor;
     public ColorChanger leftMagnetColor;
 
+    public Magnet rightMagnet;
+    public Magnet leftMagnet;
 
-    public LongClickButton longClickButton;
-
-    public float Torque { get; set; }
-    private int fieldValue;
+    public float Kt; // Torque equation constant
+    public float Voltage { get; set; }
+    public float Amperage { get; set; }
 
     private new Rigidbody rigidbody;
 
     private float eulerRotation;
+    private float previousAngularVelocity_Y;
     private bool state;
 
     static private Vector3 positiveIfield = new Vector3(0, -1, 0);
@@ -41,70 +37,55 @@ public class RotatingArm : MonoBehaviour
     private Field rightField;
     private Field leftField;
 
-
     public AchievementManager achievementManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        Torque = speed;
         rigidbody = GetComponent<Rigidbody>();
-
 
         leftField = leftArm.GetComponent<Field>();
         leftField.FieldVector = positive;
 
-
         rightField = rightArm.GetComponent<Field>();
         rightField.FieldVector = positive;
 
-
         state = true;
         eulerRotation = 0;
-
-    }
-
-    private void Awake()
-    {
-        fieldValue = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        int myModifier = 0;
+        float magneticFlux = Voltage; // (B.S.cosΘ)
+        float torque = Kt * Amperage * (Voltage); 
 
 
-        if (fieldValue == 1)
-        {
-            myModifier = -1;
-        }
-        else
-        {
-            myModifier = 1;
-
-        }
-
-        float h = myModifier * (longClickButton.pointerDown ? 1 : 0) * Torque * Time.deltaTime;
-
-        //Todo h depends on the Vectors
-
-        rigidbody.AddTorque(transform.forward * h);
+        rigidbody.AddTorque(transform.forward * torque);
 
         eulerRotation = transform.localRotation.eulerAngles.y;
 
+        float angularVelocity_Y = rigidbody.angularVelocity.y;
+        angularVelocity.text =  angularVelocity_Y.ToString("0.##"); // there is only Y axis rotation
+        velocity.text = (angularVelocity_Y * radius).ToString("0.#");
 
-        rightMagnetColor.SetColorStrength(rigidbody.angularVelocity.y);
-        leftMagnetColor.SetColorStrength(rigidbody.angularVelocity.y);
+        // any Sign change (negative <-> positive)
+        if(previousAngularVelocity_Y * angularVelocity_Y < 0){
+            rightMagnet.ChangePolarity();
+            leftMagnet.ChangePolarity();
+        }
+        previousAngularVelocity_Y = angularVelocity_Y;
+
+        rightMagnetColor.SetColorStrength(Mathf.Abs(torque));
+        leftMagnetColor.SetColorStrength(Mathf.Abs(torque));
 
         if(rigidbody.angularVelocity.y > 0)
         {
-            Debug.Log("normal");
             achievementManager.IncrementAchievement(Achievements.First);
         }
         else
         {
-            // Debug.Log("inverted");
+            
         }
 
         if (state)
@@ -148,7 +129,7 @@ public class RotatingArm : MonoBehaviour
 
     public void InvertField()
     {
-        fieldValue *= -1;
+        // fieldValue *= -1;
     }
 
     /*public void InvertTexture()

@@ -1,38 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
-
     Material material;
-    Color mainColor;
-    float duration = 30.0f;
+    public Color mainColor { get; set; }
+    public float duration = 15.0f;
     private float t = 0;
-
-    private float intensifier;
+    private float colorStrength;
+    public MagnetSettings settings;
 
     private void Awake()
     {
         material = GetComponent<Renderer>().material;
-        mainColor = GetComponent<Renderer>().material.color;
     }
 
     void Update()
     {
-        ColorChangerr();
+        UpdateColor();
     }
 
-
-    void ColorChangerr()
+    void UpdateColor()
     {
+        //HSV is easier to adjust the color saturation (S)
         float h, s, v;
-        //Debug.Log(mainColor);
         Color.RGBToHSV(mainColor, out h, out s, out v);
         float newS;
-        newS = s + intensifier;
+        newS = s + (colorStrength * settings.intensifierMultiplier);
         Color nextColor = Color.HSVToRGB(h, newS, v);
-        GetComponent<Renderer>().material.color = Color.Lerp(mainColor, nextColor, t);
+        material.color = Color.Lerp(mainColor, nextColor, t);
 
         if (t < 1)
         {
@@ -40,9 +35,8 @@ public class ColorChanger : MonoBehaviour
         }
     }
 
-    public void SetColorStrength(float s)
+    public void SetColorStrength(float strength)
     {
-        intensifier = s;
-        //Debug.Log(intensifier);
+        colorStrength = strength;
     }
 }

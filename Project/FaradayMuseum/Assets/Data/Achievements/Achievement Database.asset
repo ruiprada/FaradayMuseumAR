@@ -39,8 +39,3 @@ MonoBehaviour:
       description: Fifth Achievement Description
       objective: 1
       points: 50
-    - id: Diogo
-      title: Diogo Achievement
-      description: Diogo Achievement Description
-      objective: 1
-      points: 50

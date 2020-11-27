@@ -1,12 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MagneticForceLine : MonoBehaviour
 {
     public Transform Magnets;
-    public Transform RightMagnet;
-    public Transform LeftMagnet;
+    public Transform RightMagnetPivot;
+    public Transform LeftMagnetPivot;
 
     public GameObject arrowPrefab;
 
@@ -32,8 +32,8 @@ public class MagneticForceLine : MonoBehaviour
                 name = "MagneticLine"
             };
             LineRenderer lineRenderer = go.AddComponent<LineRenderer>();
-            lineRenderer.startWidth = 0.1f * scaleFactor;
-            lineRenderer.endWidth = 0.1f * scaleFactor;
+            lineRenderer.startWidth = 0.01f * scaleFactor;
+            lineRenderer.endWidth = 0.01f * scaleFactor;
             lineRenderer.useWorldSpace = false;
 
             lineRenderer.GetComponent<Renderer>().material = material;
@@ -48,7 +48,7 @@ public class MagneticForceLine : MonoBehaviour
 
             arrow.transform.SetParent(lineRenderer.transform);
             arrow.transform.Rotate(0, 90, 90, Space.Self);
-            arrow.transform.localScale = new Vector3(0.05f* scaleFactor, 0.05f* scaleFactor, 0.05f * scaleFactor);
+            arrow.transform.localScale = new Vector3(0.01f* scaleFactor, 0.01f* scaleFactor, 0.01f * scaleFactor);
         }
     }
 
@@ -78,7 +78,7 @@ public class MagneticForceLine : MonoBehaviour
             }
         }
 
-        float length = Magnets.localScale.z * scaleFactor;
+        float length = Magnets.localScale.x * scaleFactor + (0.1f);
 
         //float length_aux = Vector3.Distance(RightMagnet.position, LeftMagnet.position);
         float factor = 1.0f / (numberOfLines + 1);
@@ -88,8 +88,8 @@ public class MagneticForceLine : MonoBehaviour
         {
             LineRenderer tempLineRenderer = tf.gameObject.GetComponent<LineRenderer>();
             float finalPosition = factor * i * length;
-            tempLineRenderer.SetPosition(0, new Vector3(LeftMagnet.localPosition.x * scaleFactor, 0, finalPosition));
-            tempLineRenderer.SetPosition(1, new Vector3(RightMagnet.localPosition.x * scaleFactor, 0, finalPosition));
+            tempLineRenderer.SetPosition(0, new Vector3(LeftMagnetPivot.position.x * scaleFactor, 0, finalPosition));
+            tempLineRenderer.SetPosition(1, new Vector3(RightMagnetPivot.position.x * scaleFactor, 0, finalPosition));
 
             float offsetX = Time.time * scrollX;
             float offsetY = Time.time * scrollY;

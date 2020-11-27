@@ -6,17 +6,7 @@ public class Field : MonoBehaviour
 {
     public Vector3 FieldVector { get; set; }
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void Invert()
     {
         FieldVector = -1 * FieldVector;

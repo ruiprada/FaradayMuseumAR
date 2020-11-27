@@ -39,8 +39,7 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
         gameScript = gameObject.GetComponent<Game>();
 
         base.Start();
-        //coroutine = Hint(5.0f);
-        //StartCoroutine(coroutine);
+        StartCoroutine(Hint(5.0f));
     }
 
     protected override void OnTrackingFound()

@@ -23,7 +23,7 @@ public class AchievementWindowController : MonoBehaviour
         m_animator = GetComponent<Animator>();
     }
 
-    public void ShowAchievementWindow()
+    public void ToggleAchievementWindow()
     {
         if (!isWindowOpen)
         {
