@@ -7,8 +7,6 @@ public class InitialExplicationDisplay : PopUps
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
     [SerializeField]
-    private TargetManager targetManager;
-    [SerializeField]
     private SettingsManager settingsManager;
     [SerializeField]
     private InitialExplication[] initialExplications;
@@ -29,7 +27,7 @@ public class InitialExplicationDisplay : PopUps
         animator.SetTrigger("FadeIn");
 
         string expertiseLevel = settingsManager.GetExpertiseLevel();
-        string targetID = targetManager.TargetID;
+        string targetID = "CR";
 
         for (int i = 0; i < initialExplications.Length; i++)
         {

@@ -45,14 +45,19 @@ public class ParserData : MonoBehaviour
             splited = strToParse.Split(';');
            
             artifactID = splited[0];
-            if(artifactID != targetManager.TargetID)
+            if(artifactID != targetManager.GetTargetID())
             {
                 Debug.LogError("ArtifactID parsed not match the tatget ArtifactID! " + 
-                    "ArtifactID parsed: " + artifactID + " Target artifactID: " + targetManager.TargetID);
+                    "ArtifactID parsed: " + artifactID + " Target artifactID: " + targetManager.GetTargetID());
                 return;
             }
 
-            if(artifactID == "CR")
+            //Debug.Log("Parser artifactID: " + artifactID);
+            if (artifactID == "Gramme")
+            {
+                throw new NotImplementedException();
+            }
+            else if(artifactID == "CR")
             {
                 for (int i = 0; i < splited.Length; i++)
                 {
