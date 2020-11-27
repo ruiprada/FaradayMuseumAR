@@ -23,14 +23,13 @@ public class CheckAchievements : MonoBehaviour
 
     public void CheckCircumferenceAchivement(double radius)
     {
-        Debug.Log(radius);
         if (circumFirstTime)
         {
             AchivementDone(Achievements.CR2);
             circumFirstTime = false;
 
             //Image target -> 0.0638976494092061f ; Model target -> 0.0645f
-            if (radius > 0.0638976494092061f)
+            if (radius > 0.0645f)
             {
                 
                 circumBig = true;

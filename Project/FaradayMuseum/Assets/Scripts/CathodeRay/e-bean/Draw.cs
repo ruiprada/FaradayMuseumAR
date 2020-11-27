@@ -24,16 +24,19 @@ public class Draw : MonoBehaviour
     private Color augementedColor;
     private Color augementedColor_Lock;
 
-    private float ampuleRadius = 0.073f; //imageTarget -> 0.073f ; modelTarget -> 0.25f;
-    private float offSet = -0.013f; //imageTarget -> -0.013f ; modelTarget -> +0.025f;
-    private float auxDistance = 0.2119759f; //imageTarget -> 0.2119759f ; modelTarget -> +0.025f;
     private int numberOfVertices = 400;
     private float radius = 0.2f;
-    
     private float lineWidthMultiplier = 0.2f;
     private float lineStartWidth = 0.02f;
     private float lineEndWidth = 0.02f;
-    
+
+    private float ampuleRadius = 0.25f; //imageTarget -> 0.073f ; modelTarget -> 0.25f;
+    private float offSet = +0.025f; //imageTarget -> -0.013f ; modelTarget -> +0.025f;
+    private float auxDistance = 0.409f; //imageTarget -> 0.2119759f ; modelTarget -> 0.4080672f;
+    // Line
+    private float z1 = -0.071f; //imageTarget -> -0.062f; modelTarget -> -0.071f;
+    private float z2 = 0.075f; //imageTarget -> 0.065ff; modelTarget -> 0.075f;
+
     private LineRenderer lineRenderer;
     private new Renderer renderer;
     #endregion
@@ -108,13 +111,13 @@ public class Draw : MonoBehaviour
         {
             // z(t) = -V0 * t, (z(t) < 0) e x(t) = y(t) = 0 
             lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
-            lineRenderer.SetPosition(1, new Vector3(0, 0, -0.062f)); //0.071f
+            lineRenderer.SetPosition(1, new Vector3(0, 0, z1)); 
         }
         else
         {
             // z(t) = V0 * t, (z(t) > 0) e x(t) = y(t) = 0
             lineRenderer.SetPosition(0, new Vector3(0.01f, 0, 0));
-            lineRenderer.SetPosition(1, new Vector3(0, 0, 0.065f)); //0.075f
+            lineRenderer.SetPosition(1, new Vector3(0, 0, z2));
         }
 
     }
@@ -175,11 +178,8 @@ public class Draw : MonoBehaviour
               Math.Pow(difference.y, 2f) +
               Math.Pow(difference.z, 2f));
 
-            //Debug.Log("i: " + i + " Point: " + point + " AmpulePos: " + ampuleWorldPos + " D:" + distance);
             if (distance > auxDistance) 
             {
-                //Debug.Log(i);
-
                 lineRenderer.positionCount = i;
                 lineRenderer.loop = false;
 

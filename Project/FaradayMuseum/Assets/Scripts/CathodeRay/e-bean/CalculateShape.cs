@@ -82,7 +82,7 @@ public class CalculateShape : PhysicsConsts
         {
             draw.NumberOfVertices = 2;
 
-            draw.DrawLine(alpha);
+            draw.DrawLine(0);
            
             checkAchievements.AchivementDone(Achievements.CR1);
         }
