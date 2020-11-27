@@ -6,8 +6,8 @@ public class Magnet : MonoBehaviour
 {
     public bool IsNorth { get; set; }
 
-    public Material NorthPole { get; set; }
-    public Material SouthPole { get; set; }
+    private Color NorthPole = new Color(0, 1, 100);
+    private Color SouthPole = new Color(240, 1, 100);
 
     // Start is called before the first frame update
     void Start()
@@ -33,13 +33,13 @@ public class Magnet : MonoBehaviour
     {
         if (IsNorth)
         {
-            GetComponentInChildren<TextMesh>().text = "N";
-            GetComponent<Renderer>().material = NorthPole;
+            // GetComponentInChildren<TextMesh>().text = "N";
+            GetComponent<Renderer>().material.color = NorthPole;
         }
         else
         {
-            GetComponentInChildren<TextMesh>().text = "S";
-            GetComponent<Renderer>().material = SouthPole;
+            // GetComponentInChildren<TextMesh>().text = "S";
+            GetComponent<Renderer>().material.color = SouthPole;
         }
     }
 }

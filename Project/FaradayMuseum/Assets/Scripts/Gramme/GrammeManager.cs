@@ -17,16 +17,18 @@ public class GrammeManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        LeftMagnet.GetComponent<Magnet>().IsNorth = true;
-        RightMagnet.GetComponent<Magnet>().IsNorth = false;
+        LeftMagnet.GetComponent<Magnet>().IsNorth = false;
+        RightMagnet.GetComponent<Magnet>().IsNorth = true;
 
         MagneticField.FieldVector = new Vector3(1, 0, 0);
 
-        RightMagnet.NorthPole = northPole;
+        /*RightMagnet.NorthPole = northPole;
         RightMagnet.SouthPole = southPole;
 
         LeftMagnet.NorthPole = northPole;
         LeftMagnet.SouthPole = southPole;
+        */
+          
     }
 
     // Update is called once per frame
@@ -45,10 +47,11 @@ public class GrammeManager : MonoBehaviour
     public void ChangePolarity()
     {
 
-        LeftMagnet.ChangePolarity();
-        RightMagnet.ChangePolarity();
+        // LeftMagnet.ChangePolarity();
+        // RightMagnet.ChangePolarity();
 
         MagneticField.Invert();
+
         RotatingArm.InvertField();
 
         foreach (Transform magneticField in MagneticFields.transform) {

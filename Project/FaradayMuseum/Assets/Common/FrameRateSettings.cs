@@ -32,7 +32,7 @@ public class FrameRateSettings : MonoBehaviour
         // e.g: If targetFPS > 50 --> vSyncCount = 1; else vSyncCount = 2;
         if (Application.targetFrameRate != targetFps)
         {
-            //Debug.Log("Setting frame rate to " + targetFps + "fps");
+            Debug.Log("Setting frame rate to " + targetFps + "fps");
             Application.targetFrameRate = targetFps;
         }
     }

@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine;
-using System.Collections;
-
 public class ColorChanger : MonoBehaviour
 {
 
-    float duration = 20.0f;
+    Material material;
+    Color mainColor;
+    float duration = 30.0f;
     private float t = 0;
-    bool isReset = false;
+
+    private float intensifier;
+
+    private void Awake()
+    {
+        material = GetComponent<Renderer>().material;
+        mainColor = GetComponent<Renderer>().material.color;
+    }
 
     void Update()
     {
@@ -20,21 +26,23 @@ public class ColorChanger : MonoBehaviour
 
     void ColorChangerr()
     {
-        Color currentColor = GetComponent<Renderer>().material.color;
-
         float h, s, v;
-        Color.RGBToHSV(currentColor, out h, out s, out v);
+        //Debug.Log(mainColor);
+        Color.RGBToHSV(mainColor, out h, out s, out v);
         float newS;
-        newS = s + 1.0f;
-        //Color nextColor = new Color(currentColor.r, currentColor.g * 0.5f, currentColor.b * 0.5f, currentColor.a);
+        newS = s + intensifier;
         Color nextColor = Color.HSVToRGB(h, newS, v);
-
-
-        GetComponent<Renderer>().material.color = Color.Lerp(currentColor, nextColor, t);
+        GetComponent<Renderer>().material.color = Color.Lerp(mainColor, nextColor, t);
 
         if (t < 1)
         {
             t += Time.deltaTime / duration;
         }
+    }
+
+    public void SetColorStrength(float s)
+    {
+        intensifier = s;
+        //Debug.Log(intensifier);
     }
 }

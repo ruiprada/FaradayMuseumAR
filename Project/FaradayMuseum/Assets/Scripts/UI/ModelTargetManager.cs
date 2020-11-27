@@ -27,7 +27,7 @@ public class ModelTargetManager : MonoBehaviour
             }
             else
             {
-                modelTarget.GetComponent<MyTrackableEventHandler>().preview.SetActive(false);
+                modelTarget.GetComponent<MyTrackableEventHandler>().preview?.SetActive(false);
             }
         }
 
@@ -60,7 +60,7 @@ public class ModelTargetManager : MonoBehaviour
                 }
                 else
                 {
-                    modelTarget.GetComponent<MyTrackableEventHandler>().preview.SetActive(false);
+                    modelTarget.GetComponent<MyTrackableEventHandler>().preview?.SetActive(false);
                 }
                 modelTarget.SetActive(true);
                 modelTarget.GetComponent<MyTrackableEventHandler>().StartTracking();
@@ -83,7 +83,7 @@ public class ModelTargetManager : MonoBehaviour
                 }
                 else
                 {
-                    modelTargetNotActive.GetComponent<MyTrackableEventHandler>().preview.SetActive(false);
+                    modelTargetNotActive.GetComponent<MyTrackableEventHandler>().preview?.SetActive(false);
                 }
                 modelTargetNotActive.GetComponent<MyTrackableEventHandler>().StopTracking();
                 modelTargetNotActive.SetActive(false);

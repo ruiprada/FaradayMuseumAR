@@ -1,5 +1,5 @@
-﻿/*==============================================================================
-Copyright (c) 2015-2017 PTC Inc. All Rights Reserved.
+/*==============================================================================
+Copyright (c) 2019 PTC Inc. All Rights Reserved.
  
 Copyright (c) 2015 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
@@ -39,23 +39,15 @@ namespace Vuforia.EditorClasses
             androidSymbols = androidSymbols ?? string.Empty;
             if (!androidSymbols.Contains(VUFORIA_ANDROID_SETTINGS))
             {
-                if (PlayerSettings.Android.targetArchitectures != AndroidArchitecture.ARMv7)
-                {
-                    //Debug.Log("Setting Android target device to ARMv7");
-                    PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARMv7;
-                }
-
                 if (PlayerSettings.Android.androidTVCompatibility)
                 {
                     // Disable Android TV compatibility, as this is not compatible with
                     // portrait, portrait-upside-down and landscape-right orientations.
-                    //Debug.Log("Disabling Android TV compatibility");
+                    Debug.Log("Disabling Android TV compatibility");
                     PlayerSettings.Android.androidTVCompatibility = false;
                 }
 
                 EnableVuforia(androidBuildTarget);
-
-                CheckVuforiaConfigurationForEyewearSettings(androidBuildTarget);
 
                 // Here we set the scripting define symbols for Android
                 // so we can remember that the settings were set once.
@@ -71,24 +63,22 @@ namespace Vuforia.EditorClasses
             {
                 EnableVuforia(iOSBuildTarget);
 
-                CheckVuforiaConfigurationForEyewearSettings(iOSBuildTarget);
-
                 if (PlayerSettings.iOS.cameraUsageDescription.Length == 0)
                 {
-                    //Debug.Log("Setting Camera Usage Description for iOS");
+                    Debug.Log("Setting Camera Usage Description for iOS");
                     PlayerSettings.iOS.cameraUsageDescription = "Camera access required for target detection and tracking";
                 }
 
                 if (PlayerSettings.GetScriptingBackend(iOSBuildTarget) != ScriptingImplementation.IL2CPP)
                 {
-                    //Debug.Log("Setting iOS Scripting Backend to IL2CPP to enable 64bit support");
+                    Debug.Log("Setting iOS Scripting Backend to IL2CPP to enable 64bit support");
                     PlayerSettings.SetScriptingBackend(iOSBuildTarget, ScriptingImplementation.IL2CPP);
                 }
 
-                if (PlayerSettings.iOS.targetOSVersionString != "9.0")
+                if (PlayerSettings.iOS.targetOSVersionString != "11.0")
                 {
-                    //Debug.Log("Setting Minimum iOS Version to 9.0");
-                    PlayerSettings.iOS.targetOSVersionString = "9.0";
+                    Debug.Log("Setting Minimum iOS Version to 11.0");
+                    PlayerSettings.iOS.targetOSVersionString = "11.0";
                 }
 
                 // Here we set the scripting define symbols for IOS
@@ -105,22 +95,20 @@ namespace Vuforia.EditorClasses
             {
                 EnableVuforia(wsaBuildTarget);
 
-                CheckVuforiaConfigurationForEyewearSettings(wsaBuildTarget);
-
-                if (PlayerSettings.GetScriptingBackend(wsaBuildTarget) != ScriptingImplementation.WinRTDotNET)
+                if (PlayerSettings.GetScriptingBackend(wsaBuildTarget) != ScriptingImplementation.IL2CPP)
                 {
-                    //Debug.Log("Setting WSA Scripting Backend to .NET");
-                    PlayerSettings.SetScriptingBackend(wsaBuildTarget, ScriptingImplementation.WinRTDotNET);
+                    Debug.Log("Setting WSA Scripting Backend to IL2CPP");
+                    PlayerSettings.SetScriptingBackend(wsaBuildTarget, ScriptingImplementation.IL2CPP);
                 }
 
                 // Vuforia needs WebCam permission; UWP requires Microphone permission if using WebCam permission.
-                //Debug.Log("Setting WSA Capability for WebCam");
+                Debug.Log("Setting WSA Capability for WebCam");
                 PlayerSettings.WSA.SetCapability(PlayerSettings.WSACapability.WebCam, true);
-                //Debug.Log("Setting WSA Capability for Microphone");
+                Debug.Log("Setting WSA Capability for Microphone");
                 PlayerSettings.WSA.SetCapability(PlayerSettings.WSACapability.Microphone, true);
 
                 // Vuforia SDK for UWP also requires InternetClient Access
-                //Debug.Log("Setting WSA Capability for InternetClient");
+                Debug.Log("Setting WSA Capability for InternetClient");
                 PlayerSettings.WSA.SetCapability(PlayerSettings.WSACapability.InternetClient, true);
 
                 // Here we set the scripting define symbols for WSA
@@ -138,60 +126,8 @@ namespace Vuforia.EditorClasses
         {
             if (!PlayerSettings.GetPlatformVuforiaEnabled(buildTargetGroup))
             {
-                //Debug.Log("Enabling Vuforia for " + buildTargetGroup.ToString());
+                Debug.Log("Enabling Vuforia for " + buildTargetGroup.ToString());
                 PlayerSettings.SetPlatformVuforiaEnabled(buildTargetGroup, true);
-            }
-        }
-
-
-        static void EnableVR(BuildTargetGroup buildTargetGroup)
-        {
-            if (!UnityEditorInternal.VR.VREditor.GetVREnabledOnTargetGroup(buildTargetGroup))
-            {
-                //Debug.Log("Enabling Virtual Reality for " + buildTargetGroup.ToString());
-                UnityEditorInternal.VR.VREditor.SetVREnabledOnTargetGroup(buildTargetGroup, true);
-
-                // Set the VR SDK to either Vuforia or Windows Mixed Reality based on VuforiaConfiguration settings
-                // Vuforia: Suports ARVR Stereo Viewer mode for Android/iOS or StereoRendering for ODG
-                // Windows Mixed Reality: Supports HoloLens
-
-                string vrSDK = (buildTargetGroup == BuildTargetGroup.WSA) ? "WindowsMR" : "Vuforia";
-                //Debug.Log("Setting Virtual Reality SDK to " + vrSDK + " for " + buildTargetGroup.ToString());
-                UnityEditorInternal.VR.VREditor.SetVREnabledDevicesOnTargetGroup(buildTargetGroup, new[] { vrSDK });
-            }
-        }
-
-
-        static void CheckVuforiaConfigurationForEyewearSettings(BuildTargetGroup buildTargetGroup)
-        {
-            VuforiaConfiguration vuforiaConfiguration = VuforiaConfigurationEditor.LoadConfigurationObject();
-
-            DigitalEyewearARController.EyewearType eyewearType = vuforiaConfiguration.DigitalEyewear.EyewearType;
-            DigitalEyewearARController.SeeThroughConfiguration opticalConfig = vuforiaConfiguration.DigitalEyewear.SeeThroughConfiguration;
-
-            switch (buildTargetGroup)
-            {
-                case BuildTargetGroup.Android:
-                    if (eyewearType == DigitalEyewearARController.EyewearType.VideoSeeThrough ||
-                        (eyewearType == DigitalEyewearARController.EyewearType.OpticalSeeThrough &&
-                        opticalConfig == DigitalEyewearARController.SeeThroughConfiguration.Vuforia))
-                    {
-                        EnableVR(buildTargetGroup);
-                    }
-                    break;
-                case BuildTargetGroup.iOS:
-                    if (eyewearType == DigitalEyewearARController.EyewearType.VideoSeeThrough)
-                    {
-                        EnableVR(buildTargetGroup);
-                    }
-                    break;
-                case BuildTargetGroup.WSA:
-                    if (eyewearType == DigitalEyewearARController.EyewearType.OpticalSeeThrough &&
-                        opticalConfig == DigitalEyewearARController.SeeThroughConfiguration.HoloLens)
-                    {
-                        EnableVR(buildTargetGroup);
-                    }
-                    break;
             }
         }
     }

@@ -72,7 +72,7 @@ public class VideoController : MonoBehaviour
 
     void OnApplicationPause(bool pause)
     {
-        //Debug.Log("OnApplicationPause(" + pause + ") called.");
+        Debug.Log("OnApplicationPause(" + pause + ") called.");
         if (pause)
             Pause();
     }
@@ -84,7 +84,7 @@ public class VideoController : MonoBehaviour
 
     public void Play()
     {
-        //Debug.Log("Play Video");
+        Debug.Log("Play Video");
         PauseAudio(false);
         videoPlayer.Play();
         ShowPlayButton(false);
@@ -94,7 +94,7 @@ public class VideoController : MonoBehaviour
     {
         if (videoPlayer)
         {
-            //Debug.Log("Pause Video");
+            Debug.Log("Pause Video");
             PauseAudio(true);
             videoPlayer.Pause();
             ShowPlayButton(true);
@@ -137,7 +137,7 @@ public class VideoController : MonoBehaviour
                 "\nLength: " + videoPlayer.clip.length +
                 "\nPath: " + videoPlayer.clip.originalPath;
 
-            //Debug.Log(stats);
+            Debug.Log(stats);
         }
     }
 
@@ -153,22 +153,22 @@ public class VideoController : MonoBehaviour
 
     void HandleStartedEvent(VideoPlayer video)
     {
-        //Debug.Log("Started: " + video.clip.name);
+        Debug.Log("Started: " + video.clip.name);
     }
 
     void HandlePrepareCompleted(VideoPlayer video)
     {
-        //Debug.Log("Prepare Completed: " + video.clip.name);
+        Debug.Log("Prepare Completed: " + video.clip.name);
     }
 
     void HandleSeekCompleted(VideoPlayer video)
     {
-        //Debug.Log("Seek Completed: " + video.clip.name);
+        Debug.Log("Seek Completed: " + video.clip.name);
     }
 
     void HandleLoopPointReached(VideoPlayer video)
     {
-        //Debug.Log("Loop Point Reached: " + video.clip.name);
+        Debug.Log("Loop Point Reached: " + video.clip.name);
 
         ShowPlayButton(true);
     }

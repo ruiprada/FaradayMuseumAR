@@ -74,7 +74,7 @@ public abstract class Augmentation : MonoBehaviour
     public virtual void OnExit()
     {
         m_EvtOnExit.Invoke();
-        //Debug.Log("Did exit: " + gameObject.name);
+        Debug.Log("Did exit: " + gameObject.name);
     }
 
 

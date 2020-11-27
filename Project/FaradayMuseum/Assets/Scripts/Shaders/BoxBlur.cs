@@ -17,6 +17,7 @@ public class BoxBlur : MonoBehaviour
 
     public void Blur()
     {
+        Debug.Log("blur");
         _iterations = 10;
         _downRes = 1;
     }

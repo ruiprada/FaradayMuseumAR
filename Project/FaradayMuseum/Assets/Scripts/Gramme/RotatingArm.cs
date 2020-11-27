@@ -16,10 +16,16 @@ public class RotatingArm : MonoBehaviour
 
     //public ScrollTexture[] CoilComponents;
 
+
+
+    public ColorChanger rightMagnetColor;
+    public ColorChanger leftMagnetColor;
+
+
     public LongClickButton longClickButton;
 
     public float Torque { get; set; }
-    private int field;
+    private int fieldValue;
 
     private new Rigidbody rigidbody;
 
@@ -36,11 +42,14 @@ public class RotatingArm : MonoBehaviour
     private Field leftField;
 
 
+    public AchievementManager achievementManager;
+
     // Start is called before the first frame update
     void Start()
     {
         Torque = speed;
         rigidbody = GetComponent<Rigidbody>();
+
 
         leftField = leftArm.GetComponent<Field>();
         leftField.FieldVector = positive;
@@ -49,19 +58,24 @@ public class RotatingArm : MonoBehaviour
         rightField = rightArm.GetComponent<Field>();
         rightField.FieldVector = positive;
 
+
         state = true;
         eulerRotation = 0;
-        field = 1;
+
+    }
+
+    private void Awake()
+    {
+        fieldValue = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //transform.Rotate(0, speed * Time.deltaTime, 0);
-
         int myModifier = 0;
 
-        if (field == 1)
+
+        if (fieldValue == 1)
         {
             myModifier = -1;
         }
@@ -73,12 +87,25 @@ public class RotatingArm : MonoBehaviour
 
         float h = myModifier * (longClickButton.pointerDown ? 1 : 0) * Torque * Time.deltaTime;
 
-
         //Todo h depends on the Vectors
 
         rigidbody.AddTorque(transform.forward * h);
 
         eulerRotation = transform.localRotation.eulerAngles.y;
+
+
+        rightMagnetColor.SetColorStrength(rigidbody.angularVelocity.y);
+        leftMagnetColor.SetColorStrength(rigidbody.angularVelocity.y);
+
+        if(rigidbody.angularVelocity.y > 0)
+        {
+            Debug.Log("normal");
+            achievementManager.IncrementAchievement(Achievements.First);
+        }
+        else
+        {
+            // Debug.Log("inverted");
+        }
 
         if (state)
         {
@@ -105,11 +132,14 @@ public class RotatingArm : MonoBehaviour
 
         //InvertTexture();
 
-        if (rotationState) {
+        if (rotationState)
+        {
             //DownConnector.GetComponent<Renderer>().material = darkBlue;
             //UpConnector.GetComponent<Renderer>().material = lightBlue;
 
-        } else {
+        }
+        else
+        {
             //DownConnector.GetComponent<Renderer>().material = lightBlue;
             //UpConnector.GetComponent<Renderer>().material = darkBlue;
 
@@ -118,7 +148,7 @@ public class RotatingArm : MonoBehaviour
 
     public void InvertField()
     {
-        field *= -1;
+        fieldValue *= -1;
     }
 
     /*public void InvertTexture()

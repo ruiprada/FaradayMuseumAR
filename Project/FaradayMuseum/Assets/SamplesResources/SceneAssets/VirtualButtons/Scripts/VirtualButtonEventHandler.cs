@@ -1,4 +1,4 @@
-﻿/*============================================================================== 
+/*============================================================================== 
  Copyright (c) 2016-2017 PTC Inc. All Rights Reserved.
  
  Copyright (c) 2012-2015 Qualcomm Connected Experiences, Inc. All Rights Reserved. 
@@ -46,7 +46,7 @@ public class VirtualButtonEventHandler : MonoBehaviour,
     /// </summary>
     public void OnButtonPressed(VirtualButtonBehaviour vb)
     {
-        //Debug.Log("OnButtonPressed: " + vb.VirtualButtonName);
+        Debug.Log("OnButtonPressed: " + vb.VirtualButtonName);
 
         SetVirtualButtonMaterial(m_VirtualButtonPressed);
 
@@ -60,7 +60,7 @@ public class VirtualButtonEventHandler : MonoBehaviour,
     /// </summary>
     public void OnButtonReleased(VirtualButtonBehaviour vb)
     {
-        //Debug.Log("OnButtonReleased: " + vb.VirtualButtonName);
+        Debug.Log("OnButtonReleased: " + vb.VirtualButtonName);
 
         SetVirtualButtonMaterial(m_VirtualButtonDefault);
 

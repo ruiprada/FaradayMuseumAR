@@ -38,21 +38,21 @@ public class Astronaut : Augmentation
 
     public void AnimEvt_ScaleUpDrill()
     {
-        //Debug.Log("AnimEvt_ScaleUpDrill() called.");
+        Debug.Log("AnimEvt_ScaleUpDrill() called.");
 
         m_Drill.m_IsDrilling = true;
     }
 
     public void AnimEvt_ScaleDownDrill()
     {
-        //Debug.Log("AnimEvt_ScaleDownDrill() called.");
+        Debug.Log("AnimEvt_ScaleDownDrill() called.");
 
         m_Drill.m_IsDrilling = false;
     }
 
     public void AnimEvt_PlayDrillEffect()
     {
-        //Debug.Log("AnimEvt_PlayDrillEffect() called.");
+        Debug.Log("AnimEvt_PlayDrillEffect() called.");
 
         var emissionSmoke = m_DrillEffectSmoke.emission;
         emissionSmoke.enabled = true;
@@ -68,7 +68,7 @@ public class Astronaut : Augmentation
 
     public void AnimEvt_StopDrillEffect()
     {
-        //Debug.Log("AnimEvt_StopDrillEffect() called.");
+        Debug.Log("AnimEvt_StopDrillEffect() called.");
 
         var emissionSmoke = m_DrillEffectSmoke.emission;
         emissionSmoke.enabled = false;

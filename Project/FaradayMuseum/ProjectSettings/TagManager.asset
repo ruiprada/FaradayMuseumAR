@@ -3,41 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Tools
-  - Battery
-  - CenterPiece
-  - Objectives
-  - TopDoor
-  - VibratePlate
-  - BottomDoor
-  - InfoPanel
-  - Phones
-  - FadeBattery
-  - SoundPS
-  - Bobine
-  - FadeBobine
-  - FadeMotor
-  - Handheld
-  - Motor
-  - cameraController
-  - LoadManagar
-  - Debug
-  - Book
-  - XMLManager
-  - TelephoneDemo
-  - SmallImages
-  - InfoPanelBook
-  - InfoExtra1
-  - InfoPanelIntruccoes
-  - DarkBackground
-  - DarkBackground2
-  - Toggle Bg
-  - OnText
-  - Handle
-  - Off Text
-  - ModelTarget
-  - Field
+  tags: []
   layers:
   - Default
   - TransparentFX

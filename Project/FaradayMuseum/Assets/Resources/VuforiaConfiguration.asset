@@ -13,17 +13,16 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AVfYRV3/////AAAAmbuuXhrHLEyCgmQYGMe5/7eC0WzM/3HmIKddalK7kUdRdK/AOxvyP+UUaCSNzX1tj9VAt4VMaCX7rAgionZIo3mNByAveE/KpBoQtUrUVnPBkFTQtWlsBX3O359Ye2Um8IVNlJUms3CsKdVudTcJtAZFg3En1nJbBe8jPgxoMVcWXSXm5QYgXuKl4JQl5CUSuwxFNAD1pbWZsGiaaeYMQM1HCf+NRHKoIImJ5OlicbUjSQ2+I2zpuPSsjgpJxJgwsXbQDU3ujfXTFwXw/Cwk3W951+lUZL8F4cGd29OAShM+bWgk5K+o58rjtudIjuMMhLdTftCBHytxOnysUa/k4me2BzW9cvtjwiINgvZae4Gf
-    ufoLicenseKey: QVptSVVkVC8vLy8vQUFBQUtDSzJ4LzJCOGtweWlZZzhHQUtDekdON0tPYjFHOUFsY2pGK1hyakdmVlpDdy9FK0FVN0xGeTRHcVpEVGRlN3V1TTlYNUJPL2RVM0MrRlMwVVphOGhtZ1pDc3EyejhlbXFTK3h3azgxWTZyNlpJbGFEN1ZSNjBTVVlXZUZqdDNHb0EwWkkvTnNYZVc3VUJHSktzbnRRcll0VURaeUV1Z3JWWTZHR1FvRjdTV3pYVFFHYWxhV3FJR2RkcTAwRXpDUTNoaEJiYXpCS2xiQUMyNHAzeGV2ZmpjditvSkZxcXVEVi8zOFR6eDI3cnE5N05NUW5PMmtic25IZzE2QnlhYlFpdVBUUERMdU5VY3k2dUlxTGF4NUlEOGNoeGprNm9MaTZkRVNoL2JGak9TTHBJc1dmWHU1bnRhTkdwNlpVRTlsYkJEZ2plRkN3bWtrSXZnNlBKb2pldE5xY09OTnRCOUd4Q0lGdlJ1Q3lkVzM=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVNZV0cxWC8vLy8vQUFBQUtPN000M3ZYblVhd3IvODYwL2xRQ1dnT0xYN3ZWTUE0VDRqbnd4aUtvTG5TeWgydS83Q3pMaExYQkNkTUZ4cXBtTVluRWo5Y0xqaWtnNEQvc2lBUkZOSngxbUdmQlA2cVNId055ZWVGd0loRkFtS3JkVmlYbkFOUExwR3c3M0tmaWtxRnQxZmkrajJPanVPNmZQMUJLUjRGNHFvM3BDc0FvMi95Y3lwaDZhYVFkOVlISFN5TmI2WExqS0VLcXU3RmU1b1Z3NFVrUTdQTWV3YXBTRndPS3NteTYrekRXOWM5MmxCbkh2WTdvWVlUdmpSRWd1emEvSG14MkZacHFTVWlVNFhablZzSUluM0UrTkoxS2RSd0F6ejdMS29OMk5yTFBQNzF0OFhlS0tJN1d0UmpIQmZGZk5LVEp0VHM4T1c0OWJOVzVSQStMZ3kzeVREcHVlWjRHMDliQVQ2d29Nc29vMmtsL1l4eit3OHY=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 2
-    maxSimultaneousObjectTargets: 2
+    maxSimultaneousImageTargets: 4
+    maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
-    cameraDirection: 0
-    mirrorVideoBackground: 0
-    version: 8.0.10
-    eulaAcceptedVersions: '{"Values":["7.2","7.5","8.0"]}'
+    modelTargetRecoWhileExtendedTracked: 1
+    version: 8.3.8
+    eulaAcceptedVersions: '{"Values":["7.2","7.5","8.0","8.1","8.3"]}'
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
@@ -45,6 +44,8 @@ MonoBehaviour:
       DistortionCoefficients: {x: 0, y: 0}
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
+  database:
+    disableModelExtraction: 1
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -53,18 +54,18 @@ MonoBehaviour:
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
-    autoInitTracker: 1
-    autoStartTracker: 1
+    autoInitTracker: 0
+    autoStartTracker: 0
+    arcoreRequirement: 1
     trackingMode: 0
-    posePrediction: 1
-    modelCorrectionMode: 2
+    posePrediction: 0
+    modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   smartTerrain:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: Logitech Camera
-    flipHorizontally: 0
-    turnOffWebCam: 1
+    deviceNameSetInEditor: USB Camera
+    turnOffWebCam: 0
     renderTextureLayer: 30

@@ -1,9 +1,9 @@
 ﻿/*===============================================================================
-Copyright (c) 2015-2017 PTC Inc. All Rights Reserved.
- 
+Copyright (c) 2015-2018 PTC Inc. All Rights Reserved.
+
 Copyright (c) 2015 Qualcomm Connected Experiences, Inc. All Rights Reserved.
- 
-Vuforia is a trademark of PTC Inc., registered in the United States and other 
+
+Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 using UnityEngine;
@@ -16,7 +16,11 @@ public class CameraSettings : MonoBehaviour
     private bool mVuforiaStarted = false;
     private bool mAutofocusEnabled = true;
     private bool mFlashTorchEnabled = false;
-    private CameraDevice.CameraDirection mActiveDirection = CameraDevice.CameraDirection.CAMERA_DEFAULT;
+    private bool focusing = false;
+    public static bool DoubleTap
+    {
+        get { return Input.touchSupported && (Input.touches.Length > 0) && (Input.touches[0].tapCount == 2); }
+    }
     #endregion //PRIVATE_MEMBERS
 
 
@@ -26,6 +30,15 @@ public class CameraSettings : MonoBehaviour
         var vuforia = VuforiaARController.Instance;
         vuforia.RegisterVuforiaStartedCallback(OnVuforiaStarted);
         vuforia.RegisterOnPauseCallback(OnPaused);
+    }
+
+    void Update()
+    {
+        if (DoubleTap && !this.focusing)
+        {
+            this.focusing = true;
+            TriggerAutofocusEvent();
+        }
     }
     #endregion // MONOBEHAVIOUR_METHODS
 
@@ -40,12 +53,12 @@ public class CameraSettings : MonoBehaviour
     {
         if (CameraDevice.Instance.SetFlashTorchMode(ON))
         {
-            //Debug.Log("Successfully turned flash " + ON);
+            Debug.Log("Successfully turned flash " + ON);
             mFlashTorchEnabled = ON;
         }
         else
         {
-            //Debug.Log("Failed to set the flash torch " + ON);
+            Debug.Log("Failed to set the flash torch " + ON);
             mFlashTorchEnabled = false;
         }
     }
@@ -61,20 +74,20 @@ public class CameraSettings : MonoBehaviour
         {
             if (CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO))
             {
-                //Debug.Log("Successfully enabled continuous autofocus.");
+                Debug.Log("Successfully enabled continuous autofocus.");
                 mAutofocusEnabled = true;
             }
             else
             {
                 // Fallback to normal focus mode
-                //Debug.Log("Failed to enable continuous autofocus, switching to normal focus mode");
+                Debug.Log("Failed to enable continuous autofocus, switching to normal focus mode");
                 mAutofocusEnabled = false;
                 CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_NORMAL);
             }
         }
         else
         {
-            //Debug.Log("Disabling continuous autofocus (enabling normal focus mode).");
+            Debug.Log("Disabling continuous autofocus (enabling normal focus mode).");
             mAutofocusEnabled = false;
             CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_NORMAL);
         }
@@ -82,6 +95,8 @@ public class CameraSettings : MonoBehaviour
 
     public void TriggerAutofocusEvent()
     {
+        StatusMessage.Instance.Display("Manual Focus Triggered", true);
+        
         // Trigger an autofocus event
         CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_TRIGGERAUTO);
 
@@ -89,49 +104,35 @@ public class CameraSettings : MonoBehaviour
         StartCoroutine(RestoreOriginalFocusMode());
     }
 
-    public void SelectCamera(CameraDevice.CameraDirection camDir)
+    public bool RestartCamera()
     {
-        if (RestartCamera(camDir))
+        ObjectTracker objectTracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
+
+        if (objectTracker != null)
         {
-            mActiveDirection = camDir;
-
-            // Upon camera restart, flash is turned off
-            mFlashTorchEnabled = false;
+            objectTracker.Stop();
         }
-    }
 
-    public bool IsFrontCameraActive()
-    {
-        return (mActiveDirection == CameraDevice.CameraDirection.CAMERA_FRONT);
-    }
-
-
-    public bool RestartCamera(CameraDevice.CameraDirection direction)
-    {
-        ObjectTracker tracker = TrackerManager.Instance.GetTracker<ObjectTracker>();
-        if (tracker != null)
-        {
-            tracker.Stop();
-        }
+        // Camera must be deinitialized before attempting to deinitialize trackers
         CameraDevice.Instance.Stop();
         CameraDevice.Instance.Deinit();
 
-        if (!CameraDevice.Instance.Init(direction))
+        if (!CameraDevice.Instance.Init())
         {
-            //Debug.Log("Failed to init camera for direction: " + direction.ToString());
+            Debug.Log("Failed to initialize the camera.");
             return false;
         }
         if (!CameraDevice.Instance.Start())
         {
-            //Debug.Log("Failed to start camera for direction: " + direction.ToString());
+            Debug.Log("Failed to start the camera.");
             return false;
         }
 
-        if (tracker != null)
+        if (objectTracker != null)
         {
-            if (!tracker.Start())
+            if (!objectTracker.Start())
             {
-                //Debug.Log("Failed to restart the Tracker.");
+                Debug.Log("Failed to restart the Object Tracker.");
                 return false;
             }
         }
@@ -177,6 +178,8 @@ public class CameraSettings : MonoBehaviour
             CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
         else
             CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_NORMAL);
+
+        this.focusing = false;
     }
 
     #endregion // PRIVATE_METHODS
