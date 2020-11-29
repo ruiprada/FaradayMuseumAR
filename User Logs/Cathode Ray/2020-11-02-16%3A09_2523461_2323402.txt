@@ -1,0 +1,2 @@
+EventType: OnAppLoad EventDate: 02/11/2020 16:09:59 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 02/11/2020 16:09:59 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 

@@ -1,0 +1,2 @@
+EventType: OnAppLoad EventDate: 10/22/2020 17:21:45 AdditionalInfo:  
+EventType: Click EventDate: 10/22/2020 17:22:24 AdditionalInfo: Next Button 

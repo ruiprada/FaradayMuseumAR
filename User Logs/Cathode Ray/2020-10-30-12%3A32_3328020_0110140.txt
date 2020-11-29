@@ -1,0 +1,95 @@
+EventType: OnAppLoad EventDate: 30/10/2020 12:32:14 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 30/10/2020 12:32:14 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 30/10/2020 12:32:14 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: Rotation EventDate: 30/10/2020 12:32:18 AdditionalInfo: 90 
+EventType: Intensity EventDate: 30/10/2020 12:32:20 AdditionalInfo: 0 
+EventType: AchivementUnlocked EventDate: 30/10/2020 12:32:21 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 30/10/2020 12:32:21 AdditionalInfo: 0,2 
+EventType: Click EventDate: 30/10/2020 12:32:24 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 30/10/2020 12:32:25 AdditionalInfo: ShowAR: True 
+EventType: Rotation EventDate: 30/10/2020 12:32:29 AdditionalInfo: 91 
+EventType: Rotation EventDate: 30/10/2020 12:32:29 AdditionalInfo: 92 
+EventType: Rotation EventDate: 30/10/2020 12:32:29 AdditionalInfo: 93 
+EventType: Rotation EventDate: 30/10/2020 12:32:30 AdditionalInfo: 94 
+EventType: Rotation EventDate: 30/10/2020 12:32:32 AdditionalInfo: 90 
+EventType: Intensity EventDate: 30/10/2020 12:32:32 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:33 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:33 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:33 AdditionalInfo: 1 
+EventType: Intensity EventDate: 30/10/2020 12:32:33 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:34 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:34 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:34 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:34 AdditionalInfo: 2 
+EventType: Intensity EventDate: 30/10/2020 12:32:35 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:35 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:35 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:36 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:36 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:37 AdditionalInfo: 2 
+EventType: Intensity EventDate: 30/10/2020 12:32:38 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:39 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:39 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:40 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:40 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:40 AdditionalInfo: 2 
+EventType: Intensity EventDate: 30/10/2020 12:32:41 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:41 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:41 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:41 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:41 AdditionalInfo: 1 
+EventType: Intensity EventDate: 30/10/2020 12:32:41 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:42 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:42 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:42 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:42 AdditionalInfo: 2,980232E-08 
+EventType: Intensity EventDate: 30/10/2020 12:32:46 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:47 AdditionalInfo: 2,980232E-08 
+EventType: Intensity EventDate: 30/10/2020 12:32:48 AdditionalInfo: 0 
+EventType: Intensity EventDate: 30/10/2020 12:32:48 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:49 AdditionalInfo: 0 
+EventType: Intensity EventDate: 30/10/2020 12:32:50 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:51 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:51 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:51 AdditionalInfo: 0 
+EventType: Intensity EventDate: 30/10/2020 12:32:52 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:52 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:52 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:53 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:53 AdditionalInfo: 1 
+EventType: Intensity EventDate: 30/10/2020 12:32:53 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:53 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:53 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:53 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:54 AdditionalInfo: 2 
+EventType: Intensity EventDate: 30/10/2020 12:32:54 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:54 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:54 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:54 AdditionalInfo: 2,8 
+EventType: Warning EventDate: 30/10/2020 12:32:54 AdditionalInfo:  
+EventType: Intensity EventDate: 30/10/2020 12:32:54 AdditionalInfo: 3 
+EventType: Warning EventDate: 30/10/2020 12:32:55 AdditionalInfo:  
+EventType: Intensity EventDate: 30/10/2020 12:32:55 AdditionalInfo: 3 
+EventType: Warning EventDate: 30/10/2020 12:32:55 AdditionalInfo:  
+EventType: Intensity EventDate: 30/10/2020 12:32:55 AdditionalInfo: 3 
+EventType: Warning EventDate: 30/10/2020 12:32:55 AdditionalInfo:  
+EventType: Intensity EventDate: 30/10/2020 12:32:55 AdditionalInfo: 3 
+EventType: Intensity EventDate: 30/10/2020 12:32:55 AdditionalInfo: 2,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:55 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:56 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:56 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:56 AdditionalInfo: 2 
+EventType: Intensity EventDate: 30/10/2020 12:32:56 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 30/10/2020 12:32:56 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 30/10/2020 12:32:57 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 30/10/2020 12:32:57 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 30/10/2020 12:32:57 AdditionalInfo: 0,9999996 
+EventType: Intensity EventDate: 30/10/2020 12:32:57 AdditionalInfo: 0,7999996 
+EventType: Intensity EventDate: 30/10/2020 12:32:57 AdditionalInfo: 0,5999996 
+EventType: Intensity EventDate: 30/10/2020 12:32:57 AdditionalInfo: 0,3999996 
+EventType: Intensity EventDate: 30/10/2020 12:32:58 AdditionalInfo: 0,1999996 
+EventType: Warning EventDate: 30/10/2020 12:32:58 AdditionalInfo:  
+EventType: Intensity EventDate: 30/10/2020 12:32:58 AdditionalInfo: 0 
+EventType: Intensity EventDate: 30/10/2020 12:32:59 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:33:00 AdditionalInfo: 0 
+EventType: Intensity EventDate: 30/10/2020 12:33:01 AdditionalInfo: 0,2 

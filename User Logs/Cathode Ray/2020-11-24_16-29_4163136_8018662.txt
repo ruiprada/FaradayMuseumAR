@@ -1,0 +1,4 @@
+EventType: OnAppLoad EventDate: 24/11/2020 16:29:19 AdditionalInfo: Android 
+EventType: AchivementUnlocked EventDate: 24/11/2020 16:29:23 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 24/11/2020 16:29:23 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 24/11/2020 16:29:24 AdditionalInfo: 14 

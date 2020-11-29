@@ -1,0 +1,25 @@
+EventType: OnAppLoad EventDate: 24/11/2020 14:41:54 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 24/11/2020 14:41:54 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: Rotation EventDate: 24/11/2020 14:42:02 AdditionalInfo: 0 
+EventType: AchivementUnlocked EventDate: 24/11/2020 14:42:02 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 24/11/2020 14:42:02 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 24/11/2020 14:42:03 AdditionalInfo: 1 
+EventType: AchivementUnlocked EventDate: 24/11/2020 14:42:03 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 24/11/2020 14:42:03 AdditionalInfo: 0 
+EventType: AchivementUnlocked EventDate: 24/11/2020 14:42:06 AdditionalInfo: CR2 
+EventType: Rotation EventDate: 24/11/2020 14:42:06 AdditionalInfo: 90 
+EventType: Intensity EventDate: 24/11/2020 14:42:11 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 24/11/2020 14:42:11 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 24/11/2020 14:42:12 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 24/11/2020 14:42:12 AdditionalInfo: 1 
+EventType: Intensity EventDate: 24/11/2020 14:42:13 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 24/11/2020 14:42:13 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 24/11/2020 14:42:13 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 24/11/2020 14:42:14 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 24/11/2020 14:42:15 AdditionalInfo: 2 
+EventType: AchivementUnlocked EventDate: 24/11/2020 14:42:19 AdditionalInfo: CR3 
+EventType: Intensity EventDate: 24/11/2020 14:42:19 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 24/11/2020 14:42:31 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 24/11/2020 14:42:31 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 24/11/2020 14:42:31 AdditionalInfo: 2,8 
+EventType: Intensity EventDate: 24/11/2020 14:42:31 AdditionalInfo: 3 

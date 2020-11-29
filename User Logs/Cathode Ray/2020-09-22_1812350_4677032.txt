@@ -1,0 +1,23 @@
+EventType: OnAppLoad EventDate: 9/22/2020 1:24:13 PM AdditionalInfo: CathodeRay 
+EventType: Click EventDate: 9/22/2020 1:24:22 PM AdditionalInfo: Warning Button 
+EventType: Click EventDate: 9/22/2020 1:24:22 PM AdditionalInfo: FullScreen Button 
+EventType: Click EventDate: 9/22/2020 1:24:23 PM AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 9/22/2020 1:24:25 PM AdditionalInfo: CathodeRay 
+EventType: Tension EventDate: 9/22/2020 1:24:26 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 9/22/2020 1:24:26 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 9/22/2020 1:24:26 PM AdditionalInfo: 100 
+EventType: Rotation EventDate: 9/22/2020 1:24:26 PM AdditionalInfo: 13 
+EventType: Click EventDate: 9/22/2020 1:24:49 PM AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 9/22/2020 1:24:49 PM AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 9/22/2020 1:24:52 PM AdditionalInfo: initialExplanation 
+EventType: Click EventDate: 9/22/2020 1:24:55 PM AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 9/22/2020 1:24:58 PM AdditionalInfo: Achivement window: False 
+EventType: Click EventDate: 9/22/2020 1:24:59 PM AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 9/22/2020 1:25:00 PM AdditionalInfo: Show pop-ups: True 
+EventType: AchivementUnlocked EventDate: 9/22/2020 1:25:17 PM AdditionalInfo: CR0 
+EventType: Intensity EventDate: 9/22/2020 1:25:17 PM AdditionalInfo: 0.8417763 
+EventType: Click EventDate: 9/22/2020 1:25:19 PM AdditionalInfo: Left Arrow, Show: Initial Explanation 
+EventType: Click EventDate: 9/22/2020 1:25:27 PM AdditionalInfo: Right Arrow, Show: CR0Explanation 
+EventType: Click EventDate: 9/22/2020 1:25:32 PM AdditionalInfo: Explanation 
+EventType: NoActionClick EventDate: 9/22/2020 1:26:17 PM AdditionalInfo: Hint showed: CR1 
+EventType: Click EventDate: 9/22/2020 1:26:43 PM AdditionalInfo: Hint 

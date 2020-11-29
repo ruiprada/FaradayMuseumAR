@@ -1,0 +1,34 @@
+EventType: OnAppLoad EventDate: 30/10/2020 23:01:51 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 30/10/2020 23:01:51 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 30/10/2020 23:01:51 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: AchivementUnlocked EventDate: 30/10/2020 23:01:55 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 30/10/2020 23:01:55 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 30/10/2020 23:01:56 AdditionalInfo: 12 
+EventType: Rotation EventDate: 30/10/2020 23:01:56 AdditionalInfo: 11 
+EventType: Rotation EventDate: 30/10/2020 23:01:56 AdditionalInfo: 10 
+EventType: Rotation EventDate: 30/10/2020 23:01:56 AdditionalInfo: 9 
+EventType: Rotation EventDate: 30/10/2020 23:01:57 AdditionalInfo: 8 
+EventType: Rotation EventDate: 30/10/2020 23:01:57 AdditionalInfo: 7 
+EventType: Rotation EventDate: 30/10/2020 23:01:57 AdditionalInfo: 6 
+EventType: Rotation EventDate: 30/10/2020 23:01:57 AdditionalInfo: 5 
+EventType: Rotation EventDate: 30/10/2020 23:01:57 AdditionalInfo: 4 
+EventType: Rotation EventDate: 30/10/2020 23:01:58 AdditionalInfo: 3 
+EventType: Rotation EventDate: 30/10/2020 23:01:58 AdditionalInfo: 2 
+EventType: Rotation EventDate: 30/10/2020 23:01:58 AdditionalInfo: 1 
+EventType: AchivementUnlocked EventDate: 30/10/2020 23:01:58 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 30/10/2020 23:01:58 AdditionalInfo: 0 
+EventType: Rotation EventDate: 30/10/2020 23:01:58 AdditionalInfo: 0 
+EventType: Warning EventDate: 30/10/2020 23:01:58 AdditionalInfo:  
+EventType: Rotation EventDate: 30/10/2020 23:01:58 AdditionalInfo: 0 
+EventType: Warning EventDate: 30/10/2020 23:01:59 AdditionalInfo:  
+EventType: Rotation EventDate: 30/10/2020 23:01:59 AdditionalInfo: 0 
+EventType: Warning EventDate: 30/10/2020 23:01:59 AdditionalInfo:  
+EventType: Rotation EventDate: 30/10/2020 23:01:59 AdditionalInfo: 0 
+EventType: Warning EventDate: 30/10/2020 23:01:59 AdditionalInfo:  
+EventType: Rotation EventDate: 30/10/2020 23:01:59 AdditionalInfo: 0 
+EventType: Warning EventDate: 30/10/2020 23:01:59 AdditionalInfo:  
+EventType: Rotation EventDate: 30/10/2020 23:01:59 AdditionalInfo: 0 
+EventType: Warning EventDate: 30/10/2020 23:01:59 AdditionalInfo:  
+EventType: Rotation EventDate: 30/10/2020 23:01:59 AdditionalInfo: 0 
+EventType: Warning EventDate: 30/10/2020 23:02:02 AdditionalInfo:  
+EventType: Rotation EventDate: 30/10/2020 23:02:02 AdditionalInfo: 0 

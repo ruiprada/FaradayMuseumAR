@@ -1,0 +1,49 @@
+EventType: OnAppLoad EventDate: 9/30/2020 12:02:12 PM AdditionalInfo: CathodeRay 
+EventType: Click EventDate: 9/30/2020 12:02:35 PM AdditionalInfo: Warning Button 
+EventType: Click EventDate: 9/30/2020 12:02:39 PM AdditionalInfo: FullScreen Button 
+EventType: Click EventDate: 9/30/2020 12:02:41 PM AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 9/30/2020 12:02:51 PM AdditionalInfo: CathodeRay 
+EventType: Tension EventDate: 9/30/2020 12:02:56 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 9/30/2020 12:02:56 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 9/30/2020 12:02:56 PM AdditionalInfo: 100 
+EventType: Rotation EventDate: 9/30/2020 12:02:56 PM AdditionalInfo: 13 
+EventType: Click EventDate: 9/30/2020 12:03:20 PM AdditionalInfo: Show pop-ups: False 
+EventType: Rotation EventDate: 9/30/2020 12:03:25 PM AdditionalInfo: 360 
+EventType: AchivementUnlocked EventDate: 9/30/2020 12:03:29 PM AdditionalInfo: CR0 
+EventType: Intensity EventDate: 9/30/2020 12:03:29 PM AdditionalInfo: 2.263676 
+EventType: Rotation EventDate: 9/30/2020 12:03:34 PM AdditionalInfo: 36 
+EventType: Rotation EventDate: 9/30/2020 12:03:36 PM AdditionalInfo: 24 
+EventType: Rotation EventDate: 9/30/2020 12:03:36 PM AdditionalInfo: 7 
+EventType: Rotation EventDate: 9/30/2020 12:03:36 PM AdditionalInfo: 4 
+EventType: AchivementUnlocked EventDate: 9/30/2020 12:03:36 PM AdditionalInfo: CR1 
+EventType: Rotation EventDate: 9/30/2020 12:03:36 PM AdditionalInfo: 0 
+EventType: Warning EventDate: 9/30/2020 12:03:37 PM AdditionalInfo:  
+EventType: Rotation EventDate: 9/30/2020 12:03:37 PM AdditionalInfo: 0 
+EventType: Tension EventDate: 9/30/2020 12:03:42 PM AdditionalInfo: 110 
+EventType: Tension EventDate: 9/30/2020 12:03:42 PM AdditionalInfo: 108 
+EventType: Tension EventDate: 9/30/2020 12:03:44 PM AdditionalInfo: 119 
+EventType: Tension EventDate: 9/30/2020 12:03:44 PM AdditionalInfo: 186 
+EventType: Tension EventDate: 9/30/2020 12:03:44 PM AdditionalInfo: 244 
+EventType: Tension EventDate: 9/30/2020 12:03:44 PM AdditionalInfo: 276 
+EventType: Tension EventDate: 9/30/2020 12:03:44 PM AdditionalInfo: 288 
+EventType: Tension EventDate: 9/30/2020 12:03:45 PM AdditionalInfo: 300 
+EventType: Click EventDate: 9/30/2020 12:03:47 PM AdditionalInfo: ShowObjs: False 
+EventType: Tension EventDate: 9/30/2020 12:03:51 PM AdditionalInfo: 300 
+EventType: Click EventDate: 9/30/2020 12:03:55 PM AdditionalInfo: Explanation 
+EventType: Intensity EventDate: 9/30/2020 12:04:00 PM AdditionalInfo: 2.26 
+EventType: Intensity EventDate: 9/30/2020 12:04:00 PM AdditionalInfo: 2.26 
+EventType: Click EventDate: 9/30/2020 12:04:02 PM AdditionalInfo: Show pop-ups: True 
+EventType: Click EventDate: 9/30/2020 12:04:04 PM AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 9/30/2020 12:04:05 PM AdditionalInfo: Achivement window: False 
+EventType: Click EventDate: 9/30/2020 12:04:06 PM AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 9/30/2020 12:04:11 PM AdditionalInfo: Rotation: True 
+EventType: Click EventDate: 9/30/2020 12:04:13 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:13 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:14 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:14 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:14 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:14 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:14 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:14 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:15 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 
+EventType: Click EventDate: 9/30/2020 12:04:15 PM AdditionalInfo: Obj Rotation: (270.0, 180.0, 0.0) 

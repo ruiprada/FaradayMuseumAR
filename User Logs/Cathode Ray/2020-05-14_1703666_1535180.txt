@@ -1,0 +1,467 @@
+EventType: OnAppLoad EventDate: 5/14/2020 8:34:25 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:28 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:28 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:28 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:28 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:28 AM AdditionalInfo:  
+EventType: AchivementUnlocked EventDate: 5/14/2020 8:34:39 AM AdditionalInfo: CR3 
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:39 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Rotation EventDate: 5/14/2020 8:34:43 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:46 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:47 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:48 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:48 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:48 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:48 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:50 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Intensity EventDate: 5/14/2020 8:34:53 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:56 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:57 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:34:58 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:00 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Tension EventDate: 5/14/2020 8:35:01 AM AdditionalInfo:  
+EventType: Click EventDate: 5/14/2020 8:35:04 AM AdditionalInfo: Control Panel: False 
+EventType: Click EventDate: 5/14/2020 8:35:06 AM AdditionalInfo: Control Panel: True 
+EventType: Click EventDate: 5/14/2020 8:35:07 AM AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 5/14/2020 8:35:09 AM AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 5/14/2020 8:35:10 AM AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 5/14/2020 8:35:11 AM AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 5/14/2020 8:35:12 AM AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 5/14/2020 8:35:16 AM AdditionalInfo: Rotation: True 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:19 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:20 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:21 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:23 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:24 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:25 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:26 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:27 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:27 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:27 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:27 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:27 AM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/14/2020 8:35:27 AM AdditionalInfo: Rotating 

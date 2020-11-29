@@ -1,0 +1,46 @@
+EventType: OnAppLoad EventDate: 10/22/2020 18:43:01 AdditionalInfo: Android 
+EventType: Click EventDate: 10/22/2020 18:44:24 AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 10/22/2020 18:44:27 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 10/22/2020 18:44:28 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 18:44:43 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: AchivementUnlocked EventDate: 10/22/2020 18:44:51 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 10/22/2020 18:44:51 AdditionalInfo: 0.2 
+EventType: Rotation EventDate: 10/22/2020 18:45:00 AdditionalInfo: 4 
+EventType: Rotation EventDate: 10/22/2020 18:45:00 AdditionalInfo: 3 
+EventType: Rotation EventDate: 10/22/2020 18:45:00 AdditionalInfo: 2 
+EventType: Rotation EventDate: 10/22/2020 18:45:00 AdditionalInfo: 1 
+EventType: AchivementUnlocked EventDate: 10/22/2020 18:45:00 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 10/22/2020 18:45:00 AdditionalInfo: 0 
+EventType: Rotation EventDate: 10/22/2020 18:45:00 AdditionalInfo: 0 
+EventType: Intensity EventDate: 10/22/2020 18:45:10 AdditionalInfo: 2.6 
+EventType: Intensity EventDate: 10/22/2020 18:45:11 AdditionalInfo: 2.4 
+EventType: Intensity EventDate: 10/22/2020 18:45:11 AdditionalInfo: 2.2 
+EventType: Intensity EventDate: 10/22/2020 18:45:11 AdditionalInfo: 2 
+EventType: Intensity EventDate: 10/22/2020 18:45:11 AdditionalInfo: 1.8 
+EventType: Intensity EventDate: 10/22/2020 18:45:12 AdditionalInfo: 1.6 
+EventType: Intensity EventDate: 10/22/2020 18:45:12 AdditionalInfo: 1.4 
+EventType: Intensity EventDate: 10/22/2020 18:45:12 AdditionalInfo: 1.2 
+EventType: AchivementUnlocked EventDate: 10/22/2020 18:45:12 AdditionalInfo: CR3 
+EventType: Intensity EventDate: 10/22/2020 18:45:12 AdditionalInfo: 1 
+EventType: Intensity EventDate: 10/22/2020 18:45:12 AdditionalInfo: 0.8 
+EventType: Intensity EventDate: 10/22/2020 18:45:12 AdditionalInfo: 0.6 
+EventType: Intensity EventDate: 10/22/2020 18:45:26 AdditionalInfo: 0.4 
+EventType: AchivementUnlocked EventDate: 10/22/2020 18:45:30 AdditionalInfo: CR4 
+EventType: Tension EventDate: 10/22/2020 18:45:30 AdditionalInfo: 150 
+EventType: TrackingTarget EventDate: 10/22/2020 18:45:34 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 18:45:36 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: Intensity EventDate: 10/22/2020 18:45:50 AdditionalInfo: 0.7 
+EventType: Click EventDate: 10/22/2020 18:45:58 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 10/22/2020 18:45:59 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 10/22/2020 18:45:59 AdditionalInfo: Show pop-ups: False 
+EventType: Click EventDate: 10/22/2020 18:46:00 AdditionalInfo: Show pop-ups: True 
+EventType: Click EventDate: 10/22/2020 18:46:00 AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 10/22/2020 18:46:01 AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 10/22/2020 18:46:02 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 10/22/2020 18:46:02 AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 10/22/2020 18:46:03 AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 10/22/2020 18:46:04 AdditionalInfo: Achivement window: False 
+EventType: TrackingTarget EventDate: 10/22/2020 18:46:06 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 18:46:15 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 18:46:21 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 18:46:25 AdditionalInfo: TrackingLost: CR Image target: True 

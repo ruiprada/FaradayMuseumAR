@@ -1,0 +1,5 @@
+EventType: OnAppLoad EventDate: 24/11/2020 19:00:22 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 24/11/2020 19:00:22 AdditionalInfo: TrackingLost! TargetID: CR Image target: False 
+EventType: TrackingTarget EventDate: 24/11/2020 19:00:22 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: Click EventDate: 24/11/2020 19:00:25 AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 24/11/2020 19:00:32 AdditionalInfo: Achivement window: False 

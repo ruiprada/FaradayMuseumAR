@@ -1,0 +1,9 @@
+EventType: OnAppLoad EventDate: 11/02/2020 16:30:20 AdditionalInfo: Android 
+EventType: Click EventDate: 11/02/2020 16:30:25 AdditionalInfo: consent Button 
+EventType: Click EventDate: 11/02/2020 16:30:26 AdditionalInfo: Next Button 
+EventType: Click EventDate: 11/02/2020 16:30:27 AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 11/02/2020 16:30:29 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 11/02/2020 16:30:29 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 11/02/2020 16:30:43 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: TrackingTarget EventDate: 11/02/2020 16:30:44 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 11/02/2020 16:30:45 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 

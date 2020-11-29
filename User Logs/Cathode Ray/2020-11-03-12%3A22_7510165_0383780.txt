@@ -1,0 +1,1 @@
+EventType: OnAppLoad EventDate: 03/11/2020 12:22:08 AdditionalInfo: Android 

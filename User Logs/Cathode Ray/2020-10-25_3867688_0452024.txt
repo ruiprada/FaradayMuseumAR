@@ -1,0 +1,49 @@
+EventType: OnAppLoad EventDate: 10/25/2020 21:17:31 AdditionalInfo: Android 
+EventType: Click EventDate: 10/25/2020 21:17:37 AdditionalInfo: Next Button 
+EventType: Click EventDate: 10/25/2020 21:17:39 AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 10/25/2020 21:17:41 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 10/25/2020 21:17:43 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/25/2020 21:18:03 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: Rotation EventDate: 10/25/2020 21:18:21 AdditionalInfo: 90 
+EventType: Intensity EventDate: 10/25/2020 21:18:23 AdditionalInfo: 1 
+EventType: AchivementUnlocked EventDate: 10/25/2020 21:18:24 AdditionalInfo: CR2 
+EventType: Intensity EventDate: 10/25/2020 21:18:24 AdditionalInfo: 1.2 
+EventType: Intensity EventDate: 10/25/2020 21:18:24 AdditionalInfo: 1.4 
+EventType: Intensity EventDate: 10/25/2020 21:18:24 AdditionalInfo: 1.6 
+EventType: Intensity EventDate: 10/25/2020 21:18:24 AdditionalInfo: 1.8 
+EventType: Intensity EventDate: 10/25/2020 21:18:25 AdditionalInfo: 2 
+EventType: Intensity EventDate: 10/25/2020 21:18:25 AdditionalInfo: 2.2 
+EventType: Intensity EventDate: 10/25/2020 21:18:26 AdditionalInfo: 2.4 
+EventType: Intensity EventDate: 10/25/2020 21:18:26 AdditionalInfo: 2.6 
+EventType: Intensity EventDate: 10/25/2020 21:18:27 AdditionalInfo: 2.8 
+EventType: Warning EventDate: 10/25/2020 21:18:27 AdditionalInfo:  
+EventType: Intensity EventDate: 10/25/2020 21:18:27 AdditionalInfo: 3 
+EventType: Intensity EventDate: 10/25/2020 21:18:28 AdditionalInfo: 2.8 
+EventType: Intensity EventDate: 10/25/2020 21:18:28 AdditionalInfo: 2.6 
+EventType: Intensity EventDate: 10/25/2020 21:18:28 AdditionalInfo: 2.4 
+EventType: Intensity EventDate: 10/25/2020 21:18:28 AdditionalInfo: 2.2 
+EventType: Intensity EventDate: 10/25/2020 21:18:28 AdditionalInfo: 2 
+EventType: Intensity EventDate: 10/25/2020 21:18:29 AdditionalInfo: 1.8 
+EventType: Intensity EventDate: 10/25/2020 21:18:29 AdditionalInfo: 1.6 
+EventType: Intensity EventDate: 10/25/2020 21:18:29 AdditionalInfo: 1.4 
+EventType: Intensity EventDate: 10/25/2020 21:18:29 AdditionalInfo: 1.2 
+EventType: AchivementUnlocked EventDate: 10/25/2020 21:18:29 AdditionalInfo: CR3 
+EventType: Intensity EventDate: 10/25/2020 21:18:29 AdditionalInfo: 0.9999996 
+EventType: Intensity EventDate: 10/25/2020 21:18:30 AdditionalInfo: 0.7999996 
+EventType: Intensity EventDate: 10/25/2020 21:18:30 AdditionalInfo: 0.5999996 
+EventType: Rotation EventDate: 10/25/2020 21:18:35 AdditionalInfo: 110 
+EventType: TrackingTarget EventDate: 10/25/2020 21:18:41 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/25/2020 21:18:44 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/25/2020 21:18:47 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: Intensity EventDate: 10/25/2020 21:18:51 AdditionalInfo: 0.3999996 
+EventType: Tension EventDate: 10/25/2020 21:18:52 AdditionalInfo: 101 
+EventType: Tension EventDate: 10/25/2020 21:18:52 AdditionalInfo: 102 
+EventType: Tension EventDate: 10/25/2020 21:18:52 AdditionalInfo: 103 
+EventType: Tension EventDate: 10/25/2020 21:18:52 AdditionalInfo: 104 
+EventType: Tension EventDate: 10/25/2020 21:18:53 AdditionalInfo: 105 
+EventType: Tension EventDate: 10/25/2020 21:18:53 AdditionalInfo: 106 
+EventType: Tension EventDate: 10/25/2020 21:18:53 AdditionalInfo: 107 
+EventType: Tension EventDate: 10/25/2020 21:18:53 AdditionalInfo: 108 
+EventType: Tension EventDate: 10/25/2020 21:18:53 AdditionalInfo: 109 
+EventType: Tension EventDate: 10/25/2020 21:18:54 AdditionalInfo: 110 
+EventType: Tension EventDate: 10/25/2020 21:18:54 AdditionalInfo: 111 

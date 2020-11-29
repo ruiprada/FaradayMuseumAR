@@ -1,0 +1,28 @@
+EventType: OnAppLoad EventDate: 03/11/2020 17:32:52 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 03/11/2020 17:32:52 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 03/11/2020 17:32:52 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: Rotation EventDate: 03/11/2020 17:32:57 AdditionalInfo: 0 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:32:58 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 03/11/2020 17:32:58 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 03/11/2020 17:33:02 AdditionalInfo: 94 
+EventType: Intensity EventDate: 03/11/2020 17:33:04 AdditionalInfo: 0,2 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:33:07 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 03/11/2020 17:33:07 AdditionalInfo: 0 
+EventType: Rotation EventDate: 03/11/2020 17:33:07 AdditionalInfo: 1 
+EventType: Rotation EventDate: 03/11/2020 17:33:09 AdditionalInfo: 90 
+EventType: Intensity EventDate: 03/11/2020 17:33:11 AdditionalInfo: 0,4 
+EventType: Rotation EventDate: 03/11/2020 17:33:13 AdditionalInfo: 90 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:33:14 AdditionalInfo: CR2 
+EventType: Intensity EventDate: 03/11/2020 17:33:14 AdditionalInfo: 3 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:33:16 AdditionalInfo: CR3 
+EventType: Intensity EventDate: 03/11/2020 17:33:16 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 03/11/2020 17:33:21 AdditionalInfo: 94 
+EventType: Tension EventDate: 03/11/2020 17:33:23 AdditionalInfo: 150 
+EventType: Intensity EventDate: 03/11/2020 17:33:24 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 03/11/2020 17:33:28 AdditionalInfo: 0,4 
+EventType: Rotation EventDate: 03/11/2020 17:33:28 AdditionalInfo: 95 
+EventType: Rotation EventDate: 03/11/2020 17:33:30 AdditionalInfo: 94 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:33:33 AdditionalInfo: CR4 
+EventType: Rotation EventDate: 03/11/2020 17:33:33 AdditionalInfo: 110 
+EventType: Rotation EventDate: 03/11/2020 17:33:36 AdditionalInfo: 94 
+EventType: Intensity EventDate: 03/11/2020 17:33:39 AdditionalInfo: 0,7 

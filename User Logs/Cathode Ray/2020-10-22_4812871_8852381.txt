@@ -1,0 +1,7 @@
+EventType: OnAppLoad EventDate: 22/10/2020 18:34:16 AdditionalInfo: Android 
+EventType: Click EventDate: 22/10/2020 18:34:21 AdditionalInfo: Next Button 
+EventType: Click EventDate: 22/10/2020 18:34:22 AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 22/10/2020 18:34:25 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 22/10/2020 18:34:25 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 22/10/2020 18:34:25 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: Tension EventDate: 22/10/2020 18:34:36 AdditionalInfo: 101 

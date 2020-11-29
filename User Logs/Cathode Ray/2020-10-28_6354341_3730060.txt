@@ -1,0 +1,4 @@
+EventType: OnAppLoad EventDate: 28/10/2020 14:42:49 AdditionalInfo: Android 
+EventType: Click EventDate: 28/10/2020 14:42:50 AdditionalInfo: Next Button 
+EventType: Click EventDate: 28/10/2020 14:42:56 AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 28/10/2020 14:42:58 AdditionalInfo: Android 

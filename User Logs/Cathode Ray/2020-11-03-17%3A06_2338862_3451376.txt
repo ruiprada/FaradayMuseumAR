@@ -1,0 +1,28 @@
+EventType: OnAppLoad EventDate: 03/11/2020 17:06:51 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 03/11/2020 17:06:51 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 03/11/2020 17:06:51 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: Rotation EventDate: 03/11/2020 17:06:56 AdditionalInfo: 110 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:06:59 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 03/11/2020 17:06:59 AdditionalInfo: 3 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:07:03 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 03/11/2020 17:07:03 AdditionalInfo: 0 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:07:04 AdditionalInfo: CR2 
+EventType: Rotation EventDate: 03/11/2020 17:07:04 AdditionalInfo: 90 
+EventType: Rotation EventDate: 03/11/2020 17:07:05 AdditionalInfo: 90 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:07:07 AdditionalInfo: CR3 
+EventType: Intensity EventDate: 03/11/2020 17:07:07 AdditionalInfo: 0,2 
+EventType: Tension EventDate: 03/11/2020 17:07:08 AdditionalInfo: 100 
+EventType: Warning EventDate: 03/11/2020 17:07:09 AdditionalInfo:  
+EventType: Tension EventDate: 03/11/2020 17:07:09 AdditionalInfo: 100 
+EventType: Tension EventDate: 03/11/2020 17:07:10 AdditionalInfo: 150 
+EventType: Rotation EventDate: 03/11/2020 17:07:16 AdditionalInfo: 110 
+EventType: Intensity EventDate: 03/11/2020 17:07:21 AdditionalInfo: 0,7 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:07:23 AdditionalInfo: CR4 
+EventType: Intensity EventDate: 03/11/2020 17:07:23 AdditionalInfo: 0,4 
+EventType: Warning EventDate: 03/11/2020 17:07:30 AdditionalInfo:  
+EventType: Intensity EventDate: 03/11/2020 17:07:30 AdditionalInfo: 3 
+EventType: Rotation EventDate: 03/11/2020 17:07:32 AdditionalInfo: 94 
+EventType: Intensity EventDate: 03/11/2020 17:07:34 AdditionalInfo: 0,7 
+EventType: AchivementUnlocked EventDate: 03/11/2020 17:07:36 AdditionalInfo: CR5 
+EventType: NoActionClick EventDate: 03/11/2020 17:07:36 AdditionalInfo: GameEnd 
+EventType: Tension EventDate: 03/11/2020 17:07:36 AdditionalInfo: 100 

@@ -1,0 +1,15 @@
+EventType: OnAppLoad EventDate: 25/11/2020 17:13:43 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 25/11/2020 17:13:44 AdditionalInfo: TrackingFound! TargetID:  Image target: False 
+EventType: Click EventDate: 25/11/2020 17:13:49 AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 25/11/2020 17:13:50 AdditionalInfo: Achivement window: False 
+EventType: Click EventDate: 25/11/2020 17:13:51 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 25/11/2020 17:13:54 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 25/11/2020 17:13:55 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 25/11/2020 17:13:56 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 25/11/2020 17:13:59 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 25/11/2020 17:13:59 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 25/11/2020 17:14:00 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 25/11/2020 17:14:01 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 25/11/2020 17:14:01 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 25/11/2020 17:14:01 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 25/11/2020 17:14:02 AdditionalInfo: Instructions: True 

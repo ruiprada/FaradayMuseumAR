@@ -1,0 +1,11 @@
+EventType: OnAppLoad EventDate: 10/22/2020 17:58:29 AdditionalInfo: maybe 
+EventType: Click EventDate: 10/22/2020 17:58:49 AdditionalInfo: Next Button 
+EventType: Click EventDate: 10/22/2020 17:58:51 AdditionalInfo: Play Button 
+EventType: TrackingTarget EventDate: 10/22/2020 17:58:55 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 17:58:55 AdditionalInfo: TrackingLost: CR Image target: False 
+EventType: TrackingTarget EventDate: 10/22/2020 17:58:55 AdditionalInfo: TrackingLost: CR Image target: False 
+EventType: TrackingTarget EventDate: 10/22/2020 17:59:14 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 17:59:34 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 17:59:37 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 10/22/2020 18:01:18 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: NoActionClick EventDate: 10/22/2020 18:02:15 AdditionalInfo: Hint showed: CR2 

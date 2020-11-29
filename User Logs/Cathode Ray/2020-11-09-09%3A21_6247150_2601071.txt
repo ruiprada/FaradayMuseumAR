@@ -1,0 +1,32 @@
+EventType: OnAppLoad EventDate: 09/11/2020 09:21:02 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 09/11/2020 09:21:02 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 09/11/2020 09:21:02 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: AchivementUnlocked EventDate: 09/11/2020 09:21:07 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 09/11/2020 09:21:07 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 09/11/2020 09:21:09 AdditionalInfo: 12 
+EventType: Rotation EventDate: 09/11/2020 09:21:09 AdditionalInfo: 11 
+EventType: Rotation EventDate: 09/11/2020 09:21:09 AdditionalInfo: 10 
+EventType: Rotation EventDate: 09/11/2020 09:21:10 AdditionalInfo: 9 
+EventType: Rotation EventDate: 09/11/2020 09:21:10 AdditionalInfo: 8 
+EventType: AchivementUnlocked EventDate: 09/11/2020 09:21:12 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 09/11/2020 09:21:12 AdditionalInfo: 0 
+EventType: Rotation EventDate: 09/11/2020 09:21:15 AdditionalInfo: 90 
+EventType: Rotation EventDate: 09/11/2020 09:21:18 AdditionalInfo: 91 
+EventType: Rotation EventDate: 09/11/2020 09:21:18 AdditionalInfo: 92 
+EventType: Rotation EventDate: 09/11/2020 09:21:20 AdditionalInfo: 90 
+EventType: Intensity EventDate: 09/11/2020 09:21:34 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 09/11/2020 09:21:34 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 09/11/2020 09:21:35 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 09/11/2020 09:21:35 AdditionalInfo: 1 
+EventType: Intensity EventDate: 09/11/2020 09:21:35 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 09/11/2020 09:21:35 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 09/11/2020 09:21:35 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 09/11/2020 09:21:36 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 09/11/2020 09:21:36 AdditionalInfo: 2 
+EventType: AchivementUnlocked EventDate: 09/11/2020 09:21:36 AdditionalInfo: CR2 
+EventType: Intensity EventDate: 09/11/2020 09:21:36 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 09/11/2020 09:21:36 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 09/11/2020 09:21:46 AdditionalInfo: 2,2 
+EventType: AchivementUnlocked EventDate: 09/11/2020 09:21:47 AdditionalInfo: CR3 
+EventType: Intensity EventDate: 09/11/2020 09:21:47 AdditionalInfo: 2 
+EventType: Intensity EventDate: 09/11/2020 09:21:47 AdditionalInfo: 1,8 

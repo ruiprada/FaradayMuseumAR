@@ -1,0 +1,28 @@
+EventType: OnAppLoad EventDate: 29/10/2020 17:15:24 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 29/10/2020 17:15:24 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 29/10/2020 17:15:24 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: AchivementUnlocked EventDate: 29/10/2020 17:15:30 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 29/10/2020 17:15:30 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 29/10/2020 17:15:30 AdditionalInfo: 12 
+EventType: Rotation EventDate: 29/10/2020 17:15:31 AdditionalInfo: 11 
+EventType: Rotation EventDate: 29/10/2020 17:15:31 AdditionalInfo: 10 
+EventType: Rotation EventDate: 29/10/2020 17:15:31 AdditionalInfo: 9 
+EventType: Rotation EventDate: 29/10/2020 17:15:31 AdditionalInfo: 8 
+EventType: Rotation EventDate: 29/10/2020 17:15:32 AdditionalInfo: 7 
+EventType: Rotation EventDate: 29/10/2020 17:15:32 AdditionalInfo: 6 
+EventType: Rotation EventDate: 29/10/2020 17:15:32 AdditionalInfo: 5 
+EventType: Rotation EventDate: 29/10/2020 17:15:32 AdditionalInfo: 4 
+EventType: Rotation EventDate: 29/10/2020 17:15:32 AdditionalInfo: 3 
+EventType: Rotation EventDate: 29/10/2020 17:15:32 AdditionalInfo: 2 
+EventType: Rotation EventDate: 29/10/2020 17:15:32 AdditionalInfo: 1 
+EventType: AchivementUnlocked EventDate: 29/10/2020 17:15:33 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 29/10/2020 17:15:33 AdditionalInfo: 0 
+EventType: Click EventDate: 29/10/2020 17:15:33 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 29/10/2020 17:15:34 AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 29/10/2020 17:15:35 AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 29/10/2020 17:15:35 AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 29/10/2020 17:15:36 AdditionalInfo: Show pop-ups: False 
+EventType: Click EventDate: 29/10/2020 17:15:37 AdditionalInfo: Show pop-ups: True 
+EventType: Click EventDate: 29/10/2020 17:15:38 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 29/10/2020 17:15:38 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 29/10/2020 17:15:39 AdditionalInfo: Achivement window: True 

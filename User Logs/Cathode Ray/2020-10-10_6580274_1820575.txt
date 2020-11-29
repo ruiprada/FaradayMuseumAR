@@ -1,0 +1,9 @@
+EventType: OnAppLoad EventDate: 10/10/2020 3:38:39 PM AdditionalInfo: CathodeRay 
+EventType: Click EventDate: 10/10/2020 3:38:54 PM AdditionalInfo: Warning Button 
+EventType: Click EventDate: 10/10/2020 3:38:56 PM AdditionalInfo: FullScreen Button 
+EventType: Click EventDate: 10/10/2020 3:38:57 PM AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 10/10/2020 3:38:59 PM AdditionalInfo: CathodeRay 
+EventType: Tension EventDate: 10/10/2020 3:39:00 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 10/10/2020 3:39:00 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 10/10/2020 3:39:00 PM AdditionalInfo: 100 
+EventType: Rotation EventDate: 10/10/2020 3:39:00 PM AdditionalInfo: 13 

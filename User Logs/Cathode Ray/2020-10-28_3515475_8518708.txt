@@ -1,0 +1,32 @@
+EventType: OnAppLoad EventDate: 28/10/2020 14:27:29 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 28/10/2020 14:27:29 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 28/10/2020 14:27:29 AdditionalInfo: TrackingLost! TargetID:CR Image target: True 
+EventType: TrackingTarget EventDate: 28/10/2020 14:27:29 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: TrackingTarget EventDate: 28/10/2020 14:27:29 AdditionalInfo: TrackingFound! TargetID: CR Image target: True 
+EventType: AchivementUnlocked EventDate: 28/10/2020 14:27:31 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 28/10/2020 14:27:31 AdditionalInfo: 0,2 
+EventType: Click EventDate: 28/10/2020 14:27:38 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 28/10/2020 14:27:39 AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 28/10/2020 14:27:41 AdditionalInfo: ShowAR: False 
+EventType: Intensity EventDate: 28/10/2020 14:27:42 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 28/10/2020 14:27:42 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 28/10/2020 14:27:42 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 28/10/2020 14:27:42 AdditionalInfo: 1 
+EventType: Intensity EventDate: 28/10/2020 14:27:43 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 28/10/2020 14:27:43 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 28/10/2020 14:27:43 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 28/10/2020 14:27:43 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 28/10/2020 14:27:43 AdditionalInfo: 2 
+EventType: Intensity EventDate: 28/10/2020 14:27:43 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 28/10/2020 14:27:44 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 28/10/2020 14:27:44 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 28/10/2020 14:27:44 AdditionalInfo: 2,8 
+EventType: Intensity EventDate: 28/10/2020 14:27:44 AdditionalInfo: 3 
+EventType: Warning EventDate: 28/10/2020 14:27:44 AdditionalInfo:  
+EventType: Intensity EventDate: 28/10/2020 14:27:44 AdditionalInfo: 3 
+EventType: Warning EventDate: 28/10/2020 14:27:44 AdditionalInfo:  
+EventType: Intensity EventDate: 28/10/2020 14:27:44 AdditionalInfo: 3 
+EventType: Warning EventDate: 28/10/2020 14:27:45 AdditionalInfo:  
+EventType: Intensity EventDate: 28/10/2020 14:27:45 AdditionalInfo: 3 
+EventType: Warning EventDate: 28/10/2020 14:27:45 AdditionalInfo:  
+EventType: Intensity EventDate: 28/10/2020 14:27:45 AdditionalInfo: 3 

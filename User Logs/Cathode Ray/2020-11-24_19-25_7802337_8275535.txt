@@ -1,0 +1,49 @@
+EventType: OnAppLoad EventDate: 24/11/2020 19:25:58 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 24/11/2020 19:25:59 AdditionalInfo: TrackingLost! TargetID: CR Image target: True 
+EventType: TrackingTarget EventDate: 24/11/2020 19:25:59 AdditionalInfo: TrackingFound! TargetID: CR Image target: True 
+EventType: AchivementUnlocked EventDate: 24/11/2020 19:26:03 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 24/11/2020 19:26:03 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 24/11/2020 19:26:15 AdditionalInfo: 12 
+EventType: AchivementUnlocked EventDate: 24/11/2020 19:26:17 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 24/11/2020 19:26:17 AdditionalInfo: 0 
+EventType: AchivementUnlocked EventDate: 24/11/2020 19:26:19 AdditionalInfo: CR2 
+EventType: Rotation EventDate: 24/11/2020 19:26:19 AdditionalInfo: 90 
+EventType: Intensity EventDate: 24/11/2020 19:26:21 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 24/11/2020 19:26:21 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 24/11/2020 19:26:22 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 24/11/2020 19:26:22 AdditionalInfo: 1 
+EventType: Intensity EventDate: 24/11/2020 19:26:22 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 24/11/2020 19:26:23 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 24/11/2020 19:26:23 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 24/11/2020 19:26:23 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 24/11/2020 19:26:23 AdditionalInfo: 2 
+EventType: AchivementUnlocked EventDate: 24/11/2020 19:26:23 AdditionalInfo: CR3 
+EventType: Intensity EventDate: 24/11/2020 19:26:23 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 24/11/2020 19:26:24 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 24/11/2020 19:26:24 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 24/11/2020 19:26:25 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 24/11/2020 19:26:25 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 24/11/2020 19:26:25 AdditionalInfo: 2 
+EventType: Intensity EventDate: 24/11/2020 19:26:25 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 24/11/2020 19:26:25 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 24/11/2020 19:26:25 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 24/11/2020 19:26:26 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 24/11/2020 19:26:26 AdditionalInfo: 1 
+EventType: Intensity EventDate: 24/11/2020 19:26:26 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 24/11/2020 19:26:26 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 24/11/2020 19:26:26 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 24/11/2020 19:26:27 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 24/11/2020 19:26:27 AdditionalInfo: 2,980232E-08 
+EventType: Intensity EventDate: 24/11/2020 19:26:28 AdditionalInfo: 0,2 
+EventType: Tension EventDate: 24/11/2020 19:26:29 AdditionalInfo: 101 
+EventType: Tension EventDate: 24/11/2020 19:26:30 AdditionalInfo: 100 
+EventType: Click EventDate: 24/11/2020 19:26:31 AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 24/11/2020 19:26:35 AdditionalInfo: Achivement window: False 
+EventType: Click EventDate: 24/11/2020 19:26:37 AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 24/11/2020 19:26:38 AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 24/11/2020 19:26:38 AdditionalInfo: Show pop-ups: False 
+EventType: Click EventDate: 24/11/2020 19:26:39 AdditionalInfo: Show pop-ups: True 
+EventType: Click EventDate: 24/11/2020 19:26:39 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 24/11/2020 19:26:40 AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 24/11/2020 19:26:41 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 24/11/2020 19:26:41 AdditionalInfo: Instructions: False 

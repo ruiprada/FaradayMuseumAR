@@ -1,0 +1,33 @@
+EventType: OnAppLoad EventDate: 03/11/2020 13:21:33 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 03/11/2020 13:21:33 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 03/11/2020 13:21:33 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: AchivementUnlocked EventDate: 03/11/2020 13:21:36 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 03/11/2020 13:21:36 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 03/11/2020 13:21:38 AdditionalInfo: 90 
+EventType: Rotation EventDate: 03/11/2020 13:21:39 AdditionalInfo: 91 
+EventType: Rotation EventDate: 03/11/2020 13:21:41 AdditionalInfo: 90 
+EventType: Intensity EventDate: 03/11/2020 13:21:42 AdditionalInfo: 0,4 
+EventType: Intensity EventDate: 03/11/2020 13:21:42 AdditionalInfo: 0,6 
+EventType: Intensity EventDate: 03/11/2020 13:21:43 AdditionalInfo: 0,8 
+EventType: Intensity EventDate: 03/11/2020 13:21:43 AdditionalInfo: 1 
+EventType: Intensity EventDate: 03/11/2020 13:21:44 AdditionalInfo: 1,2 
+EventType: Intensity EventDate: 03/11/2020 13:21:44 AdditionalInfo: 1,4 
+EventType: Intensity EventDate: 03/11/2020 13:21:44 AdditionalInfo: 1,6 
+EventType: Intensity EventDate: 03/11/2020 13:21:45 AdditionalInfo: 1,8 
+EventType: Intensity EventDate: 03/11/2020 13:21:46 AdditionalInfo: 2 
+EventType: Intensity EventDate: 03/11/2020 13:21:46 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 03/11/2020 13:21:47 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 03/11/2020 13:21:48 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 03/11/2020 13:21:48 AdditionalInfo: 2,8 
+EventType: Intensity EventDate: 03/11/2020 13:21:48 AdditionalInfo: 3 
+EventType: Warning EventDate: 03/11/2020 13:21:48 AdditionalInfo:  
+EventType: Intensity EventDate: 03/11/2020 13:21:48 AdditionalInfo: 3 
+EventType: Warning EventDate: 03/11/2020 13:21:48 AdditionalInfo:  
+EventType: Intensity EventDate: 03/11/2020 13:21:48 AdditionalInfo: 3 
+EventType: Warning EventDate: 03/11/2020 13:21:48 AdditionalInfo:  
+EventType: Intensity EventDate: 03/11/2020 13:21:48 AdditionalInfo: 3 
+EventType: Intensity EventDate: 03/11/2020 13:21:50 AdditionalInfo: 2,8 
+EventType: Intensity EventDate: 03/11/2020 13:21:50 AdditionalInfo: 2,6 
+EventType: Intensity EventDate: 03/11/2020 13:21:50 AdditionalInfo: 2,4 
+EventType: Intensity EventDate: 03/11/2020 13:21:50 AdditionalInfo: 2,2 
+EventType: Intensity EventDate: 03/11/2020 13:21:51 AdditionalInfo: 2 

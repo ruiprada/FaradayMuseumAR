@@ -1,0 +1,31 @@
+EventType: OnAppLoad EventDate: 22/10/2020 18:04:31 AdditionalInfo: maybe 
+EventType: Click EventDate: 22/10/2020 18:04:47 AdditionalInfo: Next Button 
+EventType: Click EventDate: 22/10/2020 18:04:52 AdditionalInfo: Play Button 
+EventType: TrackingTarget EventDate: 22/10/2020 18:04:54 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 22/10/2020 18:04:54 AdditionalInfo: TrackingFound: CR Image target: True 
+EventType: AchivementUnlocked EventDate: 22/10/2020 18:05:11 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 22/10/2020 18:05:11 AdditionalInfo: 0,2 
+EventType: Click EventDate: 22/10/2020 18:05:20 AdditionalInfo: Show pop-ups: False 
+EventType: Click EventDate: 22/10/2020 18:05:20 AdditionalInfo: Show pop-ups: True 
+EventType: Click EventDate: 22/10/2020 18:05:21 AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 22/10/2020 18:05:21 AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 22/10/2020 18:05:22 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 22/10/2020 18:05:22 AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 22/10/2020 18:05:23 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 22/10/2020 18:05:23 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 22/10/2020 18:05:34 AdditionalInfo: Achivement window: True 
+EventType: Click EventDate: 22/10/2020 18:05:36 AdditionalInfo: Achivement window: False 
+EventType: Rotation EventDate: 22/10/2020 18:05:41 AdditionalInfo: 12 
+EventType: Rotation EventDate: 22/10/2020 18:05:42 AdditionalInfo: 11 
+EventType: Rotation EventDate: 22/10/2020 18:05:42 AdditionalInfo: 10 
+EventType: Rotation EventDate: 22/10/2020 18:05:42 AdditionalInfo: 9 
+EventType: Rotation EventDate: 22/10/2020 18:05:42 AdditionalInfo: 8 
+EventType: Rotation EventDate: 22/10/2020 18:05:42 AdditionalInfo: 7 
+EventType: Rotation EventDate: 22/10/2020 18:05:42 AdditionalInfo: 6 
+EventType: Rotation EventDate: 22/10/2020 18:05:43 AdditionalInfo: 5 
+EventType: Rotation EventDate: 22/10/2020 18:05:43 AdditionalInfo: 4 
+EventType: Rotation EventDate: 22/10/2020 18:05:43 AdditionalInfo: 3 
+EventType: Rotation EventDate: 22/10/2020 18:05:43 AdditionalInfo: 2 
+EventType: Rotation EventDate: 22/10/2020 18:05:43 AdditionalInfo: 1 
+EventType: AchivementUnlocked EventDate: 22/10/2020 18:05:44 AdditionalInfo: CR1 
+EventType: Rotation EventDate: 22/10/2020 18:05:44 AdditionalInfo: 0 

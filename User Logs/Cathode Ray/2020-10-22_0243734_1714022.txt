@@ -1,0 +1,5 @@
+EventType: OnAppLoad EventDate: 22/10/2020 18:17:57 AdditionalInfo: maybe 
+EventType: Click EventDate: 22/10/2020 18:17:59 AdditionalInfo: Next Button 
+EventType: Click EventDate: 22/10/2020 18:18:00 AdditionalInfo: Play Button 
+EventType: TrackingTarget EventDate: 22/10/2020 18:18:02 AdditionalInfo: TrackingLost: CR Image target: True 
+EventType: TrackingTarget EventDate: 22/10/2020 18:18:02 AdditionalInfo: TrackingFound: CR Image target: True 

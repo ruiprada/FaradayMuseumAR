@@ -1,0 +1,5 @@
+EventType: OnAppLoad EventDate: 11/02/2020 22:11:12 AdditionalInfo: Android 
+EventType: Click EventDate: 11/02/2020 22:12:00 AdditionalInfo: consent Button 
+EventType: Click EventDate: 11/02/2020 22:12:01 AdditionalInfo: Next Button 
+EventType: Click EventDate: 11/02/2020 22:12:01 AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 11/02/2020 22:12:04 AdditionalInfo: Android 

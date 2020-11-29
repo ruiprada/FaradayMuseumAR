@@ -1,0 +1,12 @@
+EventType: OnAppLoad EventDate: 30/10/2020 12:48:37 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 30/10/2020 12:48:37 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 30/10/2020 12:48:37 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: AchivementUnlocked EventDate: 30/10/2020 12:48:43 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 30/10/2020 12:48:43 AdditionalInfo: 0,2 
+EventType: Rotation EventDate: 30/10/2020 12:48:44 AdditionalInfo: 90 
+EventType: Click EventDate: 30/10/2020 12:48:48 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 30/10/2020 12:48:48 AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 30/10/2020 12:48:49 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 30/10/2020 12:48:49 AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 30/10/2020 12:48:50 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 30/10/2020 12:48:51 AdditionalInfo: ShowAR: True 

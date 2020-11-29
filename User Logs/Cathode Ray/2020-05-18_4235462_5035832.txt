@@ -1,0 +1,13 @@
+EventType: OnAppLoad EventDate: 5/18/2020 8:42:03 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:42:05 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:42:05 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:42:05 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:42:05 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:42:05 PM AdditionalInfo:  
+EventType: AchivementUnlocked EventDate: 5/18/2020 8:42:21 PM AdditionalInfo: CR3 
+EventType: Rotation EventDate: 5/18/2020 8:42:21 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:42:29 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:42:30 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:42:31 PM AdditionalInfo:  
+EventType: AchivementUnlocked EventDate: 5/18/2020 8:42:33 PM AdditionalInfo: CR1 
+EventType: Rotation EventDate: 5/18/2020 8:42:33 PM AdditionalInfo:  

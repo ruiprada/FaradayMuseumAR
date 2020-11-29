@@ -1,0 +1,11 @@
+EventType: OnAppLoad EventDate: 11/18/2020 3:28:28 PM AdditionalInfo: WebGL CathodeRay 
+EventType: Click EventDate: 11/18/2020 3:28:40 PM AdditionalInfo: Warning Button 
+EventType: Click EventDate: 11/18/2020 3:28:40 PM AdditionalInfo: FullScreen Button 
+EventType: Click EventDate: 11/18/2020 3:28:41 PM AdditionalInfo: Play Button 
+EventType: OnAppLoad EventDate: 11/18/2020 3:28:43 PM AdditionalInfo: WebGL CathodeRay 
+EventType: Tension EventDate: 11/18/2020 3:28:43 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 11/18/2020 3:28:43 PM AdditionalInfo: 100 
+EventType: Tension EventDate: 11/18/2020 3:28:43 PM AdditionalInfo: 100 
+EventType: Rotation EventDate: 11/18/2020 3:28:43 PM AdditionalInfo: 13 
+EventType: AchivementUnlocked EventDate: 11/18/2020 3:28:46 PM AdditionalInfo: CR0 
+EventType: Intensity EventDate: 11/18/2020 3:28:46 PM AdditionalInfo: 0.9602677 

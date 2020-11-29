@@ -1,0 +1,30 @@
+EventType: OnAppLoad EventDate: 30/10/2020 12:50:53 AdditionalInfo: Android 
+EventType: TrackingTarget EventDate: 30/10/2020 12:50:53 AdditionalInfo: TrackingLost! TargetID:CR Image target: False 
+EventType: TrackingTarget EventDate: 30/10/2020 12:50:53 AdditionalInfo: TrackingFound! TargetID: CR Image target: False 
+EventType: Rotation EventDate: 30/10/2020 12:50:59 AdditionalInfo: 90 
+EventType: AchivementUnlocked EventDate: 30/10/2020 12:51:00 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 30/10/2020 12:51:00 AdditionalInfo: 0,2 
+EventType: Intensity EventDate: 30/10/2020 12:51:04 AdditionalInfo: 0,01 
+EventType: Intensity EventDate: 30/10/2020 12:51:07 AdditionalInfo: 0,1 
+EventType: Intensity EventDate: 30/10/2020 12:51:09 AdditionalInfo: 0,3 
+EventType: Intensity EventDate: 30/10/2020 12:51:09 AdditionalInfo: 0,5 
+EventType: Intensity EventDate: 30/10/2020 12:51:10 AdditionalInfo: 0,7 
+EventType: Intensity EventDate: 30/10/2020 12:51:11 AdditionalInfo: 0,9 
+EventType: Intensity EventDate: 30/10/2020 12:51:11 AdditionalInfo: 1,1 
+EventType: Intensity EventDate: 30/10/2020 12:51:11 AdditionalInfo: 1,3 
+EventType: Intensity EventDate: 30/10/2020 12:51:12 AdditionalInfo: 1,5 
+EventType: Intensity EventDate: 30/10/2020 12:51:12 AdditionalInfo: 1,7 
+EventType: Intensity EventDate: 30/10/2020 12:51:13 AdditionalInfo: 1,5 
+EventType: Intensity EventDate: 30/10/2020 12:51:13 AdditionalInfo: 1,3 
+EventType: Intensity EventDate: 30/10/2020 12:51:13 AdditionalInfo: 1,1 
+EventType: Intensity EventDate: 30/10/2020 12:51:13 AdditionalInfo: 0,9 
+EventType: Intensity EventDate: 30/10/2020 12:51:14 AdditionalInfo: 0,7 
+EventType: Intensity EventDate: 30/10/2020 12:51:14 AdditionalInfo: 0,5000001 
+EventType: Intensity EventDate: 30/10/2020 12:51:14 AdditionalInfo: 0,3000001 
+EventType: Intensity EventDate: 30/10/2020 12:51:14 AdditionalInfo: 0,1000001 
+EventType: Intensity EventDate: 30/10/2020 12:51:46 AdditionalInfo: 0,3000001 
+EventType: Intensity EventDate: 30/10/2020 12:51:47 AdditionalInfo: 0,1000001 
+EventType: Intensity EventDate: 30/10/2020 12:51:47 AdditionalInfo: 0 
+EventType: Intensity EventDate: 30/10/2020 12:51:47 AdditionalInfo: 0,2 
+EventType: NoActionClick EventDate: 30/10/2020 12:52:00 AdditionalInfo: Hint showed: CR1 
+EventType: Click EventDate: 30/10/2020 12:52:03 AdditionalInfo: Close Hint 

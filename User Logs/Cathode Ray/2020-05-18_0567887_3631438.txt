@@ -1,0 +1,138 @@
+EventType: OnAppLoad EventDate: 5/18/2020 7:47:00 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:02 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:02 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:02 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:47:02 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:47:02 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:44 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:45 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:46 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:46 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:48 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:47:48 PM AdditionalInfo:  
+EventType: AchivementUnlocked EventDate: 5/18/2020 7:47:50 PM AdditionalInfo: CR2 
+EventType: Intensity EventDate: 5/18/2020 7:47:50 PM AdditionalInfo:  
+EventType: AchivementUnlocked EventDate: 5/18/2020 7:48:08 PM AdditionalInfo: CR3 
+EventType: Rotation EventDate: 5/18/2020 7:48:08 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:48:13 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:22 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:23 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:24 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:27 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:27 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:30 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:31 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:36 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:38 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:39 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:39 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:48:41 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:48:45 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:48:46 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:48:48 PM AdditionalInfo:  
+EventType: Click EventDate: 5/18/2020 7:49:04 PM AdditionalInfo: Rotation: True 
+EventType: Click EventDate: 5/18/2020 7:49:06 PM AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 5/18/2020 7:49:09 PM AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 5/18/2020 7:49:10 PM AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 5/18/2020 7:49:16 PM AdditionalInfo: Control Panel: False 
+EventType: Click EventDate: 5/18/2020 7:49:17 PM AdditionalInfo: Control Panel: True 
+EventType: Click EventDate: 5/18/2020 7:49:23 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:23 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:23 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:23 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:23 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:25 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:25 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:25 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:25 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:25 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:28 PM AdditionalInfo: Reset Rotation 
+EventType: Click EventDate: 5/18/2020 7:49:30 PM AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 5/18/2020 7:49:49 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:49 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:49 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:49 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:49 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:49:49 PM AdditionalInfo: Rotating 
+EventType: Tension EventDate: 5/18/2020 7:50:56 PM AdditionalInfo:  
+EventType: Click EventDate: 5/18/2020 7:50:56 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:50:56 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:50:56 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:50:56 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:50:56 PM AdditionalInfo: Rotating 
+EventType: Tension EventDate: 5/18/2020 7:50:57 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:50:59 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 7:50:59 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:51:02 PM AdditionalInfo:  
+EventType: Click EventDate: 5/18/2020 7:51:02 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:51:02 PM AdditionalInfo: Rotating 
+EventType: Click EventDate: 5/18/2020 7:51:02 PM AdditionalInfo: Rotating 
+EventType: Intensity EventDate: 5/18/2020 7:51:02 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:51:03 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 7:51:04 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:05 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:07 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:10 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:13 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:14 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:22 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:35 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:36 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:37 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:38 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:39 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:40 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:42 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 7:51:42 PM AdditionalInfo:  
+EventType: AchivementUnlocked EventDate: 5/18/2020 7:51:44 PM AdditionalInfo: CR1 
+EventType: Rotation EventDate: 5/18/2020 7:51:44 PM AdditionalInfo:  
+EventType: Click EventDate: 5/18/2020 7:59:48 PM AdditionalInfo: Reset Rotation 
+EventType: Click EventDate: 5/18/2020 7:59:50 PM AdditionalInfo: Rotation: False 
+EventType: Click EventDate: 5/18/2020 7:59:52 PM AdditionalInfo: Rotation: True 
+EventType: Click EventDate: 5/18/2020 7:59:53 PM AdditionalInfo: Reset Rotation 
+EventType: Click EventDate: 5/18/2020 7:59:54 PM AdditionalInfo: Reset Rotation 
+EventType: Click EventDate: 5/18/2020 7:59:55 PM AdditionalInfo: Rotation: False 
+EventType: Click EventDate: 5/18/2020 7:59:56 PM AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 5/18/2020 7:59:58 PM AdditionalInfo: ShowAR: True 
+EventType: Click EventDate: 5/18/2020 8:00:00 PM AdditionalInfo: ShowAR: False 
+EventType: Rotation EventDate: 5/18/2020 8:00:15 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:15 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:18 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:18 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:18 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:20 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:21 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:23 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:27 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:37 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:38 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:38 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:39 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:40 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:40 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:41 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:42 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:00:43 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:00:45 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:00:45 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:00:46 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:49 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:49 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:49 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:49 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:49 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:00:49 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:55 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:00:56 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:01:00 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:01:00 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:01:01 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:01:02 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:01:03 PM AdditionalInfo:  
+EventType: Rotation EventDate: 5/18/2020 8:01:03 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:01:07 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:01:08 PM AdditionalInfo:  
+EventType: Intensity EventDate: 5/18/2020 8:01:09 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:01:11 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:01:11 PM AdditionalInfo:  
+EventType: Tension EventDate: 5/18/2020 8:01:12 PM AdditionalInfo:  

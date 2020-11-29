@@ -1,0 +1,15 @@
+EventType: OnAppLoad EventDate: 24/11/2020 16:10:26 AdditionalInfo: Android 
+EventType: Click EventDate: 24/11/2020 16:10:29 AdditionalInfo: Instructions: True 
+EventType: Click EventDate: 24/11/2020 16:10:30 AdditionalInfo: Instructions: False 
+EventType: Click EventDate: 24/11/2020 16:10:30 AdditionalInfo: Show pop-ups: False 
+EventType: Rotation EventDate: 24/11/2020 16:10:33 AdditionalInfo: 14 
+EventType: Rotation EventDate: 24/11/2020 16:10:34 AdditionalInfo: 13 
+EventType: AchivementUnlocked EventDate: 24/11/2020 16:10:35 AdditionalInfo: CR0 
+EventType: Intensity EventDate: 24/11/2020 16:10:35 AdditionalInfo: 0,2 
+EventType: Click EventDate: 24/11/2020 16:10:37 AdditionalInfo: Show pop-ups: True 
+EventType: Click EventDate: 24/11/2020 16:10:38 AdditionalInfo: Show pop-ups: False 
+EventType: Click EventDate: 24/11/2020 16:10:39 AdditionalInfo: Show pop-ups: True 
+EventType: Click EventDate: 24/11/2020 16:10:40 AdditionalInfo: ShowObjs: False 
+EventType: Click EventDate: 24/11/2020 16:10:41 AdditionalInfo: ShowObjs: True 
+EventType: Click EventDate: 24/11/2020 16:10:42 AdditionalInfo: ShowAR: False 
+EventType: Click EventDate: 24/11/2020 16:10:42 AdditionalInfo: ShowAR: True 

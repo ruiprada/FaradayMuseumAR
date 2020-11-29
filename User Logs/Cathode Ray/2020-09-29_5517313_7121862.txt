@@ -1,0 +1,3 @@
+EventType: OnAppLoad EventDate: 9/29/2020 8:34:01 PM AdditionalInfo: CathodeRay 
+EventType: Click EventDate: 9/29/2020 8:37:19 PM AdditionalInfo: Warning Button 
+EventType: Click EventDate: 9/29/2020 8:37:30 PM AdditionalInfo: FullScreen Button 
