@@ -9,6 +9,28 @@ Theme: Object animation using Augmented Reality for Faraday Museum.
 Description: This is a project for [Faraday Museum](https://tecnico.ulisboa.pt/pt/tag/museu-faraday/) on of the Museums of Instituto Superior Técnico.
 The idea of this project, is to give life to objects that can't be intractable, to improve the visiting experience of the museum and to create an interactive learning experience. This project follows a Mobile Augmeted Reality approach with User Centered Desing. It also has the collaboration of the Faculty of Fine Arts, Lisbon University.
 
+## Repository Structure
+
+<pre>
+	
+FaradayMuseumAR/
+├─ Artist Work/
+│	└─ Contains the work done by the Fine Arts Students
+├─ Img/
+│	└─ Contains images of the artifacts and the app
+├─ Project/
+│	└─ Contains the unity project and the server side for log tests
+├─ User Logs/
+│	└─ Contains the data collected with the log tests
+└─ Vuforia Targets/
+	├─ Image Targets/
+	│	└─ Contains the images to use as image target (need to generate the target) 
+	└─ Model Targets/
+		└─ Contains the model targets already generated with the Model Target Generator tool
+
+</pre>
+
+
 ## Credits
 
 ### Advisors
