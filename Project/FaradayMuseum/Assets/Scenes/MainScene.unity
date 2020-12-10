@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4513123, g: 0.50095165, b: 0.5731122, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2630,7 +2630,7 @@ RectTransform:
   m_Father: {fileID: 1750381710}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.00000017881393}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -4003,8 +4003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd20e253ca824fb4a45ba382c613686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCanvas: {fileID: 0}
-  ARCameraBlur: {fileID: 0}
+  mainCanvas: {fileID: 498750339}
+  ARCameraBlur: {fileID: 1276773960}
   ObjectOverview: {fileID: 799774825}
 --- !u!114 &137932823
 MonoBehaviour:
@@ -4018,7 +4018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb892544cf43a1343ac86353f1242626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DropdownBorder: {fileID: 1261911983}
+  DropdownBorder: {fileID: 909721893}
   hint: {fileID: 1957671649}
   giveHint: 0
   active: 0
@@ -8350,7 +8350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ff650de45df84d319213f200fb33a38, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a319e2f469abb7408fbd9509c1622c3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12956,6 +12956,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 148.9}
   m_SizeDelta: {x: -200, y: 297.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!21 &469471672
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'CathodeRay_lightRoomMaterial
+
+    19952'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 890ebefb52374cb5ba84e7ca83907ec5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &483096969
 GameObject:
   m_ObjectHideFlags: 0
@@ -14381,7 +14409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db69098dd46c047b09e7306dc49fec82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c95330434799c894892f4c0dea41f3ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18919,7 +18947,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300022, guid: 90d2e3d578c89344183cc790201e1fe1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22573,7 +22601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00001457898}
+  m_AnchoredPosition: {x: 0, y: 0.000024425151}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &866933361
@@ -24428,6 +24456,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!21 &943968015
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'quinta_dos_animaisMaterial
+
+    19560'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3d7e17b83c7f464ea7db24232fa70aee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &947339914
 GameObject:
   m_ObjectHideFlags: 0
@@ -26085,8 +26141,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 66810493}
   m_HandleRect: {fileID: 66810492}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9999998
+  m_Value: 0
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -37219,7 +37275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 596c8901faba04abe9624dc27b83b950, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c95330434799c894892f4c0dea41f3ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -39046,7 +39102,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2101068243}
+  - {fileID: 943968015}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47918,7 +47974,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2076633148}
+  - {fileID: 469471672}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48010,8 +48066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd20e253ca824fb4a45ba382c613686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCanvas: {fileID: 0}
-  ARCameraBlur: {fileID: 0}
+  mainCanvas: {fileID: 498750339}
+  ARCameraBlur: {fileID: 1276773960}
   ObjectOverview: {fileID: 799774825}
 --- !u!114 &1630027007
 MonoBehaviour:
@@ -48025,8 +48081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb892544cf43a1343ac86353f1242626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DropdownBorder: {fileID: 0}
-  hint: {fileID: 0}
+  DropdownBorder: {fileID: 909721893}
+  hint: {fileID: 1957671649}
   giveHint: 0
   active: 0
   preview: {fileID: 799774825}
@@ -53744,7 +53800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300022, guid: 90d2e3d578c89344183cc790201e1fe1, type: 3}
+  m_Sprite: {fileID: 21300022, guid: 85cf8a82912b67b4f8ad47afcd5d0066, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -61612,34 +61668,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073007053}
   m_CullTransparentMesh: 0
---- !u!21 &2076633148
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'CathodeRay_lightRoomMaterial
-
-    19916'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 890ebefb52374cb5ba84e7ca83907ec5, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &2079273592
 GameObject:
   m_ObjectHideFlags: 0
@@ -62209,34 +62237,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!21 &2101068243
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'quinta_dos_animaisMaterial
-
-    68602'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3d7e17b83c7f464ea7db24232fa70aee, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &2101854483
 GameObject:
   m_ObjectHideFlags: 0
