@@ -16033,7 +16033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610372403}
   m_Layer: 0
-  m_Name: ===== Garbage =====
+  m_Name: ==== Garbage ====
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18169,7 +18169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 714609381}
   m_Layer: 0
-  m_Name: ===== UI =====
+  m_Name: ==== UI ====
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60426,7 +60426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045549361}
   m_Layer: 0
-  m_Name: ===== Image Targets =====
+  m_Name: ==== Image Targets ====
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

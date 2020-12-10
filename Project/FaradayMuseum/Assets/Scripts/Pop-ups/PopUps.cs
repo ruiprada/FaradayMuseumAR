@@ -5,8 +5,6 @@ using UnityEngine;
 
 public abstract class PopUps : MonoBehaviour
 {
-    public bool SwipeCenterToRight { get; set; } = false;
-    public bool SwipeRightToCenter { get; set; } = false;
     public bool IsActive { get; set; } = false;
 
     protected bool firstTime = true;

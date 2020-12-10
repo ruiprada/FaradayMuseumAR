@@ -7,9 +7,6 @@ public class ExplanationDisplay : PopUps
 {
     public static UsabilityTestsSingleton singleton = UsabilityTestsSingleton.Instance();
 
-
-    public bool SwipeLeftToCenter { get; set; } = false;
-
     [SerializeField]
     private SettingsManager settingsManager;
     [SerializeField]
