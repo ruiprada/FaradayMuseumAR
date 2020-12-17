@@ -40,10 +40,11 @@ FaradayMuseumAR/
 ### Developers
 * João Barreto: Gower-Bell Telephone
 * Luís Nunes: Dynamo / Engine (TargetID: Gramme)
-* Tiago Henriques: Cathode Ray (TargetID: CR) [Work Documentation](https://github.com/Toscan0/IST-Thesis-FaradayMuseum/blob/main/Project/Technical%20Report.pdf)
+* [Tiago Henriques](https://github.com/Toscan0): Cathode Ray (TargetID: CR) [Work Documentation](https://github.com/ruiprada/FaradayMuseumAR/blob/Android/Project/Documentation/Technical%20Report.pdf)
 
 ### Artists
-* 3D artist: Marta Mendes (Gower-Bell Telephone, Cathode Ray)
+* 3D artist: Marta Mendes (Gower-Bell Telephone, Cathode Ray), Rafael Miranda (Gower-Bell Telephone)
+* Graphical interface and storyboard illustrations: Camila Reis (Gower-Bell Telephone)
 
 ## Contacts
 
