@@ -5,14 +5,14 @@ using UnityEditor;
 using System;
 using System.IO;
 
-[CustomEditor(typeof(AchievementDatabase))]
-public class AchievementDatabaseEditor : Editor
+[CustomEditor(typeof(TargetIDsDatabase))]
+public class TargetIDsDatabaseEditor : Editor
 {
-    private AchievementDatabase database;
+    private TargetIDsDatabase targetIDsDatabase;
 
     private void OnEnable()
     {
-        database = target as AchievementDatabase;
+        targetIDsDatabase = target as TargetIDsDatabase;
     }
 
     public override void OnInspectorGUI()
@@ -26,17 +26,17 @@ public class AchievementDatabaseEditor : Editor
 
     private void GenerateEnum(){
 
-        string filePath = Path.Combine(Application.dataPath, "Achievement.cs");
+        string filePath = Path.Combine(Application.dataPath, "TargetIDs.cs");
 
-        string code = "public enum Achievements {";
-        
-        foreach(Achievement achievement in database.achievements)
+        string code = "public enum TargetIDs {";
+
+        foreach(TargetID targetID in targetIDsDatabase.targetIDs)
         {
             //Todo validate id is proper format
-            code += achievement.id + ",";
+            code += targetID.artifactID + ",";
         }
         code += "}";
         File.WriteAllText(filePath, code);
-        AssetDatabase.ImportAsset("Assets/Achievements.cs");
+        AssetDatabase.ImportAsset("Assets/TargetIDs.cs");
     }
 }
