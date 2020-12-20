@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artifactID: CR
   title: Cathode Ray
-  description: "Este \xE9 o Raio Cat\xF3dico, permite-nos manipular um feixe de electr\xF5es.<br>br>br>Voc\xEA
-    sabia?<br>Electr\xF5es podem ser manipulados atrav\xE9s de um campo magn\xE9tico.<br>br>br>Para
+  description: "Este \xE9 o Raio Cat\xF3dico, permite-nos manipular um feixe de electr\xF5es.<br><br>Voc\xEA
+    sabia?<br>Electr\xF5es podem ser manipulados atrav\xE9s de um campo magn\xE9tico.<br><br>Para
     come\xE7ar, tente aumentar a intensidade."
   expertiseLevel: begginer

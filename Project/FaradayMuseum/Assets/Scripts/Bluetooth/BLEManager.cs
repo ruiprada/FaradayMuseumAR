@@ -39,7 +39,7 @@ public class BLEManager : MonoBehaviour
 
     private ParserData parserData;
     private BluetoothHelper bluetoothHelper;
-    
+
     private void Awake()
     {
         parserData = gameObject.GetComponent<ParserData>();
@@ -195,7 +195,10 @@ public class BLEManager : MonoBehaviour
 
     private void DisconectBLE()
     {
-        BLEDisconnectFromEvents();
+        if (BLEconnected)
+        {
+            BLEDisconnectFromEvents();
+        }
 
         if (bluetoothHelper != null)
         {
@@ -248,7 +251,6 @@ public class BLEManager : MonoBehaviour
         else
         {
             UpdateBluetoothIcons(false, false, false);
-
             DisconectBLE();
         }
     }
@@ -273,6 +275,6 @@ public class BLEManager : MonoBehaviour
     {
         DisconectBLE();
 
-        MyTrackableEventHandler.OnTrackingObj += ObjTracking;   
+        MyTrackableEventHandler.OnTrackingObj += ObjTracking;
     }
 }
