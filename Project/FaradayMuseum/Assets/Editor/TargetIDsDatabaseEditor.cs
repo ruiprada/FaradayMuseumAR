@@ -26,7 +26,7 @@ public class TargetIDsDatabaseEditor : Editor
 
     private void GenerateEnum(){
 
-        string filePath = Path.Combine(Application.dataPath, "TargetIDs.cs");
+        string filePath = Path.Combine(Application.dataPath, "Scripts/TargetID/TargetIDs.cs");
 
         string code = "public enum TargetIDs {";
 
@@ -37,6 +37,6 @@ public class TargetIDsDatabaseEditor : Editor
         }
         code += "}";
         File.WriteAllText(filePath, code);
-        AssetDatabase.ImportAsset("Assets/TargetIDs.cs");
+        AssetDatabase.ImportAsset("Assets/Scripts/TargetID/TargetIDs.cs");
     }
 }
