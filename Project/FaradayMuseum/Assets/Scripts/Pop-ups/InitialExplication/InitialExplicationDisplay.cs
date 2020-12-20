@@ -29,7 +29,7 @@ public class InitialExplicationDisplay : PopUps
         animator.SetTrigger("FadeIn");
 
         string expertiseLevel = settingsManager.GetExpertiseLevel();
-        string targetID = targetManager.GetTargetID();
+        string targetID = targetManager.TargetID;
 
         for (int i = 0; i < initialExplications.Length; i++)
         {

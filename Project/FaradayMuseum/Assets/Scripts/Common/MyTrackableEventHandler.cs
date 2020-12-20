@@ -40,7 +40,7 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
 
     [SerializeField]
     [Tooltip("Check if this target is a image target")]
-    private bool imageTarget;
+    private bool isImageTarget;
 
     private IEnumerator coroutine;
 
@@ -67,8 +67,8 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
         giveHint = false;
         hint.SetActive(false);
 
-        targetManager.SetTargetID(artifactID);
-        targetManager.SetImageTarget(imageTarget);
+        targetManager.TargetID = artifactID;
+        targetManager.IsImageTarget = isImageTarget;
 
         if (UI != null)
         {
@@ -79,7 +79,7 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
 
         gameScript.StartGame();
 
-        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingFound! TargetID: " + artifactID + " Image target: " + imageTarget);
+        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingFound! TargetID: " + artifactID + " Image target: " + isImageTarget);
     }
 
     protected override void OnTrackingLost()
@@ -94,10 +94,10 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
         }
         gameScript.LostFocus();
 
-        targetManager.SetTargetID("");
+        targetManager.TargetID = "";
 
         OnTrackingObj?.Invoke(false);
-        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingLost! TargetID: " + artifactID + " Image target: " + imageTarget);
+        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingLost! TargetID: " + artifactID + " Image target: " + isImageTarget);
     }
 
     public void StartTracking()

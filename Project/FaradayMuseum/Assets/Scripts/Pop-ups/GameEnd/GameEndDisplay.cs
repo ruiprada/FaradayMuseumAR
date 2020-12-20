@@ -27,7 +27,7 @@ public class GameEndDisplay : PopUps
 
     void OnEnable()
     {
-        string targetID = targetManager.GetTargetID();
+        string targetID = targetManager.TargetID;
 
         for (int i = 0; i < gameEnds.Length; i++)
         {
