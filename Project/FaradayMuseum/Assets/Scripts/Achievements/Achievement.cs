@@ -17,6 +17,5 @@ public class Achievement{
     [Tooltip("If this achivement have an explanation")]
     public bool haveExplanation;
 
-    [Tooltip("Case Sensitive!")]
     public TargetIDs targetID;
 }

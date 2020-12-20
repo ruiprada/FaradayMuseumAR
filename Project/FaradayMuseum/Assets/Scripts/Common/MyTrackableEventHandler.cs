@@ -34,9 +34,7 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
     [SerializeField]
     private TargetManager targetManager;
 
-    [SerializeField]
-    [Tooltip("This is the ID of the artifact, should match the achivements and the pop-ups. Case Sensitive")]
-    private string artifactID;
+    public TargetIDs targetID;
 
     [SerializeField]
     [Tooltip("Check if this target is a image target")]
@@ -67,7 +65,7 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
         giveHint = false;
         hint.SetActive(false);
 
-        targetManager.TargetID = artifactID;
+        targetManager.TargetID = targetID.ToString();
         targetManager.IsImageTarget = isImageTarget;
 
         if (UI != null)
@@ -79,7 +77,7 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
 
         gameScript.StartGame();
 
-        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingFound! TargetID: " + artifactID + " Image target: " + isImageTarget);
+        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingFound! TargetID: " + targetID + " Image target: " + isImageTarget);
     }
 
     protected override void OnTrackingLost()
@@ -97,7 +95,7 @@ public class MyTrackableEventHandler : DefaultTrackableEventHandler
         targetManager.TargetID = "";
 
         OnTrackingObj?.Invoke(false);
-        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingLost! TargetID: " + artifactID + " Image target: " + isImageTarget);
+        singleton.AddGameEvent(LogEventType.TrackingTarget, "TrackingLost! TargetID: " + targetID + " Image target: " + isImageTarget);
     }
 
     public void StartTracking()

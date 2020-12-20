@@ -20,8 +20,8 @@ public class ParserData : MonoBehaviour
      * This code may need to be redone to match the BLE module script
      * Or change the BLE script to match this
      * Im using the following sintaxt:
-     *      CR;I2;\n          (singel value passed)
-     *      CR;I2;R90;T150;\n  (multiple value passed)
+     *      CR;I;2;\n          (singel value passed)
+     *      CR;I;2;R;90;T;150;\n  (multiple value passed)
      * Where:
      *      CR - target ID (need to know wich target refering too)
      *      ; - separator  (need for easy parser)
@@ -51,13 +51,13 @@ public class ParserData : MonoBehaviour
                     "ArtifactID parsed: " + artifactID + " Target artifactID: " + targetManager.TargetID);
                 return;
             }
-
+            
             //Debug.Log("Parser artifactID: " + artifactID);
-            if (artifactID == "Gramme")
+            if (artifactID == TargetIDs.Gramme.ToString())
             {
                 throw new NotImplementedException();
             }
-            else if(artifactID == "CR")
+            else if(artifactID == TargetIDs.CR.ToString())
             {
                 for (int i = 0; i < splited.Length; i++)
                 {
