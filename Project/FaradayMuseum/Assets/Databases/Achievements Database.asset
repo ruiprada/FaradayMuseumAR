@@ -20,53 +20,53 @@ MonoBehaviour:
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: CR
+      targetID: 0
     - id: CR1
       title: Fazer uma linha
       description: Fazer uma linha rodando a ampola
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: CR
+      targetID: 0
     - id: CR2
       title: "Fa\xE7a um c\xEDrculo 1"
       description: "Fazer um c\xEDrculo"
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: CR
+      targetID: 0
     - id: CR3
       title: "Fa\xE7a um c\xEDrculo 2"
       description: "Fazer outro c\xEDrculo"
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: CR
+      targetID: 0
     - id: CR4
       title: Fazer uma espiral 1
       description: Fazer uma espiral rodando a ampola
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: CR
+      targetID: 0
     - id: CR5
       title: Fazer uma espiral
       description: Fazer uma espiral rodando a ampola
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: CR
+      targetID: 0
     - id: First
       title: First
       description: First
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: Gramme
+      targetID: 1
     - id: Second
       title: Second
       description: Second
       objective: 1
       points: 50
       haveExplanation: 1
-      artifactID: Gramme
+      targetID: 1

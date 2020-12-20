@@ -18,5 +18,5 @@ public class Achievement{
     public bool haveExplanation;
 
     [Tooltip("Case Sensitive!")]
-    public string artifactID;
+    public TargetIDs targetID;
 }
