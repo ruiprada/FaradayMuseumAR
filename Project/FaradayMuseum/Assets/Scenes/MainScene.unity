@@ -11405,7 +11405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4858f3648afdde54595f666aaf51b9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ampule: {fileID: 1283349102}
+  toRotate: {fileID: 1283349102}
 --- !u!120 &408066259
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -30233,7 +30233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150325ae1d6f6c643bccc6a5e2d38dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manageInput: {fileID: 408066258}
   tensionInput: {fileID: 162952091}
   minText: {fileID: 291260382}
   maxText: {fileID: 389102792}
@@ -30252,7 +30251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbdb90217e10c64783e835fc993d541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manageInput: {fileID: 408066258}
   intensityInput: {fileID: 1676430786}
   minText: {fileID: 546842127}
   maxText: {fileID: 1735267389}
@@ -30271,7 +30269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6881dde4a868c4595092033dbd5584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manageInput: {fileID: 408066258}
   rotationInput: {fileID: 1807053045}
   minText: {fileID: 258523538}
   maxText: {fileID: 93149689}
@@ -33305,7 +33302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4858f3648afdde54595f666aaf51b9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ampule: {fileID: 824189117}
+  toRotate: {fileID: 824189117}
 --- !u!120 &1276696530
 LineRenderer:
   m_ObjectHideFlags: 0
